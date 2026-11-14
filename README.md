@@ -18,5 +18,10 @@ The repository contains source code, data files, models, effects, translations, 
 
 ## Credits
 
-- Hex: Low IQ (67) — third-party model assets used with permission under GPLv3.
-- New Legend Mod — geometry used by selected blocks; the original author and license remain credited with the imported assets.
+- Hex: Low IQ (67) - third-party model assets used with permission under GPLv3.
+- 1x1x1 Explosive Canister - model.
+- Cannons Pack - Lua, UI, and model assets.
+- Scoob's Plane Parts - Lua and model assets.
+- Wings - parachute block, Lua, and model assets.
+- Engineer Tools - drag reducer, Lua, and model assets.
+- New Legend Mod - Lua and multiple model assets.
