@@ -1,0 +1,1204 @@
+{
+    "partList":  [
+                     {
+                         "uuid":  "0c62c00a-bb5e-4fa6-94df-38cfb51fa101",
+                         "name":  "obj_centered_wing_wedge_1x1",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wing Wedges/Centered Wing Wedge 1x1.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x1"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "b893f20b-6d94-4e3e-8b42-83df04bf0301",
+                         "name":  "obj_sided_wing_wedge_l_1x1",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges Mirrored/Sided Wing Wedge L 1x1.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x1"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a782f10a-5c83-4d2d-9a31-72cf93af0201",
+                         "name":  "obj_sided_wing_wedge_r_1x1",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges/Sided Wing Wedge 1x1.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x1"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "0c62c00a-bb5e-4fa6-94df-38cfb51fa102",
+                         "name":  "obj_centered_wing_wedge_1x2",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wing Wedges/Centered Wing Wedge 1x2.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  2,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x2"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "b893f20b-6d94-4e3e-8b42-83df04bf0302",
+                         "name":  "obj_sided_wing_wedge_l_1x2",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges Mirrored/Sided Wing Wedge L 1x2.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  2,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x2"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a782f10a-5c83-4d2d-9a31-72cf93af0202",
+                         "name":  "obj_sided_wing_wedge_r_1x2",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges/Sided Wing Wedge 1x2.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  2,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x2"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "0c62c00a-bb5e-4fa6-94df-38cfb51fa103",
+                         "name":  "obj_centered_wing_wedge_1x3",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wing Wedges/Centered Wing Wedge 1x3.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  3,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x3"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "b893f20b-6d94-4e3e-8b42-83df04bf0303",
+                         "name":  "obj_sided_wing_wedge_l_1x3",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges Mirrored/Sided Wing Wedge L 1x3.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  3,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x3"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a782f10a-5c83-4d2d-9a31-72cf93af0203",
+                         "name":  "obj_sided_wing_wedge_r_1x3",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges/Sided Wing Wedge 1x3.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  3,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x3"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "0c62c00a-bb5e-4fa6-94df-38cfb51fa104",
+                         "name":  "obj_centered_wing_wedge_1x4",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wing Wedges/Centered Wing Wedge 1x4.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  4,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x4"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "b893f20b-6d94-4e3e-8b42-83df04bf0304",
+                         "name":  "obj_sided_wing_wedge_l_1x4",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges Mirrored/Sided Wing Wedge L 1x4.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  4,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x4"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a782f10a-5c83-4d2d-9a31-72cf93af0204",
+                         "name":  "obj_sided_wing_wedge_r_1x4",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges/Sided Wing Wedge 1x4.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  4,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x4"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "0c62c00a-bb5e-4fa6-94df-38cfb51fa105",
+                         "name":  "obj_centered_wing_wedge_1x5",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wing Wedges/Centered Wing Wedge 1x5.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  5,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x5"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "b893f20b-6d94-4e3e-8b42-83df04bf0305",
+                         "name":  "obj_sided_wing_wedge_l_1x5",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges Mirrored/Sided Wing Wedge L 1x5.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  5,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x5"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a782f10a-5c83-4d2d-9a31-72cf93af0205",
+                         "name":  "obj_sided_wing_wedge_r_1x5",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges/Sided Wing Wedge 1x5.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  5,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x5"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "0c62c00a-bb5e-4fa6-94df-38cfb51fa106",
+                         "name":  "obj_centered_wing_wedge_1x6",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wing Wedges/Centered Wing Wedge 1x6.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  6,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x6"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "b893f20b-6d94-4e3e-8b42-83df04bf0306",
+                         "name":  "obj_sided_wing_wedge_l_1x6",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges Mirrored/Sided Wing Wedge L 1x6.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  6,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x6"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a782f10a-5c83-4d2d-9a31-72cf93af0206",
+                         "name":  "obj_sided_wing_wedge_r_1x6",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges/Sided Wing Wedge 1x6.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  6,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x6"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "0c62c00a-bb5e-4fa6-94df-38cfb51fa107",
+                         "name":  "obj_centered_wing_wedge_1x7",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wing Wedges/Centered Wing Wedge 1x7.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  7,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x7"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "b893f20b-6d94-4e3e-8b42-83df04bf0307",
+                         "name":  "obj_sided_wing_wedge_l_1x7",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges Mirrored/Sided Wing Wedge L 1x7.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  7,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x7"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a782f10a-5c83-4d2d-9a31-72cf93af0207",
+                         "name":  "obj_sided_wing_wedge_r_1x7",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges/Sided Wing Wedge 1x7.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  7,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x7"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "0c62c00a-bb5e-4fa6-94df-38cfb51fa108",
+                         "name":  "obj_centered_wing_wedge_1x8",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wing Wedges/Centered Wing Wedge 1x8.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  8,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x8"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "b893f20b-6d94-4e3e-8b42-83df04bf0308",
+                         "name":  "obj_sided_wing_wedge_l_1x8",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges Mirrored/Sided Wing Wedge L 1x8.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  8,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x8"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a782f10a-5c83-4d2d-9a31-72cf93af0208",
+                         "name":  "obj_sided_wing_wedge_r_1x8",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges/Sided Wing Wedge 1x8.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  8,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x8"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "0c62c00a-bb5e-4fa6-94df-38cfb51fa109",
+                         "name":  "obj_centered_wing_wedge_1x9",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wing Wedges/Centered Wing Wedge 1x9.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  9,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x9"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "b893f20b-6d94-4e3e-8b42-83df04bf0309",
+                         "name":  "obj_sided_wing_wedge_l_1x9",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges Mirrored/Sided Wing Wedge L 1x9.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  9,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x9"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a782f10a-5c83-4d2d-9a31-72cf93af0209",
+                         "name":  "obj_sided_wing_wedge_r_1x9",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges/Sided Wing Wedge 1x9.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  9,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x9"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "0c62c00a-bb5e-4fa6-94df-38cfb51fa110",
+                         "name":  "obj_centered_wing_wedge_1x10",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wing Wedges/Centered Wing Wedge 1x10.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  10,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x10"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "b893f20b-6d94-4e3e-8b42-83df04bf0310",
+                         "name":  "obj_sided_wing_wedge_l_1x10",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges Mirrored/Sided Wing Wedge L 1x10.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  10,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x10"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a782f10a-5c83-4d2d-9a31-72cf93af0210",
+                         "name":  "obj_sided_wing_wedge_r_1x10",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wing Wedges/Sided Wing Wedge 1x10.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  10,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "WingWedge1x10"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     }
+                 ]
+}

@@ -1,0 +1,484 @@
+{
+    "partList":  [
+                     {
+                         "uuid":  "d28f337c-87d0-43f0-bb66-67f75b405e50",
+                         "name":  "obj_centered_wing_1x1",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Centered Wings/Centered Wing 1x1.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing1x1"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250.0,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "3e4f9ea3-5fc4-4d60-8b67-94b6b0408ef1",
+                         "name":  "obj_sided_wing_1x1",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wings/Sided Wing 1x1.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing1x1"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250.0,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "10c8439e-c8bc-41e4-896b-b0fb1802bd55",
+                         "name":  "obj_centered_wing_edge_45_1x1",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Wing Additions/Centered/Centered Wing Edge 45 1x1.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing1x1"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "a5a27827-71d4-420d-b24c-c19fa75bccad",
+                         "name":  "obj_sided_wing_edge_45_1x1",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Wing Additions/Sided/Sided Wing Edge 45 1x1.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing1x1"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "f8463888-870e-4110-b625-d9f0191a0c10",
+                         "name":  "obj_centered_wing_edge_straight_1x1",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Wing Additions/Centered/Centered Wing Edge Straight 1x1.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing1x1"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "e5313e97-bd5e-489f-8b93-404d8355d3b2",
+                         "name":  "obj_sided_wing_edge_straight_1x1",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Wing Additions/Sided/Sided Wing Edge Straight 1x1.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing1x1"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "d24f70d6-7cd6-4b9b-8eb2-03f99fb356b6",
+                         "name":  "obj_centered_wing_2x2",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Wing Additions/Centered/Centered Wing 2x2.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  2,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing2x2"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "9e8e7e48-234c-490f-af8f-d8e703734258",
+                         "name":  "obj_sided_wing_2x2",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Wing Additions/Sided/Sided Wing 2x2.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  2,
+                                     "y":  1,
+                                     "z":  2
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing2x2"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "c6159641-0bc1-4957-b6a7-be10ec74cf47",
+                         "name":  "obj_centered_wing_3x3",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Wing Additions/Centered/Centered Wing 3x3.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  3,
+                                     "y":  1,
+                                     "z":  3
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing3x3"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "cdf62bba-0208-470b-b849-629384682b08",
+                         "name":  "obj_sided_wing_3x3",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Wing Additions/Sided/Sided Wing 3x3.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  3,
+                                     "y":  1,
+                                     "z":  3
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing3x3"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "8ce3fb7e-ab19-4c2d-81e8-46e7e894688b",
+                         "name":  "obj_centered_wing_4x4",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Wing Additions/Centered/Centered Wing 4x4.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  4,
+                                     "y":  1,
+                                     "z":  4
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing4x4"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     },
+                     {
+                         "uuid":  "83aa4d09-c38e-4925-8fdf-ebb5db436078",
+                         "name":  "obj_sided_wing_4x4",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/Wing Additions/Sided/Sided Wing 4x4.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  4,
+                                     "y":  1,
+                                     "z":  4
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                                          "classname":  "Wing4x4"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "aeb5bb",
+                         "density":  250,
+                         "flammable":  true,
+                         "physicsMaterial":  "Plastic",
+                         "rotationSet":  "PropFull",
+                         "sticky":  "+X-X+Y-Y+Z-Z",
+                         "ratings":  {
+                                         "durability":  4
+                                     }
+                     }
+                 ]
+}

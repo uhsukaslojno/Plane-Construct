@@ -1,0 +1,24 @@
+{
+    "system": {
+        "emitters": [
+            {
+                "color": { "r": 0.8, "g": 0.86, "b": 0.92, "a": 0.9 },
+                "emission_mode": "loop",
+                "emission_rate": 2000,
+                "keep_local": true,
+                "particle": "billboard",
+                "scene_blend": "alpha_blend",
+                "time_to_live_min": 0.5,
+                "type": "point",
+                "velocity_max": 0.0,
+                "velocity_min": 0.0,
+                "velocity_val": 0.0,
+                "visual_particle_quota": 8
+            }
+        ],
+        "scale": 0.12,
+        "scale_time": 1,
+        "system_type": "stream",
+        "min_quality": "low"
+    }
+}

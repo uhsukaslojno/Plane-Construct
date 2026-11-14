@@ -1,0 +1,12 @@
+{
+    "effectSetList": [
+        "$MOD_DATA/Effects/Database/EffectSets/PlaneRadarEffects.json",
+        "$MOD_DATA/Effects/Database/EffectSets/CustomShellEffects.json",
+        "$MOD_DATA/Effects/Database/EffectSets/CustomShootingEffects.json",
+        "$MOD_DATA/Effects/Database/EffectSets/CustomExplosionEffects.json",
+        "$MOD_DATA/Effects/Database/EffectSets/Sounds.json",
+        "$MOD_DATA/Effects/Database/EffectSets/PlaneCannonEffects.json",
+        "$MOD_DATA/Effects/Database/EffectSets/PlaneDopplerEngineEffects.json"
+        ,"$MOD_DATA/Effects/Database/EffectSets/PlaneConstructThrusterSounds.json"
+    ]
+}

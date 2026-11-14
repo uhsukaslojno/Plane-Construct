@@ -1,0 +1,658 @@
+{
+    "partList":  [
+                     {
+                         "uuid":  "f0a5db28-26f9-4cf9-a3d9-d75d5a0bf8c8",
+                         "name":  "obj_interactive_fuel_tank",
+                         "renderable":  "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/FuelTank.lua",
+                                          "classname":  "FuelTank"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "f2c40e",
+                         "ratings":  {
+                                         "buoyancy":  2,
+                                         "density":  2,
+                                         "durability":  4,
+                                         "friction":  5
+                                     },
+                         "flammable":  false,
+                         "physicsMaterial":  "Electronics",
+                         "rotationSet":  "PropYZ",
+                         "stackSize":  10
+                     },
+                     {
+                         "uuid":  "7de2c122-1734-45fb-90e0-9b535587eb06",
+                         "name":  "obj_interactive_random_output_gate",
+                         "renderable":  "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/RandomOutputGate.lua",
+                                          "classname":  "RandomOutputGate"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "19e753",
+                         "ratings":  {
+                                         "buoyancy":  2,
+                                         "density":  2,
+                                         "durability":  4,
+                                         "friction":  5
+                                     },
+                         "flammable":  false,
+                         "physicsMaterial":  "Electronics",
+                         "rotationSet":  "PropYZ",
+                         "stackSize":  10
+                     },
+                     {
+                         "uuid":  "91c22f4b-cd44-4b2f-9b68-a6b625a3ee8f",
+                         "name":  "obj_interactive_fire_detector_gate",
+                         "renderable":  "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/FireDetectorGate.lua",
+                                          "classname":  "FireDetectorGate"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "d00000",
+                         "ratings":  {
+                                         "buoyancy":  2,
+                                         "density":  2,
+                                         "durability":  4,
+                                         "friction":  5
+                                     },
+                         "flammable":  false,
+                         "physicsMaterial":  "Electronics",
+                         "rotationSet":  "PropYZ",
+                         "stackSize":  10
+                     },
+                     {
+                         "uuid":  "55b0b50e-8cb9-4d2d-ba52-95a71a8c2e9d",
+                         "name":  "obj_interactive_connected_weapon_selector",
+                         "renderable":  "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/ConnectedWeaponSelector.lua",
+                                          "classname":  "ConnectedWeaponSelector"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "ae79f0",
+                         "ratings":  {
+                                         "buoyancy":  2,
+                                         "density":  2,
+                                         "durability":  4,
+                                         "friction":  5
+                                     },
+                         "flammable":  false,
+                         "physicsMaterial":  "Electronics",
+                         "rotationSet":  "PropYZ",
+                         "stackSize":  10
+                     },
+                     {
+                         "uuid":  "e4ad98f3-f9c7-48f9-bd2a-da16f9da8ee9",
+                         "name":  "obj_interactive_plane_controller",
+                         "renderable":  "$SURVIVAL_DATA/Objects/Renderable/interactive_upgradeable/obj_interactiveupgradeable_sensor01.rend",
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/PlaneController.lua",
+                                          "classname":  "PlaneController"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "df7f01",
+                         "ratings":  {
+                                         "buoyancy":  2,
+                                         "density":  3,
+                                         "durability":  4,
+                                         "friction":  5
+                                     },
+                         "flammable":  true,
+                         "physicsMaterial":  "Electronics",
+                          "rotationSet":  "PropZY",
+                          "stackSize":  10,
+                          "sticky":  "+Y-Y-Z+X-X"
+                       },
+                       {
+                           "uuid":  "de73f113-3f2c-4c35-9c7f-cb5efe394b17",
+                           "name":  "obj_interactive_turret_controller",
+                           "renderable":  "$SURVIVAL_DATA/Objects/Renderable/interactive_upgradeable/obj_interactiveupgradeable_sensor01.rend",
+                           "box":  {
+                                       "x":  1,
+                                       "y":  1,
+                                       "z":  1
+                                   },
+                           "scripted":  {
+                                            "filename":  "$CONTENT_DATA/Scripts/TurretController.lua",
+                                            "classname":  "TurretController"
+                                        },
+                           "qualityLevel":  0,
+                           "color":  "4b4b4b",
+                           "ratings":  {
+                                           "buoyancy":  2,
+                                           "density":  3,
+                                           "durability":  4,
+                                           "friction":  5
+                                       },
+                           "flammable":  true,
+                           "physicsMaterial":  "Electronics",
+                           "rotationSet":  "PropZY",
+                           "stackSize":  10,
+                           "sticky":  "+Y-Y-Z+X-X"
+                       },
+                       {
+                           "uuid":  "a2dc250a-0c7b-4d37-8600-b60daa2edddd",
+                           "name":  "obj_interactive_walker_controller",
+                           "renderable":  "$SURVIVAL_DATA/Objects/Renderable/interactive_upgradeable/obj_interactiveupgradeable_sensor01.rend",
+                           "box":  {
+                                       "x":  1,
+                                       "y":  1,
+                                       "z":  1
+                                   },
+                           "scripted":  {
+                                            "filename":  "$CONTENT_DATA/Scripts/WalkerController.lua",
+                                            "classname":  "WalkerController"
+                                        },
+                           "qualityLevel":  0,
+                           "color":  "6b3fa0",
+                           "ratings":  {
+                                           "buoyancy":  2,
+                                           "density":  3,
+                                           "durability":  4,
+                                           "friction":  5
+                                       },
+                           "flammable":  true,
+                           "physicsMaterial":  "Electronics",
+                           "rotationSet":  "PropZY",
+                           "stackSize":  10,
+                           "sticky":  "+Y-Y-Z+X-X"
+                       },
+                        {
+                         "uuid":  "6f25cb72-bf72-42b6-b3b0-c27c5e6e770d",
+                         "name":  "obj_interactive_horn_foam_extinguisher",
+                         "renderable":  "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_horn.rend",
+                         "hull":  {
+                                      "x":  1,
+                                      "y":  1,
+                                      "z":  1,
+                                      "col":  "$GAME_DATA/Objects/Collision/obj_interactive_horn.obj"
+                                  },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/HornFoamExtinguisher.lua",
+                                          "classname":  "HornFoamExtinguisher"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "df7f01",
+                         "ratings":  {
+                                         "buoyancy":  5,
+                                         "density":  2,
+                                         "durability":  4,
+                                         "friction":  5
+                                     },
+                         "flammable":  true,
+                         "physicsMaterial":  "Mechanical",
+                         "rotationSet":  "PropY",
+                         "stackSize":  10,
+                         "sticky":  "-Y"
+                     },
+                     {
+                         "uuid":  "0b49d3cb-afd8-4c64-a842-129c2169f7c5",
+                         "name":  "obj_interactive_fire_pulse",
+                         "renderable":  "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/FirePulse.lua",
+                                          "classname":  "FirePulse"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "ff6b22",
+                         "ratings":  {
+                                         "buoyancy":  4,
+                                         "density":  4,
+                                         "durability":  4,
+                                         "friction":  4
+                                     },
+                         "flammable":  false,
+                         "physicsMaterial":  "Electronics",
+                         "rotationSet":  "PropYZ",
+                         "stackSize":  10,
+                         "sticky":  "+Y-Y-Z+X-X"
+                     },
+                     {
+                         "uuid":  "d0f6745d-c925-4783-819d-178123463b71",
+                         "name":  "obj_interactive_napalm_bomb",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/obj_interactive_propanetank_small_1x1.obj",
+                                                                "pose0":  "$CONTENT_DATA/Objects/Mesh/obj_interactive_propanetank_small_bshape_1x1.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "PoseAnimDifAsgNor",
+                                                                                        "textureList":  [
+                                                                                                            "$GAME_DATA/Objects/Textures/interactive/obj_interactive_propanetank_small_dif.tga",
+                                                                                                            "$GAME_DATA/Objects/Textures/interactive/obj_interactive_propanetank_small_asg.tga",
+                                                                                                            "$GAME_DATA/Objects/Textures/interactive/obj_interactive_propanetank_small_nor.tga"
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "box":  {
+                                     "x":  1,
+                                     "y":  1,
+                                     "z":  1
+                                 },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/NapalmBomb.lua",
+                                          "classname":  "NapalmBomb"
+                                      },
+                         "qualityLevel":  0,
+                         "color":  "d9480f",
+                         "ratings":  {
+                                         "buoyancy":  4,
+                                         "density":  6,
+                                         "durability":  4,
+                                         "friction":  4
+                                     },
+                         "flammable":  false,
+                         "physicsMaterial":  "Metal",
+                         "rotationSet":  "PropYZ",
+                         "stackSize":  10,
+                         "sticky":  "+Y-Y+Z-Z+X-X"
+                      },
+                      {
+                          "uuid":  "80f81be3-3651-42b9-9697-ff2aae1bbe8d",
+                          "name":  "obj_interactive_hud_block",
+                          "renderable":  "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+                          "box":  {
+                                      "x":  1,
+                                      "y":  1,
+                                      "z":  1
+                                  },
+                          "scripted":  {
+                                           "filename":  "$CONTENT_DATA/Scripts/HudBlock.lua",
+                                           "classname":  "HudBlock"
+                                       },
+                          "qualityLevel":  0,
+                          "color":  "000000",
+                          "ratings":  {
+                                          "buoyancy":  2,
+                                          "density":  2,
+                                          "durability":  4,
+                                          "friction":  5
+                                      },
+                          "flammable":  false,
+                          "physicsMaterial":  "Electronics",
+                          "rotationSet":  "PropYZ",
+                          "stackSize":  10
+                      },
+                       {
+                           "uuid":  "ed67a8c3-7bf8-4729-8596-f200440c95c5",
+                          "name":  "obj_interactive_plane_smart_cannon",
+                          "renderable":  "$CONTENT_DATA/Objects/Renderables/Cannons/SmartCannon.rend",
+                          "scripted":  {
+                                           "filename":  "$CONTENT_DATA/Scripts/PlaneConstructSmartCannon.lua",
+                                           "classname":  "PlaneConstructSmartCannon"
+                                       },
+                          "cylinder":  {
+                                           "axis":  "Z",
+                                           "depth":  1,
+                                           "diameter":  1
+                                       },
+                          "physicsMaterial":  "Metal",
+                          "ratings":  {
+                                          "buoyancy":  0,
+                                          "density":  2,
+                                          "durability":  5,
+                                          "friction":  5
+                                      },
+                          "flammable":  false,
+                          "qualityLevel":  5,
+                          "color":  "5d0096",
+                          "rotationSet":  "PropZ",
+                          "sticky":  "-Z",
+                           "stackSize":  1
+                       },
+                        {
+                            "uuid":  "b7c8d9e0-1234-4abc-8def-0123456789ab",
+                            "name":  "obj_interactive_plane_doppler_engine",
+                           "renderable":  {
+                                              "lodList": [
+                                                              {
+                                                                   "mesh":  "$CONTENT_DATA/Objects/Mesh/FaDongJi_RanQi_Mini_off.fbx",
+                                                                   "pose0":  "$CONTENT_DATA/Objects/Mesh/FaDongJi_RanQi_Mini_on.fbx",
+                                                                   "subMeshList": [
+                                                                                       {
+                                                                                           "textureList":  [
+                                                                                                               "$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_gasengine_01_dif.tga",
+                                                                                                               "$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_gasengine_01_asg.tga",
+                                                                                                               "$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_gasengine_01_nor.tga"
+                                                                                                           ],
+                                                                                           "material":  "PoseAnimDifAsgNor"
+                                                                                       }
+                                                                                  ]
+                                                              }
+                                                          ]
+                                          },
+                           "box":  {
+                                       "x":  1,
+                                       "y":  1,
+                                       "z":  1
+                                   },
+                           "scripted":  {
+                                            "filename":  "$CONTENT_DATA/Scripts/PlaneConstructDopplerEngine.lua",
+                                            "classname":  "PlaneConstructDopplerEngine"
+                                        },
+                           "qualityLevel":  0,
+                           "color":  "808080",
+                           "ratings":  {
+                                           "buoyancy":  2,
+                                           "density":  5,
+                                           "durability":  5,
+                                           "friction":  4
+                                       },
+                           "flammable":  false,
+                           "physicsMaterial":  "Metal",
+                            "rotationSet":  "PropY",
+                           "stackSize":  10,
+                           "sticky":  "+Y-Y-Z+X-X"
+                        },
+                        {
+                            "uuid":  "7c31d534-f77c-4006-afe6-47c0573f1af2",
+                            "name":  "obj_interactive_plane_countermeasure",
+                            "renderable":  "$CONTENT_DATA/Objects/Renderables/PlaneCountermeasure.rend",
+                            "box":  {
+                                        "x":  1,
+                                        "y":  1,
+                                        "z":  1
+                                    },
+                            "scripted":  {
+                                             "filename":  "$CONTENT_DATA/Scripts/PlaneCountermeasure.lua",
+                                             "classname":  "PlaneCountermeasure"
+                                         },
+                            "qualityLevel":  0,
+                            "color":  "ff7a00",
+                            "ratings":  {
+                                            "buoyancy":  2,
+                                            "density":  3,
+                                            "durability":  4,
+                                            "friction":  5
+                                        },
+                            "flammable":  false,
+                            "physicsMaterial":  "Metal",
+                            "rotationSet":  "PropZ",
+                            "stackSize":  10,
+                            "sticky":  "-Z"
+                        },
+                        {
+                            "uuid":  "c2f4a6d8-7b10-4e53-9c21-5f8a0d3b6e74",
+                            "name":  "obj_interactive_plane_flight_sensor",
+                            "renderable":  "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+                            "box":  {
+                                        "x":  1,
+                                        "y":  1,
+                                        "z":  1
+                                    },
+                            "scripted":  {
+                                             "filename":  "$CONTENT_DATA/Scripts/PlaneConstructFlightSensor.lua",
+                                             "classname":  "PlaneConstructFlightSensor"
+                                         },
+                            "qualityLevel":  0,
+                            "color":  "11a7c7",
+                            "ratings":  {
+                                            "buoyancy":  2,
+                                            "density":  2,
+                                            "durability":  4,
+                                            "friction":  5
+                                        },
+                            "flammable":  false,
+                            "physicsMaterial":  "Electronics",
+                            "rotationSet":  "PropYZ",
+                            "stackSize":  10
+                        },
+                        {
+                            "uuid":  "f1a2b3c4-d5e6-4789-9012-3456789abcde",
+                            "name":  "obj_sided_breakable_wing_1x1",
+                            "renderable":  {
+                                               "lodList":  [
+                                                               {
+                                                                   "mesh":  "$CONTENT_DATA/Objects/Mesh/Sided Wings/Sided Wing 1x1.obj",
+                                                                   "subMeshList":  [
+                                                                                       {
+                                                                                           "material":  "DifAsgNor",
+                                                                                           "textureList":  [
+                                                                                                               "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                                                                                               "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                                                                                               "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                                                                                           ]
+                                                                                       }
+                                                                                   ]
+                                                               }
+                                                           ]
+                                           },
+                            "box":  {
+                                        "x":  1,
+                                        "y":  1,
+                                        "z":  1
+                                    },
+                            "scripted":  {
+                                             "filename":  "$CONTENT_DATA/Scripts/SidedAirfoil.lua",
+                                             "classname":  "BreakableSidedWing1x1"
+                                         },
+                            "qualityLevel":  0,
+                            "color":  "aeb5bb",
+                            "ratings":  {
+                                            "buoyancy":  2,
+                                            "density":  4,
+                                            "durability":  4,
+                                            "friction":  4
+                                        },
+                            "flammable":  true,
+                            "physicsMaterial":  "Plastic",
+                            "rotationSet":  "PropFull",
+                            "sticky":  "+X-X+Z-Z",
+                             "stackSize":  10
+                         },
+                         {
+                             "uuid":  "b7c4f2a1-6d89-4e30-9f12-3a5c7d8e9012",
+                             "name":  "obj_plane_construct_drag_reducer",
+                             "renderable":  {
+                                                "lodList":  [
+                                                                {
+                                                                    "mesh":  "$CONTENT_DATA/Objects/Mesh/Engineer Tools/DragReducer.obj",
+                                                                    "subMeshList":  [
+                                                                                        {
+                                                                                            "material":  "Dif",
+                                                                                            "textureList":  [
+                                                                                                                "$CONTENT_DATA/Objects/Textures/DragReducer.tga"
+                                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                }
+                                                            ]
+                                            },
+                             "scripted":  {
+                                              "filename":  "$CONTENT_DATA/Scripts/PlaneConstructDragReducer.lua",
+                                              "classname":  "PlaneConstructDragReducer"
+                                          },
+                             "box":  {
+                                         "x":  1,
+                                         "y":  1,
+                                         "z":  1
+                                     },
+                             "qualityLevel":  0,
+                             "color":  "f7d84f",
+                             "ratings":  {
+                                             "buoyancy":  2,
+                                             "density":  4,
+                                             "durability":  4,
+                                             "friction":  4
+                                         },
+                             "flammable":  false,
+                             "physicsMaterial":  "Plastic",
+                             "rotationSet":  "PropXYZ",
+                             "sticky":  "-Z+Z-X+X-Y+Y",
+                              "stackSize":  10
+                          },
+                          {
+                              "uuid":  "c4e9d3b1-7a2f-4a8c-9d10-6f5b2e7c1a44",
+                              "name":  "obj_plane_construct_random_color_block",
+                              "renderable":  "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+                              "box":  {
+                                          "x":  1,
+                                          "y":  1,
+                                          "z":  1
+                                      },
+                              "scripted":  {
+                                               "filename":  "$CONTENT_DATA/Scripts/PlaneConstructRandomColorBlock.lua",
+                                               "classname":  "PlaneConstructRandomColorBlock"
+                                           },
+                              "qualityLevel":  0,
+                              "color":  "6b4fd6",
+                              "ratings":  {
+                                              "buoyancy":  2,
+                                              "density":  2,
+                                              "durability":  4,
+                                              "friction":  5
+                                          },
+                              "flammable":  false,
+                              "physicsMaterial":  "Electronics",
+                              "rotationSet":  "PropXYZ",
+                              "stackSize":  10
+                          },
+                          {
+                              "uuid":  "2e0055c8-90ca-4a5f-9491-da57b5f3fe42",
+                              "name":  "obj_interactive_plane_seat_camera",
+                              "renderable":  "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+                              "box":  {
+                                          "x":  1,
+                                          "y":  1,
+                                          "z":  1
+                                      },
+                              "scripted":  {
+                                               "filename":  "$CONTENT_DATA/Scripts/PlaneConstructSeatCamera.lua",
+                                               "classname":  "PlaneConstructSeatCamera"
+                                           },
+                              "qualityLevel":  0,
+                              "color":  "777777",
+                              "ratings":  {
+                                              "buoyancy":  2,
+                                              "density":  2,
+                                              "durability":  4,
+                                              "friction":  5
+                                          },
+                              "flammable":  false,
+                              "physicsMaterial":  "Electronics",
+                              "rotationSet":  "PropYZ",
+                              "stackSize":  10,
+                              "sticky":  "+Y-Y-Z+X-X"
+                          },
+                          {
+                              "uuid":  "d4f6a7b8-9c01-4e23-8f45-6a7b8c9d0123",
+                              "name":  "obj_interactive_plane_laser_emitter",
+                              "renderable":  "$GAME_DATA/Objects/Renderable/Fittings/obj_fittings_small_2way_pipe.rend",
+                              "hull":  {
+                                          "col":  "$GAME_DATA/Objects/Collision/small_2way_pipe.obj",
+                                          "margin":  0.25,
+                                          "x":  1,
+                                          "y":  1,
+                                          "z":  1
+                                      },
+                              "previewRotation":  [
+                                                     0,
+                                                     0,
+                                                     -1,
+                                                     1,
+                                                     0,
+                                                     0,
+                                                     0,
+                                                     1,
+                                                     0
+                                                 ],
+                              "scripted":  {
+                                               "filename":  "$CONTENT_DATA/Scripts/PlaneConstructLaserEmitter.lua",
+                                               "classname":  "PlaneConstructLaserEmitter"
+                                           },
+                              "qualityLevel":  0,
+                              "color":  "d00000",
+                              "ratings":  {
+                                              "buoyancy":  2,
+                                              "density":  2,
+                                              "durability":  4,
+                                              "friction":  5
+                                          },
+                              "flammable":  false,
+                              "physicsMaterial":  "Electronics",
+                              "rotationSet":  "PropXmm",
+                              "stackSize":  10,
+                              "sticky":  "-X"
+                          },
+                          {
+                              "uuid":  "e5a7b9c1-0d23-4f56-9a78-1b2c3d4e5678",
+                              "name":  "obj_interactive_plane_laser_guidance_module",
+                              "renderable":  {
+                                                 "lodList":  [
+                                                                 {
+                                                                     "mesh":  "$CONTENT_DATA/Objects/Mesh/Plane Construct/Laser Guidance Half Ball.obj",
+                                                                     "subMeshList":  [
+                                                                                         {
+                                                                                             "material":  "Glass",
+                                                                                             "textureList":  [
+                                                                                                                 "$CONTENT_DATA/Objects/Textures/plane_radar_glass_dif.png",
+                                                                                                                 "$CONTENT_DATA/Objects/Textures/plane_radar_glass_asg.png",
+                                                                                                                 "$CONTENT_DATA/Objects/Textures/plane_radar_glass_nor.png"
+                                                                                                             ]
+                                                                                         }
+                                                                                     ]
+                                                                 }
+                                                             ]
+                                             },
+                              "box":  {
+                                          "x":  1,
+                                          "y":  1,
+                                          "z":  1
+                                      },
+                              "scripted":  {
+                                               "filename":  "$CONTENT_DATA/Scripts/PlaneConstructLaserGuidanceModule.lua",
+                                               "classname":  "PlaneConstructLaserGuidanceModule"
+                                           },
+                              "qualityLevel":  0,
+                              "color":  "79d9ff",
+                              "ratings":  {
+                                              "buoyancy":  2,
+                                              "density":  3,
+                                              "durability":  4,
+                                              "friction":  5
+                                          },
+                              "flammable":  false,
+                              "physicsMaterial":  "Glass",
+                              "rotationSet":  "PropFull",
+                              "stackSize":  10,
+                              "sticky":  "-Z+Z-X+X-Y+Y"
+                          }
+                     ]
+}

@@ -1,0 +1,25 @@
+{
+    "wedgeList":  [
+                      {
+                          "uuid":  "7c57f4a2-4878-4da4-a7e8-4bf4d1420abe",
+                          "blockUuid":  "f8a03829-27d9-4158-b153-b9b179479140",
+                          "name":  "wdg_aircraft_panel",
+                          "textureList":  [
+                                              "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                              "$GAME_DATA/Objects/Textures/Blocks/blk_wedge_border_metal_asg.tga",
+                                              "$GAME_DATA/Objects/Textures/Blocks/blk_wedge_border_nor.tga"
+                                          ],
+                          "material":  "DifAsgNorTiling",
+                          "frameSize":  0.15,
+                          "color":  "aeb5bb",
+                          "physicsMaterial":  "Metal",
+                          "ratings":  {
+                                          "density":  2,
+                                          "durability":  4,
+                                          "friction":  4,
+                                          "buoyancy":  3
+                                      },
+                          "flammable":  true
+                      }
+                  ]
+}

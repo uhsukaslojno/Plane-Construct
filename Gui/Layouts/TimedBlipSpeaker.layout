@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 0.58 0.52" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.10 0.06 0.80 0.14" name="Title">
+      <Property key="Caption" value="Timed Logic Gate" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.25 0.84 0.10" name="TimingValue">
+      <Property key="Caption" value="Timing: 1.00 s" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.35 0.84 0.14" name="TimingSlider">
+      <Property key="NeedKey" value="false" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.54 0.84 0.10" name="ActivationValue">
+      <Property key="Caption" value="Activation time: 0.25 s" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.64 0.84 0.14" name="ActivationSlider">
+      <Property key="NeedKey" value="false" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

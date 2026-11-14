@@ -1,0 +1,226 @@
+{
+    "partList": [
+        {
+            "uuid": "c81f2a4e-12d9-4ec6-8b33-1e61f230a401",
+            "name": "obj_interactive_afterbody_thruster_2x2",
+            "renderable": {
+                "lodList": [
+                    {
+                        "mesh": "$CONTENT_DATA/Objects/Mesh/L_Vehicle/PenSheQi_WeiPen_2X2_off.FBX",
+                        "pose0": "$CONTENT_DATA/Objects/Mesh/L_Vehicle/PenSheQi_WeiPen_2X2_on1.FBX",
+                        "pose1": "$CONTENT_DATA/Objects/Mesh/L_Vehicle/PenSheQi_WeiPen_2X2_off.FBX",
+                        "pose2": "$CONTENT_DATA/Objects/Mesh/L_Vehicle/PenSheQi_WeiPen_2X2_on2.FBX",
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_dif.png",
+                                    "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_asg.png",
+                                    "$CONTENT_DATA/Objects/Textures/Legend/CS_nor.png"
+                                ],
+                                "material": "3PoseAnimDifAsgNor"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "box": { "x": 2, "y": 2, "z": 2 },
+            "cylinder": { "diameter": 2, "depth": 2, "margin": 0.0, "axis": "Z" },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/PlaneConstructAfterbodyThruster.lua",
+                "classname": "PlaneConstructAfterbodyThruster"
+            },
+            "qualityLevel": 0,
+            "color": "909090",
+            "ratings": { "buoyancy": 1, "density": 4, "durability": 5, "friction": 4 },
+            "flammable": false,
+            "physicsMaterial": "Metal",
+            "rotationSet": "PropZ",
+            "sticky": "+X-X+Y-Y+Z-Z",
+            "stackSize": 5
+        },
+        {
+            "uuid": "c81f2a4e-12d9-4ec6-8b33-1e61f230a402",
+            "name": "obj_interactive_afterbody_thruster_2x2_offset",
+            "renderable": {
+                "lodList": [
+                    {
+                        "mesh": "$CONTENT_DATA/Objects/Mesh/L_Vehicle/PenSheQi_WeiPen_2X2_off.FBX",
+                        "pose0": "$CONTENT_DATA/Objects/Mesh/L_Vehicle/PenSheQi_WeiPen_2X2_on1.FBX",
+                        "pose1": "$CONTENT_DATA/Objects/Mesh/L_Vehicle/PenSheQi_WeiPen_2X2_off.FBX",
+                        "pose2": "$CONTENT_DATA/Objects/Mesh/L_Vehicle/PenSheQi_WeiPen_2X2_on2.FBX",
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_dif.png",
+                                    "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_asg.png",
+                                    "$CONTENT_DATA/Objects/Textures/Legend/CS_nor.png"
+                                ],
+                                "material": "3PoseAnimDifAsgNor"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "box": { "x": 1, "y": 1, "z": 2 },
+            "cylinder": { "diameter": 2, "depth": 2, "margin": 0.0, "axis": "Z" },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/PlaneConstructAfterbodyThruster.lua",
+                "classname": "PlaneConstructAfterbodyThruster"
+            },
+            "qualityLevel": 0,
+            "color": "909090",
+            "ratings": { "buoyancy": 1, "density": 4, "durability": 5, "friction": 4 },
+            "flammable": false,
+            "physicsMaterial": "Metal",
+            "rotationSet": "PropZ",
+            "sticky": "+X-X+Y-Y+Z-Z",
+            "stackSize": 5
+        },
+        {
+            "uuid": "c81f2a4e-12d9-4ec6-8b33-1e61f230a403",
+            "name": "obj_interactive_thrust_controller",
+            "renderable": "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+            "box": { "x": 1, "y": 1, "z": 1 },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/PlaneConstructThrustController.lua",
+                "classname": "PlaneConstructThrustController"
+            },
+            "qualityLevel": 0,
+            "color": "2878d0",
+            "ratings": { "buoyancy": 2, "density": 2, "durability": 4, "friction": 5 },
+            "flammable": false,
+            "physicsMaterial": "Electronics",
+            "rotationSet": "PropYZ",
+            "stackSize": 10
+        },
+        {
+            "uuid": "c81f2a4e-12d9-4ec6-8b33-1e61f230a404",
+            "name": "obj_interactive_anti_radar",
+            "renderable": "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+            "box": { "x": 1, "y": 1, "z": 1 },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/PlaneConstructAntiRadar.lua",
+                "classname": "PlaneConstructAntiRadar"
+            },
+            "qualityLevel": 0,
+            "color": "7628b8",
+            "ratings": { "buoyancy": 2, "density": 2, "durability": 4, "friction": 5 },
+            "flammable": false,
+            "physicsMaterial": "Electronics",
+            "rotationSet": "PropYZ",
+            "stackSize": 10
+        },
+        {
+            "uuid": "c81f2a4e-12d9-4ec6-8b33-1e61f230a405",
+            "name": "obj_interactive_new_legend_ordinary_driving_seat",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_dif.png",
+                                    "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_asg.png",
+                                    ""
+                                ],
+                                "material": "DifAsg"
+                            }
+                        ],
+                        "mesh": "$CONTENT_DATA/Objects/Mesh/L_Parts/ZuoYi_PuTong_3X3X4.dae"
+                    }
+                ]
+            },
+            "color": "4A4A4A",
+            "density": 50.0,
+            "sticky": "-X+X-Y-Z",
+            "rotationSet": "PropY",
+            "hull": {
+                "x": 3,
+                "y": 4,
+                "z": 3,
+                "pointList": [
+                    { "x": 0.7, "y": -0.8, "z": 1.0 },
+                    { "x": 0.7, "y": -0.8, "z": -1.0 },
+                    { "x": 0.7, "y": 1.0, "z": -1.0 },
+                    { "x": -0.7, "y": -0.8, "z": 1.0 },
+                    { "x": -0.7, "y": -0.8, "z": -1.0 },
+                    { "x": -0.7, "y": 1.0, "z": -1.0 }
+                ]
+            },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/PlaneConstructNewLegendDrivingSeat.lua",
+                "classname": "PlaneConstructNewLegendDrivingSeat",
+                "data": {},
+                "seat": {
+                    "bones": [
+                        { "name": "Hips", "offset": { "x": 0, "y": -0.6, "z": 0.5 } },
+                        { "name": "LeftForeArm", "offset": { "x": 1.5, "y": 0.3, "z": 2.1 }, "freeRotation": true, "steers": true },
+                        { "name": "RightForeArm", "offset": { "x": -1.5, "y": 0.3, "z": 2.1 }, "freeRotation": true, "steers": true }
+                    ],
+                    "ragdollFile": "$CONTENT_DATA/Character/seat_ragdoll.json",
+                    "enterAudio": "Seat seated",
+                    "exitAudio": "Seat unseated"
+                },
+                "steering": { "steerAngle": 20.0 }
+            },
+            "ratings": { "durability": 7, "friction": 5, "buoyancy": 7 },
+            "flammable": false,
+            "stackSize": 1,
+            "physicsMaterial": "Plastic"
+        },
+        {
+            "uuid": "c81f2a4e-12d9-4ec6-8b33-1e61f230a406",
+            "name": "obj_interactive_bearing_motor_controller",
+            "renderable": "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+            "box": { "x": 1, "y": 1, "z": 1 },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/PlaneConstructBearingController.lua",
+                "classname": "PlaneConstructBearingController"
+            },
+            "qualityLevel": 0,
+            "color": "2aa876",
+            "ratings": { "buoyancy": 2, "density": 2, "durability": 4, "friction": 5 },
+            "flammable": false,
+            "physicsMaterial": "Electronics",
+            "rotationSet": "PropYZ",
+            "stackSize": 10
+        },
+        {
+            "uuid": "c81f2a4e-12d9-4ec6-8b33-1e61f230a407",
+            "name": "obj_interactive_parachute",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$CONTENT_DATA/Objects/Textures/chute1D.png",
+                                    "$CONTENT_DATA/Objects/Textures/chute1A.png",
+                                    "$CONTENT_DATA/Objects/Textures/chute1N.png"
+                                ],
+                                "material": "2PoseAnimDifAsgNor"
+                            }
+                        ],
+                        "mesh": "$CONTENT_DATA/Objects/Mesh/chute1_0.obj",
+                        "pose0": "$CONTENT_DATA/Objects/Mesh/chute1_1.obj",
+                        "pose1": "$CONTENT_DATA/Objects/Mesh/chute1_2.obj"
+                    }
+                ]
+            },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/PlaneConstructParachute.lua",
+                "classname": "PlaneConstructParachute"
+            },
+            "rotationSet": "PropZ",
+            "color": "EF3F39",
+            "box": { "x": 1, "y": 1, "z": 1 },
+            "density": 1000.0,
+            "physicsMaterial": "Plastic",
+            "sticky": "-Z",
+            "qualityLevel": 0,
+            "ratings": { "buoyancy": 1, "density": 4, "durability": 5, "friction": 4 },
+            "flammable": false,
+            "stackSize": 5
+        }
+    ]
+}

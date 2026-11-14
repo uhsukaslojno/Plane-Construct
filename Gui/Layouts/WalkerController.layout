@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 0.62 1.00" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.10 0.025 0.80 0.09" name="Title">
+      <Property key="Caption" value="Walker Controller" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.14 0.84 0.075" name="StrideValueBack">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="StrideValue">
+        <Property key="Caption" value="Stride length: 45%" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.215 0.84 0.075" name="StrideSlider" />
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.295 0.84 0.075" name="StepHeightValueBack">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="StepHeightValue">
+        <Property key="Caption" value="Foot lift: 35%" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.37 0.84 0.075" name="StepHeightSlider" />
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.45 0.84 0.075" name="CadenceValueBack">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="CadenceValue">
+        <Property key="Caption" value="Cadence: 1.0 cycles/s" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.525 0.84 0.075" name="CadenceSlider" />
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.605 0.84 0.075" name="ForceValueBack">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="ForceValue">
+        <Property key="Caption" value="Motor force: 65%" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.68 0.84 0.075" name="ForceSlider" />
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.765 0.40 0.07" name="TurnValueBack">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="TurnValue">
+        <Property key="Caption" value="Turn bias: 25%" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.50 0.765 0.42 0.07" name="TurnSlider" />
+
+    <Widget type="Button" skin="PrimaryButton" position_real="0.08 0.845 0.84 0.07" name="HoldButton">
+      <Property key="Caption" value="On seat exit: return to neutral" />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center VCenter" />
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.925 0.84 0.06" name="HelpText">
+      <Property key="Caption" value="Purple = balance, red = hip, blue = knee, yellow = ankle. Four bearings per leg enable full stabilization." />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center Top" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

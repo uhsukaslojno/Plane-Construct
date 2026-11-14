@@ -1,0 +1,18 @@
+{
+    "shapeSetList":  [
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/parts.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/PlanePropellers.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/PlaneDisappearPipes.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/PlaneRadarScreen.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/PlayerPresence.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/PlayerLockDetector.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/AfterbodyThrusters.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/NewWingVariants.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/ExperimentalCenteredWings.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/WingVariants.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/AircraftHalfParts.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/blocks.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/wedges.json",
+                         "$CONTENT_DATA/Objects/Database/ShapeSets/NewLegendGeometry.json"
+                     ]
+}

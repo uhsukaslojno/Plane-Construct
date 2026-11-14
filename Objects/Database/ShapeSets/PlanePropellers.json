@@ -1,0 +1,166 @@
+{
+    "partList":  [
+                     {
+                         "uuid":  "6854ed2d-e1f2-4350-bd95-69795e7a04d6",
+                         "name":  "obj_plane_construct_three_blade_propeller_small",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/L_Vehicle/LuoXuanJiang_SanYe_S.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsg",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_asg.png",
+                                                                                                            ""
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "color":  "EEEEEE",
+                         "density":  25.0,
+                         "sticky":  "-Z+Z",
+                         "rotationSet":  "T_+Z",
+                         "previewRotation":  [
+                                                 1,
+                                                 0,
+                                                 0,
+                                                 0,
+                                                 0,
+                                                 1,
+                                                 0,
+                                                 -1,
+                                                 0
+                                             ],
+                         "cylinder":  {
+                                          "diameter":  1,
+                                          "depth":  1,
+                                          "margin":  0.0,
+                                          "axis":  "Z"
+                                      },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/PlaneConstructPropellers.lua",
+                                          "classname":  "PlaneConstructThreeBladeSmall"
+                                      },
+                         "ratings":  {
+                                         "durability":  4,
+                                         "friction":  3,
+                                         "buoyancy":  3
+                                     },
+                         "flammable":  true,
+                         "stackSize":  1,
+                         "physicsMaterial":  "Metal"
+                     },
+                     {
+                         "uuid":  "da1713ce-80a4-433f-8a23-9d6652d1f732",
+                         "name":  "obj_plane_construct_three_blade_propeller_medium",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/L_Vehicle/LuoXuanJiang_SanYe_M.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsg",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_asg.png",
+                                                                                                            ""
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "color":  "EEEEEE",
+                         "density":  25.0,
+                         "sticky":  "-Z+Z",
+                         "rotationSet":  "T_+Z",
+                         "previewRotation":  [
+                                                 1,
+                                                 0,
+                                                 0,
+                                                 0,
+                                                 0,
+                                                 1,
+                                                 0,
+                                                 -1,
+                                                 0
+                                             ],
+                         "cylinder":  {
+                                          "diameter":  1,
+                                          "depth":  1,
+                                          "margin":  0.0,
+                                          "axis":  "Z"
+                                      },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/PlaneConstructPropellers.lua",
+                                          "classname":  "PlaneConstructThreeBladeMedium"
+                                      },
+                         "ratings":  {
+                                         "durability":  4,
+                                         "friction":  3,
+                                         "buoyancy":  3
+                                     },
+                         "flammable":  true,
+                         "stackSize":  1,
+                         "physicsMaterial":  "Metal"
+                     },
+                     {
+                         "uuid":  "4e219f93-0672-46ed-adea-0df57c202afb",
+                         "name":  "obj_plane_construct_three_blade_propeller_large",
+                         "renderable":  {
+                                            "lodList":  [
+                                                            {
+                                                                "mesh":  "$CONTENT_DATA/Objects/Mesh/L_Vehicle/LuoXuanJiang_SanYe_B.obj",
+                                                                "subMeshList":  [
+                                                                                    {
+                                                                                        "material":  "DifAsg",
+                                                                                        "textureList":  [
+                                                                                                            "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_dif.png",
+                                                                                                            "$CONTENT_DATA/Objects/Textures/Legend/CS_SB_asg.png",
+                                                                                                            ""
+                                                                                                        ]
+                                                                                    }
+                                                                                ]
+                                                            }
+                                                        ]
+                                        },
+                         "color":  "EEEEEE",
+                         "density":  25.0,
+                         "sticky":  "-Z+Z",
+                         "rotationSet":  "T_+Z",
+                         "previewRotation":  [
+                                                 1,
+                                                 0,
+                                                 0,
+                                                 0,
+                                                 0,
+                                                 1,
+                                                 0,
+                                                 -1,
+                                                 0
+                                             ],
+                         "cylinder":  {
+                                          "diameter":  1,
+                                          "depth":  1,
+                                          "margin":  0.0,
+                                          "axis":  "Z"
+                                      },
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/PlaneConstructPropellers.lua",
+                                          "classname":  "PlaneConstructThreeBladeLarge"
+                                      },
+                         "ratings":  {
+                                         "durability":  4,
+                                         "friction":  3,
+                                         "buoyancy":  3
+                                     },
+                         "flammable":  true,
+                         "stackSize":  1,
+                         "physicsMaterial":  "Metal"
+                     }
+                 ]
+}

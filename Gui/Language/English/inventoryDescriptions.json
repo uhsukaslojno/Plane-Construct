@@ -1,0 +1,1500 @@
+{
+    "7b7c7d7e-1111-4aaa-8bbb-ccccdddd0001": {
+        "title": "Experimental T-Mount Wing 1x1",
+        "description": "Experimental centered 1x1 wing using the small T-pipe attachment pattern."
+    },
+    "7b7c7d7e-3333-4aaa-8bbb-ccccdddd0003": {
+        "title": "Experimental Sided T-Mount Wing 1x1",
+        "description": "Experimental sided 1x1 wing using the small T-pipe attachment pattern."
+    },
+    "80f81be3-3651-42b9-9697-ff2aae1bbe8d":  {
+                                                 "title":  "HUD",
+                                                 "description":  "A black logic-gate-style HUD block. Connect it to a seat to show speed and height, plus fuel from connected fuel tanks and a fire alert from connected fire detectors. Choose the HUD corner from its menu.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "HUD speed height altitude fuel fire detector seat display cockpit"
+                                             },
+    "f0a5db28-26f9-4cf9-a3d9-d75d5a0bf8c8":  {
+                                                 "title":  "Fuel Tank",
+                                                 "description":  "A configurable fuel tank that outputs logic while triggered and has fuel remaining. It consumes 1 unit every 40 ticks and can be refilled from its menu.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "fuel tank capacity refill logic output"
+                                             },
+    "7de2c122-1734-45fb-90e0-9b535587eb06":  {
+                                                 "title":  "Random Output Gate",
+                                                 "description":  "A logic gate that sends a one-tick pulse to one randomly selected connected output. A new input fires immediately; a held input repeats at the configured interval.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "random output logic gate selector pulse timer"
+                                             },
+    "91c22f4b-cd44-4b2f-9b68-a6b625a3ee8f":  {
+                                                 "title":  "Fire Detector Gate",
+                                                 "description":  "A red logic gate that outputs an active logic signal whenever a burning block is within its configured 1 to 50 block radius.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "fire detector sensor burning flame logic gate range red"
+                                             },
+    "55b0b50e-8cb9-4d2d-ba52-95a71a8c2e9d":  {
+                                                 "title":  "Connected Weapon Selector",
+                                                 "description":  "A logic selector that connects a driver seat to multiple logic outputs and activates the selected output. Use its interaction menu to choose the output.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "weapon selector connected output logic gate seat"
+                                             },
+    "e4ad98f3-f9c7-48f9-bd2a-da16f9da8ee9":  {
+                                                 "title":  "Plane Controller",
+                                                 "description":  "An aircraft flight-control controller that follows the seated pilot\u0027s camera and drives connected control-surface bearings. Use its interaction menu to configure flight limits, sensitivity, offsets, damping, and flap angle.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "plane aircraft flight controller aileron elevator rudder elevon flap bearing camera wasd seat logic autolevel acceleration"
+                                             },
+    "6f25cb72-bf72-42b6-b3b0-c27c5e6e770d":  {
+                                                 "title":  "Horn Foam Extinguisher",
+                                                 "description":  "A logic-controlled foam sprayer. While its input is active, it continuously sprays extinguishing foam.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "fire extinguisher foam horn logic"
+                                             },
+    "0b49d3cb-afd8-4c64-a842-129c2169f7c5":  {
+                                                 "title":  "Fire Pulse",
+                                                 "description":  "A reusable logic-controlled igniter. Each rising logic signal ignites nearby flammable blocks without consuming the device.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "fire igniter incendiary logic reusable"
+                                             },
+    "d0f6745d-c925-4783-819d-178123463b71":  {
+                                                 "title":  "Napalm Bomb",
+                                                 "description":  "An incendiary device triggered by impact, hammer hit, nearby explosion, or active logic input. It destroys itself and ignites nearby flammable blocks.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "napalm bomb fire incendiary logic impact"
+                                             },
+    "6854ed2d-e1f2-4350-bd95-69795e7a04d6":  {
+                                                 "title":  "Three-Blade Propeller (Small)",
+                                                 "description":  "A Three-Blade Propeller (Small) that generates forward force from rotation. An optional logic input enables or disables it.\r\n#df7f00Plane Construct"
+                                             },
+    "da1713ce-80a4-433f-8a23-9d6652d1f732":  {
+                                                 "title":  "Three-Blade Propeller (Medium)",
+                                                 "description":  "A Three-Blade Propeller (Medium) that generates forward force from rotation. An optional logic input enables or disables it.\r\n#df7f00Plane Construct"
+                                             },
+    "4e219f93-0672-46ed-adea-0df57c202afb":  {
+                                                 "title":  "Three-Blade Propeller (Large)",
+                                                 "description":  "A Three-Blade Propeller (Large) that generates forward force from rotation. An optional logic input enables or disables it.\r\n#df7f00Plane Construct"
+                                             },
+    "304132e9-4b11-4052-9d96-50dcbc96578d":  {
+                                                 "title":  "Disappearing Pipe (2-Way)",
+                                                 "description":  "A small straight pipe fitting with two openings. An active logic input destroys the piece.\r\n#df7f00Plane Construct"
+                                             },
+    "db4c73e2-f54b-4bcd-b216-b2cb8eae61c8":  {
+                                                 "title":  "Disappearing Pipe (T-Junction)",
+                                                 "description":  "A small T-shaped pipe fitting with three openings. An active logic input destroys the piece.\r\n#df7f00Plane Construct"
+                                             },
+    "0c24527c-ab89-49ee-80b0-5275bd55bc7a":  {
+                                                 "title":  "Disappearing Pipe (Curved 2-Way)",
+                                                 "description":  "A small curved pipe fitting with two openings. An active logic input destroys the piece.\r\n#df7f00Plane Construct"
+                                             },
+    "4c9c248a-6e25-43f9-a19f-d7b5bbc537dc":  {
+                                                 "title":  "Disappearing Pipe (6-Way)",
+                                                 "description":  "A small pipe fitting with six openings. An active logic input destroys the piece.\r\n#df7f00Plane Construct"
+                                             },
+    "f8a03829-27d9-4158-b153-b9b179479140":  {
+                                                 "title":  "Aircraft Panel Block",
+                                                 "description":  "A paintable 1x1x1 aircraft-panel building block.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "aircraft airplane panel rivet aluminum metal flammable block"
+                                             },
+    "7c57f4a2-4878-4da4-a7e8-4bf4d1420abe":  {
+                                                 "title":  "Aircraft Panel Wedge",
+                                                 "description":  "A paintable aircraft-panel wedge building part.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "aircraft airplane panel rivet aluminum metal flammable wedge"
+                                             },
+    "3e4f9ea3-5fc4-4d60-8b67-94b6b0408ef1":  {
+                                                 "title":  "Sided Wing 1x1",
+                                                 "description":  "An aerodynamic Sided Wing 1x1 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing airfoil lift flight sided half block"
+                                             },
+    "d28f337c-87d0-43f0-bb66-67f75b405e50":  {
+                                                 "title":  "Centered Wing 1x1",
+                                                 "description":  "An aerodynamic Centered Wing 1x1 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing airfoil lift flight centered half block"
+                                             },
+    "0c62c00a-bb5e-4fa6-94df-38cfb51fa101":  {
+                                                 "title":  "Centered Wing Wedge 1x1",
+                                                 "description":  "An aerodynamic Centered Wing Wedge 1x1 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight centered 1x1"
+                                             },
+    "a782f10a-5c83-4d2d-9a31-72cf93af0201":  {
+                                                 "title":  "Sided Wing Wedge R 1x1",
+                                                 "description":  "An aerodynamic Sided Wing Wedge R 1x1 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided right R half block 1x1"
+                                             },
+    "0c62c00a-bb5e-4fa6-94df-38cfb51fa102":  {
+                                                 "title":  "Centered Wing Wedge 1x2",
+                                                 "description":  "An aerodynamic Centered Wing Wedge 1x2 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight centered 1x2"
+                                             },
+    "a782f10a-5c83-4d2d-9a31-72cf93af0202":  {
+                                                 "title":  "Sided Wing Wedge R 1x2",
+                                                 "description":  "An aerodynamic Sided Wing Wedge R 1x2 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided right R half block 1x2"
+                                             },
+    "0c62c00a-bb5e-4fa6-94df-38cfb51fa103":  {
+                                                 "title":  "Centered Wing Wedge 1x3",
+                                                 "description":  "An aerodynamic Centered Wing Wedge 1x3 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight centered 1x3"
+                                             },
+    "a782f10a-5c83-4d2d-9a31-72cf93af0203":  {
+                                                 "title":  "Sided Wing Wedge R 1x3",
+                                                 "description":  "An aerodynamic Sided Wing Wedge R 1x3 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided right R half block 1x3"
+                                             },
+    "0c62c00a-bb5e-4fa6-94df-38cfb51fa104":  {
+                                                 "title":  "Centered Wing Wedge 1x4",
+                                                 "description":  "An aerodynamic Centered Wing Wedge 1x4 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight centered 1x4"
+                                             },
+    "a782f10a-5c83-4d2d-9a31-72cf93af0204":  {
+                                                 "title":  "Sided Wing Wedge R 1x4",
+                                                 "description":  "An aerodynamic Sided Wing Wedge R 1x4 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided right R half block 1x4"
+                                             },
+    "0c62c00a-bb5e-4fa6-94df-38cfb51fa105":  {
+                                                 "title":  "Centered Wing Wedge 1x5",
+                                                 "description":  "An aerodynamic Centered Wing Wedge 1x5 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight centered 1x5"
+                                             },
+    "a782f10a-5c83-4d2d-9a31-72cf93af0205":  {
+                                                 "title":  "Sided Wing Wedge R 1x5",
+                                                 "description":  "An aerodynamic Sided Wing Wedge R 1x5 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided right R half block 1x5"
+                                             },
+    "0c62c00a-bb5e-4fa6-94df-38cfb51fa106":  {
+                                                 "title":  "Centered Wing Wedge 1x6",
+                                                 "description":  "An aerodynamic Centered Wing Wedge 1x6 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight centered 1x6"
+                                             },
+    "a782f10a-5c83-4d2d-9a31-72cf93af0206":  {
+                                                 "title":  "Sided Wing Wedge R 1x6",
+                                                 "description":  "An aerodynamic Sided Wing Wedge R 1x6 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided right R half block 1x6"
+                                             },
+    "0c62c00a-bb5e-4fa6-94df-38cfb51fa107":  {
+                                                 "title":  "Centered Wing Wedge 1x7",
+                                                 "description":  "An aerodynamic Centered Wing Wedge 1x7 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight centered 1x7"
+                                             },
+    "a782f10a-5c83-4d2d-9a31-72cf93af0207":  {
+                                                 "title":  "Sided Wing Wedge R 1x7",
+                                                 "description":  "An aerodynamic Sided Wing Wedge R 1x7 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided right R half block 1x7"
+                                             },
+    "0c62c00a-bb5e-4fa6-94df-38cfb51fa108":  {
+                                                 "title":  "Centered Wing Wedge 1x8",
+                                                 "description":  "An aerodynamic Centered Wing Wedge 1x8 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight centered 1x8"
+                                             },
+    "a782f10a-5c83-4d2d-9a31-72cf93af0208":  {
+                                                 "title":  "Sided Wing Wedge R 1x8",
+                                                 "description":  "An aerodynamic Sided Wing Wedge R 1x8 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided right R half block 1x8"
+                                             },
+    "0c62c00a-bb5e-4fa6-94df-38cfb51fa109":  {
+                                                 "title":  "Centered Wing Wedge 1x9",
+                                                 "description":  "An aerodynamic Centered Wing Wedge 1x9 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight centered 1x9"
+                                             },
+    "a782f10a-5c83-4d2d-9a31-72cf93af0209":  {
+                                                 "title":  "Sided Wing Wedge R 1x9",
+                                                 "description":  "An aerodynamic Sided Wing Wedge R 1x9 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided right R half block 1x9"
+                                             },
+    "0c62c00a-bb5e-4fa6-94df-38cfb51fa110":  {
+                                                 "title":  "Centered Wing Wedge 1x10",
+                                                 "description":  "An aerodynamic Centered Wing Wedge 1x10 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight centered 1x10"
+                                             },
+    "a782f10a-5c83-4d2d-9a31-72cf93af0210":  {
+                                                 "title":  "Sided Wing Wedge R 1x10",
+                                                 "description":  "An aerodynamic Sided Wing Wedge R 1x10 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided right R half block 1x10"
+                                             },
+    "b893f20b-6d94-4e3e-8b42-83df04bf0301":  {
+                                                 "title":  "Sided Wing Wedge L 1x1",
+                                                 "description":  "An aerodynamic Sided Wing Wedge L 1x1 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided left L mirrored half block 1x1"
+                                             },
+    "b893f20b-6d94-4e3e-8b42-83df04bf0302":  {
+                                                 "title":  "Sided Wing Wedge L 1x2",
+                                                 "description":  "An aerodynamic Sided Wing Wedge L 1x2 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided left L mirrored half block 1x2"
+                                             },
+    "b893f20b-6d94-4e3e-8b42-83df04bf0303":  {
+                                                 "title":  "Sided Wing Wedge L 1x3",
+                                                 "description":  "An aerodynamic Sided Wing Wedge L 1x3 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided left L mirrored half block 1x3"
+                                             },
+    "b893f20b-6d94-4e3e-8b42-83df04bf0304":  {
+                                                 "title":  "Sided Wing Wedge L 1x4",
+                                                 "description":  "An aerodynamic Sided Wing Wedge L 1x4 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided left L mirrored half block 1x4"
+                                             },
+    "b893f20b-6d94-4e3e-8b42-83df04bf0305":  {
+                                                 "title":  "Sided Wing Wedge L 1x5",
+                                                 "description":  "An aerodynamic Sided Wing Wedge L 1x5 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided left L mirrored half block 1x5"
+                                             },
+    "b893f20b-6d94-4e3e-8b42-83df04bf0306":  {
+                                                 "title":  "Sided Wing Wedge L 1x6",
+                                                 "description":  "An aerodynamic Sided Wing Wedge L 1x6 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided left L mirrored half block 1x6"
+                                             },
+    "b893f20b-6d94-4e3e-8b42-83df04bf0307":  {
+                                                 "title":  "Sided Wing Wedge L 1x7",
+                                                 "description":  "An aerodynamic Sided Wing Wedge L 1x7 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided left L mirrored half block 1x7"
+                                             },
+    "b893f20b-6d94-4e3e-8b42-83df04bf0308":  {
+                                                 "title":  "Sided Wing Wedge L 1x8",
+                                                 "description":  "An aerodynamic Sided Wing Wedge L 1x8 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided left L mirrored half block 1x8"
+                                             },
+    "b893f20b-6d94-4e3e-8b42-83df04bf0309":  {
+                                                 "title":  "Sided Wing Wedge L 1x9",
+                                                 "description":  "An aerodynamic Sided Wing Wedge L 1x9 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided left L mirrored half block 1x9"
+                                             },
+    "b893f20b-6d94-4e3e-8b42-83df04bf0310":  {
+                                                 "title":  "Sided Wing Wedge L 1x10",
+                                                 "description":  "An aerodynamic Sided Wing Wedge L 1x10 that generates lift for aircraft.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "wing wedge airfoil lift flight sided left L mirrored half block 1x10"
+                                             },
+    "10c8439e-c8bc-41e4-896b-b0fb1802bd55":  {
+                                                 "title":  "Centered Wing Edge 45",
+                                                 "description":  "An aerodynamic Centered Wing Edge 45 that generates lift for aircraft.\r\n#df7f00Plane Construct"
+                                             },
+    "a5a27827-71d4-420d-b24c-c19fa75bccad":  {
+                                                 "title":  "Sided Wing Edge 45",
+                                                 "description":  "An aerodynamic Sided Wing Edge 45 that generates lift for aircraft.\r\n#df7f00Plane Construct"
+                                             },
+    "f8463888-870e-4110-b625-d9f0191a0c10":  {
+                                                 "title":  "Centered Wing Edge Straight 1x1",
+                                                 "description":  "An aerodynamic Centered Wing Edge Straight 1x1 that generates lift for aircraft.\r\n#df7f00Plane Construct"
+                                             },
+    "e5313e97-bd5e-489f-8b93-404d8355d3b2":  {
+                                                 "title":  "Sided Wing Edge Straight 1x1",
+                                                 "description":  "An aerodynamic Sided Wing Edge Straight 1x1 that generates lift for aircraft.\r\n#df7f00Plane Construct"
+                                             },
+    "d24f70d6-7cd6-4b9b-8eb2-03f99fb356b6":  {
+                                                 "title":  "Centered Wing 2x2",
+                                                 "description":  "An aerodynamic Centered Wing 2x2 that generates lift for aircraft.\r\n#df7f00Plane Construct"
+                                             },
+    "9e8e7e48-234c-490f-af8f-d8e703734258":  {
+                                                 "title":  "Sided Wing 2x2",
+                                                 "description":  "An aerodynamic Sided Wing 2x2 that generates lift for aircraft.\r\n#df7f00Plane Construct"
+                                             },
+    "c6159641-0bc1-4957-b6a7-be10ec74cf47":  {
+                                                 "title":  "Centered Wing 3x3",
+                                                 "description":  "An aerodynamic Centered Wing 3x3 that generates lift for aircraft.\r\n#df7f00Plane Construct"
+                                             },
+    "cdf62bba-0208-470b-b849-629384682b08":  {
+                                                 "title":  "Sided Wing 3x3",
+                                                 "description":  "An aerodynamic Sided Wing 3x3 that generates lift for aircraft.\r\n#df7f00Plane Construct"
+                                             },
+    "8ce3fb7e-ab19-4c2d-81e8-46e7e894688b":  {
+                                                 "title":  "Centered Wing 4x4",
+                                                 "description":  "An aerodynamic Centered Wing 4x4 that generates lift for aircraft.\r\n#df7f00Plane Construct"
+                                             },
+    "83aa4d09-c38e-4925-8fdf-ebb5db436078":  {
+                                                 "title":  "Sided Wing 4x4",
+                                                 "description":  "An aerodynamic Sided Wing 4x4 that generates lift for aircraft.\r\n#df7f00Plane Construct"
+                                             },
+    "abb3ad68-e096-53ef-8161-5a8a523a9a06":  {
+                                                 "title":  "1/4 Cone [1x1x1]",
+                                                 "description":  "A 1/4 Cone [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "99a90894-5662-5c87-985b-bdc975d88d64":  {
+                                                 "title":  "1/4 Cone [1x1x2]",
+                                                 "description":  "A 1/4 Cone [1x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "cda88e83-f432-5447-ac8c-36d61d977f56":  {
+                                                 "title":  "1/4 Cone [1x1x3]",
+                                                 "description":  "A 1/4 Cone [1x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "c0d3747c-489c-59f0-a3db-0e713f73d0dc":  {
+                                                 "title":  "1/4 Cone [1x1x4]",
+                                                 "description":  "A 1/4 Cone [1x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ae9da9b5-d15c-5382-b66a-f33cee623a2a":  {
+                                                 "title":  "1/8 Ball [1x1x1]",
+                                                 "description":  "A 1/8 Ball [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "23157b3d-fa21-5588-9c80-52f43eef14db":  {
+                                                 "title":  "1/8 Ball [1x1x2]",
+                                                 "description":  "A 1/8 Ball [1x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "21f7b068-31ca-5d23-8df1-e83ed797a0a4":  {
+                                                 "title":  "1/8 Ball [1x1x3]",
+                                                 "description":  "A 1/8 Ball [1x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1631ab7c-de23-575f-82bb-8ee9c19077de":  {
+                                                 "title":  "1/8 Ball [1x1x4]",
+                                                 "description":  "A 1/8 Ball [1x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ab73fba0-0f17-52ec-8091-3a6536542503":  {
+                                                 "title":  "Anti Arc Slice [1x1x1]",
+                                                 "description":  "A Anti Arc Slice [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "131075c9-e226-55e6-b48a-53bebab1c0b9":  {
+                                                 "title":  "Anti Arc Slice [1x1x2] (Variant 1)",
+                                                 "description":  "A Anti Arc Slice [1x1x2] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "daea018e-feed-5154-a92b-3a1bf70d3dcc":  {
+                                                 "title":  "Anti Arc Slice [1x1x2] (Variant 2)",
+                                                 "description":  "A Anti Arc Slice [1x1x2] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ef4d9475-347b-5d08-8620-59c1bfd89b26":  {
+                                                 "title":  "Anti Arc Slice [1x1x3] (Variant 1)",
+                                                 "description":  "A Anti Arc Slice [1x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ad402b6c-929d-5960-9f61-b21327b40c30":  {
+                                                 "title":  "Anti Arc Slice [1x1x3] (Variant 2)",
+                                                 "description":  "A Anti Arc Slice [1x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "daebbff4-0c6c-5ae0-9c4b-3b2b2a017cc8":  {
+                                                 "title":  "Anti Arc Slice [1x1x4] (Variant 1)",
+                                                 "description":  "A Anti Arc Slice [1x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "39c55a50-7e12-5d08-9bc8-0450bb135b93":  {
+                                                 "title":  "Anti Arc Slice [1x1x4] (Variant 2)",
+                                                 "description":  "A Anti Arc Slice [1x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3fdc2a8c-388c-5e57-967c-499ae4eee95f":  {
+                                                 "title":  "Arc Slice [1x1x1] (Variant 1)",
+                                                 "description":  "A Arc Slice [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "0d73b0b3-7045-5131-96c6-6769f406e4b7":  {
+                                                 "title":  "Arc Slice [1x1x1] (Variant 2)",
+                                                 "description":  "A Arc Slice [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "2e881527-95d5-5c0e-9dd7-8c5537202982":  {
+                                                 "title":  "Arc Slice [1x1x2] (Variant 1)",
+                                                 "description":  "A Arc Slice [1x1x2] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "cf0b6fca-7080-5174-8272-c52259b0ce09":  {
+                                                 "title":  "Arc Slice [1x1x2] (Variant 2)",
+                                                 "description":  "A Arc Slice [1x1x2] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "bf132874-0963-5ddd-8bd7-b601b53c4f44":  {
+                                                 "title":  "Arc Slice [1x1x3] (Variant 1)",
+                                                 "description":  "A Arc Slice [1x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "37463a7c-455b-5111-ab86-f242c6984074":  {
+                                                 "title":  "Arc Slice [1x1x3] (Variant 2)",
+                                                 "description":  "A Arc Slice [1x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "6eef772c-e380-545e-92c6-1d7df915f93a":  {
+                                                 "title":  "Arc Slice [1x1x4] (Variant 1)",
+                                                 "description":  "A Arc Slice [1x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "5e7ec05f-ee7f-5a19-bb30-95299329859a":  {
+                                                 "title":  "Arc Slice [1x1x4] (Variant 2)",
+                                                 "description":  "A Arc Slice [1x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "d1c15d65-f7cb-545b-8d5b-9cd92ceb7ac4":  {
+                                                 "title":  "Corner Arc Slice [1x1x1]",
+                                                 "description":  "A Corner Arc Slice [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "63e2ed52-1e09-5617-a048-d27849184f38":  {
+                                                 "title":  "Anti Arc [1x1x1]",
+                                                 "description":  "A Anti Arc [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "d1528640-1eb9-5ec5-b1a6-953235fa9641":  {
+                                                 "title":  "Anti Arc [1x1x2]",
+                                                 "description":  "A Anti Arc [1x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "dd2a624d-556d-5c22-a3bc-08ee935585b2":  {
+                                                 "title":  "Anti Arc [1x1x3]",
+                                                 "description":  "A Anti Arc [1x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "309645bb-9a11-599f-aecf-b97e9448742d":  {
+                                                 "title":  "Anti Arc [1x1x4]",
+                                                 "description":  "A Anti Arc [1x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a2d8a96b-114e-5447-9d86-012fb44e8ced":  {
+                                                 "title":  "Anti Arc [2x2x1]",
+                                                 "description":  "A Anti Arc [2x2x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "4a409a01-0d8b-5947-b854-10cf6a36d1a3":  {
+                                                 "title":  "Anti Arc [3x3x1]",
+                                                 "description":  "A Anti Arc [3x3x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "006abc19-dd68-5b63-9654-47791f34c373":  {
+                                                 "title":  "Anti Arc [4x4x1]",
+                                                 "description":  "A Anti Arc [4x4x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "664ca16f-df2e-5f06-b5b5-241e1856a102":  {
+                                                 "title":  "Arc [1x1x1]",
+                                                 "description":  "A Arc [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e0192e95-e0bf-5a36-a1a1-516b7588b91c":  {
+                                                 "title":  "Arc [1x1x2]",
+                                                 "description":  "A Arc [1x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "06c33720-18db-5eca-8f6a-577c00073266":  {
+                                                 "title":  "Arc [1x1x3]",
+                                                 "description":  "A Arc [1x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "72eef14c-4ed5-5c7e-819b-0a94c692f66f":  {
+                                                 "title":  "Arc [1x1x4]",
+                                                 "description":  "A Arc [1x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "fe7a5bd0-c213-522b-bb4e-8d43f40e5a38":  {
+                                                 "title":  "Arc [2x1x2]",
+                                                 "description":  "A Arc [2x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "50ce3540-eab4-58cf-ac91-578173a0056c":  {
+                                                 "title":  "Bevel Slice [1x1x1]",
+                                                 "description":  "A Bevel Slice [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "6a1ceac1-5787-5123-acc6-7825279b606e":  {
+                                                 "title":  "Bevel Slice [1x1x2] (Variant 1)",
+                                                 "description":  "A Bevel Slice [1x1x2] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1a6f647c-a5cc-5867-b13b-19f724c42291":  {
+                                                 "title":  "Bevel Slice [1x1x2] (Variant 2)",
+                                                 "description":  "A Bevel Slice [1x1x2] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "9fa44fcd-18b0-582c-9ff0-9a8f3623e05d":  {
+                                                 "title":  "Bevel Slice [1x1x3] (Variant 1)",
+                                                 "description":  "A Bevel Slice [1x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "566a6bd8-509b-53e9-8673-ba5d0c2ef4fd":  {
+                                                 "title":  "Bevel Slice [1x1x3] (Variant 2)",
+                                                 "description":  "A Bevel Slice [1x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "cafe6bf4-465c-5951-a179-b7b0911a59ac":  {
+                                                 "title":  "Bevel Slice [1x1x4] (Variant 1)",
+                                                 "description":  "A Bevel Slice [1x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ac90e6be-3d56-5fe3-b039-6f9cb1e3c0c5":  {
+                                                 "title":  "Bevel Slice [1x1x4] (Variant 2)",
+                                                 "description":  "A Bevel Slice [1x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "9adc0c21-6d86-543c-b7d2-5bde4a1fcc91":  {
+                                                 "title":  "Bevel Slice [1x2x1]",
+                                                 "description":  "A Bevel Slice [1x2x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "aebb5943-89e9-5c7b-82da-d64f2b7c23d5":  {
+                                                 "title":  "Bevel Slice [1x2x2]",
+                                                 "description":  "A Bevel Slice [1x2x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "32ad2505-c08c-5bed-bbd0-ab2b6b987e4e":  {
+                                                 "title":  "Bevel Slice [1x2x3]",
+                                                 "description":  "A Bevel Slice [1x2x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "dc16d17c-b48d-52ea-88c6-9a51ecf43fa8":  {
+                                                 "title":  "Bevel Slice [1x2x4]",
+                                                 "description":  "A Bevel Slice [1x2x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e9bea67a-ec63-5ce7-8378-e69085ae3511":  {
+                                                 "title":  "Half bevel Slice [1x1x1] (Variant 1)",
+                                                 "description":  "A Half bevel Slice [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a603f8b3-b865-5527-a936-5476fdd137d6":  {
+                                                 "title":  "Half bevel Slice [1x1x1] (Variant 2)",
+                                                 "description":  "A Half bevel Slice [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "453b8724-8286-5c7b-8e55-02dff95cb477":  {
+                                                 "title":  "Bevel 1x1to1x2 Spacing 1 [1x1x2] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x2 Spacing 1 [1x1x2] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ff7b2793-73df-5d28-a7fb-619cdc30fdd0":  {
+                                                 "title":  "Bevel 1x1to1x2 Spacing 1 [1x1x2] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x2 Spacing 1 [1x1x2] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "edd1d958-29ea-5997-945b-276e4cd281ac":  {
+                                                 "title":  "Bevel 1x1to1x2 Spacing 2 [2x1x2] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x2 Spacing 2 [2x1x2] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "17b842ee-f80e-56a7-a6c6-70b3a3788742":  {
+                                                 "title":  "Bevel 1x1to1x2 Spacing 2 [2x1x2] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x2 Spacing 2 [2x1x2] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "cebd57df-93a1-542d-a1eb-3254e8192d15":  {
+                                                 "title":  "Bevel 1x1to1x2 Spacing 3 [3x1x2] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x2 Spacing 3 [3x1x2] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "fed3f7e0-6dee-5cb9-8a13-aabab7323394":  {
+                                                 "title":  "Bevel 1x1to1x2 Spacing 3 [3x1x2] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x2 Spacing 3 [3x1x2] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "664781f8-a31c-59c9-9891-4b1ca1511bec":  {
+                                                 "title":  "Bevel 1x1to1x2 Spacing 4 [4x1x2] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x2 Spacing 4 [4x1x2] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "d8008e49-b436-5bda-adb1-6a65d61e40a8":  {
+                                                 "title":  "Bevel 1x1to1x2 Spacing 4 [4x1x2] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x2 Spacing 4 [4x1x2] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "953d91c7-70c8-5c90-8207-09b13cd86868":  {
+                                                 "title":  "Bevel 1x1to1x3 Spacing 1 [1x1x3] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x3 Spacing 1 [1x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1417601b-0373-529e-9ac5-9325a614a705":  {
+                                                 "title":  "Bevel 1x1to1x3 Spacing 1 [1x1x3] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x3 Spacing 1 [1x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "4400120a-8af3-548d-8274-2dcc01ca857c":  {
+                                                 "title":  "Bevel 1x1to1x3 Spacing 2 [2x1x3] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x3 Spacing 2 [2x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ac7cdccb-2d52-514d-8454-f1288072645e":  {
+                                                 "title":  "Bevel 1x1to1x3 Spacing 2 [2x1x3] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x3 Spacing 2 [2x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "4de123bd-14b4-5bfe-8d25-9cf718cc7bcb":  {
+                                                 "title":  "Bevel 1x1to1x3 Spacing 3 [3x1x3] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x3 Spacing 3 [3x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "052e82a0-abaf-57ae-b237-f600f35c0312":  {
+                                                 "title":  "Bevel 1x1to1x3 Spacing 3 [3x1x3] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x3 Spacing 3 [3x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "becc634a-6eb7-5c40-93fb-8d782998d942":  {
+                                                 "title":  "Bevel 1x1to1x3 Spacing 4 [4x1x3] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x3 Spacing 4 [4x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e45829b3-5416-5fa8-98b2-94a8aebb22b8":  {
+                                                 "title":  "Bevel 1x1to1x3 Spacing 4 [4x1x3] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x3 Spacing 4 [4x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "0755c38e-bfe6-5063-8a2b-8803d475a0ca":  {
+                                                 "title":  "Bevel 1x1to1x4 Spacing 1 [1x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x4 Spacing 1 [1x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "798ee957-7773-569b-8399-6d0ba3d39897":  {
+                                                 "title":  "Bevel 1x1to1x4 Spacing 1 [1x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x4 Spacing 1 [1x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "73764168-288b-5259-b272-ad4b2d719838":  {
+                                                 "title":  "Bevel 1x1to1x4 Spacing 2 [2x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x4 Spacing 2 [2x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "bf5eac4c-6d3c-571b-a2a7-b45a941b8455":  {
+                                                 "title":  "Bevel 1x1to1x4 Spacing 2 [2x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x4 Spacing 2 [2x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e82fa94b-1bf9-5897-8d37-ece28724a5c4":  {
+                                                 "title":  "Bevel 1x1to1x4 Spacing 3 [3x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x4 Spacing 3 [3x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "55822677-18d5-5671-b072-87cf6784a1e0":  {
+                                                 "title":  "Bevel 1x1to1x4 Spacing 3 [3x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x4 Spacing 3 [3x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7406a329-0e4f-5bfc-ba20-67540cf91a42":  {
+                                                 "title":  "Bevel 1x1to1x4 Spacing 4 [4x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x1to1x4 Spacing 4 [4x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "2d9a6c89-27d0-53d2-a1bb-bd123f32352e":  {
+                                                 "title":  "Bevel 1x1to1x4 Spacing 4 [4x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x1to1x4 Spacing 4 [4x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1f145213-3fb6-569b-94c4-a99aa27fb783":  {
+                                                 "title":  "Bevel 1x2to1x3 Spacing 1 [1x1x3] (Variant 1)",
+                                                 "description":  "A Bevel 1x2to1x3 Spacing 1 [1x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "4ca94800-bf3c-50f6-bd53-f45f83293c7c":  {
+                                                 "title":  "Bevel 1x2to1x3 Spacing 1 [1x1x3] (Variant 2)",
+                                                 "description":  "A Bevel 1x2to1x3 Spacing 1 [1x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "fe8f2964-736a-58f7-8cc8-9fea7471c071":  {
+                                                 "title":  "Bevel 1x2to1x3 Spacing 2 [2x1x3] (Variant 1)",
+                                                 "description":  "A Bevel 1x2to1x3 Spacing 2 [2x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "51ac7544-b6eb-55d2-81f5-2cf29aaf71ba":  {
+                                                 "title":  "Bevel 1x2to1x3 Spacing 2 [2x1x3] (Variant 2)",
+                                                 "description":  "A Bevel 1x2to1x3 Spacing 2 [2x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "37933656-e8f3-5ada-b2f6-78070ab54980":  {
+                                                 "title":  "Bevel 1x2to1x3 Spacing 3 [3x1x3] (Variant 1)",
+                                                 "description":  "A Bevel 1x2to1x3 Spacing 3 [3x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "cb001d92-25ce-5dba-a2e7-cd5371308dcd":  {
+                                                 "title":  "Bevel 1x2to1x3 Spacing 3 [3x1x3] (Variant 2)",
+                                                 "description":  "A Bevel 1x2to1x3 Spacing 3 [3x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "5976447f-22af-507d-9e30-a38a7e4c2bb8":  {
+                                                 "title":  "Bevel 1x2to1x3 Spacing 4 [4x1x3] (Variant 1)",
+                                                 "description":  "A Bevel 1x2to1x3 Spacing 4 [4x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f239f97b-8600-50fe-9355-c0d7855757b1":  {
+                                                 "title":  "Bevel 1x2to1x3 Spacing 4 [4x1x3] (Variant 2)",
+                                                 "description":  "A Bevel 1x2to1x3 Spacing 4 [4x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3e74b087-bd27-548e-a133-8f2ca382232c":  {
+                                                 "title":  "Bevel 1x2to1x4 Spacing 1 [1x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x2to1x4 Spacing 1 [1x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7a62a41e-155c-5b60-a19e-0e56e1e0380f":  {
+                                                 "title":  "Bevel 1x2to1x4 Spacing 1 [1x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x2to1x4 Spacing 1 [1x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f7005643-8167-581b-845a-e6fbdca41efa":  {
+                                                 "title":  "Bevel 1x2to1x4 Spacing 2 [2x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x2to1x4 Spacing 2 [2x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f544de96-d611-55e8-9ea8-08407c9886f9":  {
+                                                 "title":  "Bevel 1x2to1x4 Spacing 2 [2x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x2to1x4 Spacing 2 [2x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "51dd7f1b-9ad4-5d03-b0ad-22e02db48293":  {
+                                                 "title":  "Bevel 1x2to1x4 Spacing 3 [3x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x2to1x4 Spacing 3 [3x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a7feefc3-bace-52c3-8acf-a8b5e4858b52":  {
+                                                 "title":  "Bevel 1x2to1x4 Spacing 3 [3x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x2to1x4 Spacing 3 [3x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3ddda52f-3011-5745-bacd-5eb9b049b931":  {
+                                                 "title":  "Bevel 1x2to1x4 Spacing 4 [4x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x2to1x4 Spacing 4 [4x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1cfb8569-6d02-5039-a133-17b704953abb":  {
+                                                 "title":  "Bevel 1x2to1x4 Spacing 4 [4x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x2to1x4 Spacing 4 [4x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ca40a569-5592-5a2c-9af2-16688fd80ca9":  {
+                                                 "title":  "Bevel 1x3to1x4 Spacing 1 [1x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x3to1x4 Spacing 1 [1x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "457778a4-46bc-56e4-a977-3aeba71e837a":  {
+                                                 "title":  "Bevel 1x3to1x4 Spacing 1 [1x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x3to1x4 Spacing 1 [1x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "6c25e439-7454-55d8-8a96-3c3fd7cd184c":  {
+                                                 "title":  "Bevel 1x3to1x4 Spacing 2 [2x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x3to1x4 Spacing 2 [2x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ad36f5eb-4bc1-5d8e-95c8-52054a01e06c":  {
+                                                 "title":  "Bevel 1x3to1x4 Spacing 2 [2x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x3to1x4 Spacing 2 [2x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f0750d6a-468e-5f05-9be5-f7be9baf5381":  {
+                                                 "title":  "Bevel 1x3to1x4 Spacing 3 [3x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x3to1x4 Spacing 3 [3x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "91f8ddc5-41e4-5499-86f6-72533283bfe5":  {
+                                                 "title":  "Bevel 1x3to1x4 Spacing 3 [3x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x3to1x4 Spacing 3 [3x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "774e13f1-85ef-5afc-bc3a-3e35498dda79":  {
+                                                 "title":  "Bevel 1x3to1x4 Spacing 4 [4x1x4] (Variant 1)",
+                                                 "description":  "A Bevel 1x3to1x4 Spacing 4 [4x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "40ca2abc-fdde-5651-a176-528241a3e590":  {
+                                                 "title":  "Bevel 1x3to1x4 Spacing 4 [4x1x4] (Variant 2)",
+                                                 "description":  "A Bevel 1x3to1x4 Spacing 4 [4x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "8ff68027-67f5-54b1-bade-aba5cf2bf0fc":  {
+                                                 "title":  "Bevel 1x4to1x5 Spacing 1 [1x1x5] (Variant 1)",
+                                                 "description":  "A Bevel 1x4to1x5 Spacing 1 [1x1x5] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "0abc7bf1-639a-5dc6-a336-87e754438f6e":  {
+                                                 "title":  "Bevel 1x4to1x5 Spacing 1 [1x1x5] (Variant 2)",
+                                                 "description":  "A Bevel 1x4to1x5 Spacing 1 [1x1x5] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ce883d2b-4ece-58c8-9dd1-e4165c5a30d0":  {
+                                                 "title":  "Bevel 1x4to1x5 Spacing 2 [2x1x5] (Variant 1)",
+                                                 "description":  "A Bevel 1x4to1x5 Spacing 2 [2x1x5] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "13999884-e45c-576f-bcfe-55ac25b85fc7":  {
+                                                 "title":  "Bevel 1x4to1x5 Spacing 2 [2x1x5] (Variant 2)",
+                                                 "description":  "A Bevel 1x4to1x5 Spacing 2 [2x1x5] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "2025c86d-fd85-5fbc-851e-80e2b591d01a":  {
+                                                 "title":  "Bevel 1x4to1x5 Spacing 3 [3x1x5] (Variant 1)",
+                                                 "description":  "A Bevel 1x4to1x5 Spacing 3 [3x1x5] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "cdfdabf2-35bb-539f-9f53-1f24023415d5":  {
+                                                 "title":  "Bevel 1x4to1x5 Spacing 3 [3x1x5] (Variant 2)",
+                                                 "description":  "A Bevel 1x4to1x5 Spacing 3 [3x1x5] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "6288908a-e60e-5862-8568-7e8daa092f29":  {
+                                                 "title":  "Bevel 1x4to1x5 Spacing 4 [4x1x5] (Variant 1)",
+                                                 "description":  "A Bevel 1x4to1x5 Spacing 4 [4x1x5] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3fa9eb6f-44e6-5977-9b10-5ddf171b8f4b":  {
+                                                 "title":  "Bevel 1x4to1x5 Spacing 4 [4x1x5] (Variant 2)",
+                                                 "description":  "A Bevel 1x4to1x5 Spacing 4 [4x1x5] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "c6fe2a77-5fd4-5e3f-8bf7-b061e2ce9862":  {
+                                                 "title":  "Circular Tube [diameter 1, depth 1] (Variant 1)",
+                                                 "description":  "A 1x1 Circular Tube [diameter 1, depth 1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7b47b168-1e43-58cf-a156-4b5b3aa19a07":  {
+                                                 "title":  "Circular Tube [diameter 1, depth 1] (Variant 2)",
+                                                 "description":  "A 1x1 Circular Tube [diameter 1, depth 1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3b54852b-6d91-5bc7-b234-ec52e7d7d266":  {
+                                                 "title":  "Circular Tube [diameter 1, depth 1] (Variant 3)",
+                                                 "description":  "A 1x1 Circular Tube [diameter 1, depth 1] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3c489198-dc59-55af-a34d-e251e7e57e4a":  {
+                                                 "title":  "Circular Tube [diameter 1, depth 1] (Variant 4)",
+                                                 "description":  "A 1x1 Circular Tube [diameter 1, depth 1] (Variant 4) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "b1cb6608-dc97-5e94-901e-fadf215274db":  {
+                                                 "title":  "Cone [1x1x1]",
+                                                 "description":  "A Cone [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "93bd308f-fd46-537a-8129-c03a5b0f346e":  {
+                                                 "title":  "Cone [1x2x1]",
+                                                 "description":  "A Cone [1x2x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "0237c5b7-51fd-535a-b86d-af380f6aa5e7":  {
+                                                 "title":  "Corner Slice [1x1x1] (Variant 1)",
+                                                 "description":  "A Corner Slice [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "89ce6d98-320e-5585-a16e-8aef14019ac3":  {
+                                                 "title":  "Corner Slice [1x1x1] (Variant 2)",
+                                                 "description":  "A Corner Slice [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "2e254442-f2f5-5a5a-8e1b-362dfb0b43c9":  {
+                                                 "title":  "2 Ways Half Block [1x1x1]",
+                                                 "description":  "A 2 Ways Half Block [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "fb0078d9-b4b7-59d4-928b-220811e56809":  {
+                                                 "title":  "3 Ways Half Block [1x1x1]",
+                                                 "description":  "A 3 Ways Half Block [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f608e702-e44b-5929-a170-55e458236af6":  {
+                                                 "title":  "Block Half Tangential Cube [1x1x1]",
+                                                 "description":  "A Block Half Tangential Cube [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "145454f2-e80d-5849-994a-309a3c83d6f1":  {
+                                                 "title":  "Block to Half Block [1x1x1] (Variant 1)",
+                                                 "description":  "A Block to Half Block [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "8495e4b8-cf70-5050-8ef4-e41006fd152f":  {
+                                                 "title":  "Block to Half Block [1x1x1] (Variant 2)",
+                                                 "description":  "A Block to Half Block [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "015f9871-e513-53f5-b300-777e01bc4292":  {
+                                                 "title":  "Half Block [1x1x1] (Variant 1)",
+                                                 "description":  "A Half Block [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ec05b155-b18b-5fcd-8571-7a46b07ce5b8":  {
+                                                 "title":  "Half Block [1x1x1] (Variant 2)",
+                                                 "description":  "A Half Block [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "31268288-af6a-5f32-bc17-87b8f38f387c":  {
+                                                 "title":  "Half Block Arc [1x1x1] (Variant 1)",
+                                                 "description":  "A Half Block Arc [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "abe13ea7-8046-5aeb-b1f3-d7b3a80bccba":  {
+                                                 "title":  "Half Block Arc [1x1x1] (Variant 2)",
+                                                 "description":  "A Half Block Arc [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "33ced8b4-5d6f-51a7-bd64-807e89bc2aaa":  {
+                                                 "title":  "Half Block Bevel 1 [1x1x1]",
+                                                 "description":  "A Half Block Bevel 1 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ad969d30-3231-59cb-b9a7-f933e12757da":  {
+                                                 "title":  "Half Block Bevel 2 [1x1x1]",
+                                                 "description":  "A Half Block Bevel 2 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a3f65ea7-1cf4-52dd-ac9e-41c83e76fd19":  {
+                                                 "title":  "Half Block Bevel 3 [1x1x1]",
+                                                 "description":  "A Half Block Bevel 3 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "095f801d-a646-55f7-bb87-983b492d40c9":  {
+                                                 "title":  "Half Block Bevel Corner 1 [1x1x1]",
+                                                 "description":  "A Half Block Bevel Corner 1 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "d7736461-06d7-51b1-ad87-97c8b824e5ef":  {
+                                                 "title":  "Half Block Bevel Corner 2 [1x1x1]",
+                                                 "description":  "A Half Block Bevel Corner 2 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e3b97a99-93cf-5397-92ea-35402e739b1a":  {
+                                                 "title":  "Half Block Bevel Four pyramid Corner(Left) [1x1x1]",
+                                                 "description":  "A Half Block Bevel Four pyramid Corner(Left) [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "2ff9624b-e624-59f5-834d-da15f8676801":  {
+                                                 "title":  "Half Block Bevel Four pyramid Corner(Right) [1x1x1]",
+                                                 "description":  "A Half Block Bevel Four pyramid Corner(Right) [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "96197c8f-ca40-5bf1-baad-e9c9144597a6":  {
+                                                 "title":  "Half Block Corner [1x1x1] (Variant 1)",
+                                                 "description":  "A Half Block Corner [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "0e29a598-b4a6-5b0f-9adc-15dffdf653ad":  {
+                                                 "title":  "Half Block Corner [1x1x1] (Variant 2)",
+                                                 "description":  "A Half Block Corner [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f2925852-b891-5b03-8165-e84b51f718c3":  {
+                                                 "title":  "Half Block Cylinder [diameter 1, depth 1]",
+                                                 "description":  "A 1x1 Half Block Cylinder [diameter 1, depth 1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "57d67432-6286-54fa-9266-c435dd873eb1":  {
+                                                 "title":  "Half Block Cylinder Corner [diameter 1, depth 1]",
+                                                 "description":  "A 1x1 Half Block Cylinder Corner [diameter 1, depth 1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "81029012-d654-5eb9-8a4e-a4a79d09e7f1":  {
+                                                 "title":  "Half Block Four pyramid Bevel Corner(Left) [1x1x1]",
+                                                 "description":  "A Half Block Four pyramid Bevel Corner(Left) [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "468ad12c-ee32-558d-b84f-b327f70dad28":  {
+                                                 "title":  "Half Block Four pyramid Bevel Corner(Right) [1x1x1]",
+                                                 "description":  "A Half Block Four pyramid Bevel Corner(Right) [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "73f1792b-7c21-5a7b-b0b8-d219964559e6":  {
+                                                 "title":  "Half Block Four pyramid Corner [1x1x1] (Variant 1)",
+                                                 "description":  "A Half Block Four pyramid Corner [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "bbe64666-992e-5107-8cfb-c78ec4d985c3":  {
+                                                 "title":  "Half Block Four pyramid Corner [1x1x1] (Variant 2)",
+                                                 "description":  "A Half Block Four pyramid Corner [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ca072f5e-182e-5391-9b13-a4ab2386001a":  {
+                                                 "title":  "Half Block Four pyramid Corner [1x1x1] (Variant 3)",
+                                                 "description":  "A Half Block Four pyramid Corner [1x1x1] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "52399d2a-23e2-5321-bdc1-ec2c3dd09714":  {
+                                                 "title":  "Half Block Tangential Cube [1x1x1]",
+                                                 "description":  "A Half Block Tangential Cube [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "abb557a0-f159-5ea7-87b8-fc594be78707":  {
+                                                 "title":  "Half Block to Block 1 [1x1x1]",
+                                                 "description":  "A Half Block to Block 1 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "35fed9bd-80cb-5f38-9864-c09c277cf233":  {
+                                                 "title":  "Half Block to Block 2 [1x1x1]",
+                                                 "description":  "A Half Block to Block 2 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "fc82cf81-9ce4-52e5-8d28-2ef32062a4ce":  {
+                                                 "title":  "Half Block to Block 3 [1x1x1]",
+                                                 "description":  "A Half Block to Block 3 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "c7e8e7ff-408e-5282-9926-0d5c7b23a668":  {
+                                                 "title":  "Half Block to Block Corner [1x1x1]",
+                                                 "description":  "A Half Block to Block Corner [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "dcf8ace5-ff06-554a-b36c-cafdbb07504c":  {
+                                                 "title":  "Half Block to Block Corner 1 [1x1x1]",
+                                                 "description":  "A Half Block to Block Corner 1 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "acfba923-0577-54bd-9748-66ff0636f00d":  {
+                                                 "title":  "Half Block to Block Corner 2 [1x1x1]",
+                                                 "description":  "A Half Block to Block Corner 2 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "d74e5b5a-9b09-5746-95ae-55affcc3adbf":  {
+                                                 "title":  "Half Block to Block Corner(High) [1x1x1]",
+                                                 "description":  "A Half Block to Block Corner(High) [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "072f449c-8855-5349-9727-c1b8a21feadb":  {
+                                                 "title":  "Half Block to Half Block [1x1x1]",
+                                                 "description":  "A Half Block to Half Block [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "40d89347-30e2-5e5c-ba93-55bd8a81a5e7":  {
+                                                 "title":  "Half Block Triangle [1x1x1] (Variant 1)",
+                                                 "description":  "A Half Block Triangle [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "8604fc83-3e40-53a6-8108-3363e21602cb":  {
+                                                 "title":  "Half Block Triangle [1x1x1] (Variant 2)",
+                                                 "description":  "A Half Block Triangle [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "817d564e-8373-5e97-a42f-4daa26d11377":  {
+                                                 "title":  "Half Block Triangle [1x1x1] (Variant 3)",
+                                                 "description":  "A Half Block Triangle [1x1x1] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "77c3d15e-b348-53c4-ba42-f42be931b5d8":  {
+                                                 "title":  "Half Block Triangle [1x1x1] (Variant 4)",
+                                                 "description":  "A Half Block Triangle [1x1x1] (Variant 4) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "14601f1d-4857-5c9e-90f8-bf499409d441":  {
+                                                 "title":  "Half Block Triangle [1x1x2] (Variant 1)",
+                                                 "description":  "A Half Block Triangle [1x1x2] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "cb4bf9a3-6199-55d4-8983-9e6d07dbfeda":  {
+                                                 "title":  "Half Block Triangle [1x1x2] (Variant 2)",
+                                                 "description":  "A Half Block Triangle [1x1x2] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1f613b69-bb38-5d14-a026-4f2f20cc47e3":  {
+                                                 "title":  "Half Block Triangle [1x1x2] (Variant 3)",
+                                                 "description":  "A Half Block Triangle [1x1x2] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "67c21649-2f2b-50cc-af2e-d3af9fb7c58b":  {
+                                                 "title":  "Half Block Triangle [1x1x3] (Variant 1)",
+                                                 "description":  "A Half Block Triangle [1x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7648cd47-0554-540f-b12c-43e26d244dda":  {
+                                                 "title":  "Half Block Triangle [1x1x3] (Variant 2)",
+                                                 "description":  "A Half Block Triangle [1x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "fbe61846-0508-51bf-b3d8-41d072974b31":  {
+                                                 "title":  "Half Block Triangle [1x1x3] (Variant 3)",
+                                                 "description":  "A Half Block Triangle [1x1x3] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e63ec17f-1ad3-57e8-9344-4b9d09ca1b65":  {
+                                                 "title":  "Half Block Triangle [1x1x4] (Variant 1)",
+                                                 "description":  "A Half Block Triangle [1x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "aac0bebe-9bbb-5d04-89a6-f6aca5f6e838":  {
+                                                 "title":  "Half Block Triangle [1x1x4] (Variant 2)",
+                                                 "description":  "A Half Block Triangle [1x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "26eae113-e1e5-5b82-aee6-ed7e3b55016b":  {
+                                                 "title":  "Half Block Triangle [1x1x4] (Variant 3)",
+                                                 "description":  "A Half Block Triangle [1x1x4] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "2fdf60b2-c286-5ac6-94d1-70378c9bef4a":  {
+                                                 "title":  "Half Block with a ball collision [1x1x1]",
+                                                 "description":  "A Half Block with a ball collision [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "457e2b21-f775-591d-8c1c-0ea3aed643ed":  {
+                                                 "title":  "Half Block with a half ball collision [1x1x1]",
+                                                 "description":  "A Half Block with a half ball collision [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "d55cbbc8-5330-5958-8353-e9e533f1f2b7":  {
+                                                 "title":  "Slice Half Block [1x1x1]",
+                                                 "description":  "A Slice Half Block [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "33dbe2e5-949f-5b52-8a49-d004eba831b6":  {
+                                                 "title":  "Slice Half Block Corner 1 [1x1x1]",
+                                                 "description":  "A Slice Half Block Corner 1 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a7a01d81-3bbe-5fc3-90ef-e7cd10e7fb06":  {
+                                                 "title":  "Slice Half Block Corner 2 [1x1x1]",
+                                                 "description":  "A Slice Half Block Corner 2 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a3118745-d02c-52bc-97c6-c117d472b3e3":  {
+                                                 "title":  "Trapezoid Half Block [1x1x1] (Variant 1)",
+                                                 "description":  "A Trapezoid Half Block [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "54210465-58b1-5435-8bd5-a27c5bb33727":  {
+                                                 "title":  "Trapezoid Half Block [1x1x1] (Variant 2)",
+                                                 "description":  "A Trapezoid Half Block [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7218fc74-e744-52a7-9499-f57889f1f485":  {
+                                                 "title":  "Half Slice [1x1x1] (Variant 1)",
+                                                 "description":  "A Half Slice [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "95afdc44-b191-5803-b188-75ac4d767051":  {
+                                                 "title":  "Half Slice [1x1x1] (Variant 2)",
+                                                 "description":  "A Half Slice [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "6aa39f42-e296-5ad4-b0ce-b7203d79668c":  {
+                                                 "title":  "Half Slice corner 1 [1x1x1]",
+                                                 "description":  "A Half Slice corner 1 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "240623ec-3f3b-53c7-889e-763587c503fa":  {
+                                                 "title":  "Half Slice corner 2 [1x1x1]",
+                                                 "description":  "A Half Slice corner 2 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "cecd5294-178f-5503-aedf-443a2f82f3fc":  {
+                                                 "title":  "Half Slice corner 3 [1x1x1]",
+                                                 "description":  "A Half Slice corner 3 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "25133911-8c5e-5f49-b486-36a5b4cb17cc":  {
+                                                 "title":  "Half Slice corner 4 [1x1x1]",
+                                                 "description":  "A Half Slice corner 4 [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "c6e16856-e637-515c-843a-7c4643628a25":  {
+                                                 "title":  "Half Slice to Surface [1x1x1] (Variant 1)",
+                                                 "description":  "A Half Slice to Surface [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "391ab545-35f6-552b-9e66-bd08661f043d":  {
+                                                 "title":  "Half Slice to Surface [1x1x1] (Variant 2)",
+                                                 "description":  "A Half Slice to Surface [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "8d631c8c-316f-59da-89ac-1a57e78a302b":  {
+                                                 "title":  "Half to One Block Slice [1x1x1] (Variant 1)",
+                                                 "description":  "A Half to One Block Slice [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1e38892f-d1de-5547-936c-c286834f1ad2":  {
+                                                 "title":  "Half to One Block Slice [1x1x1] (Variant 2)",
+                                                 "description":  "A Half to One Block Slice [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7206232e-822c-5ab4-9ea1-05f62b3a549d":  {
+                                                 "title":  "Rectangular Pyramid [1x1x1] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "67190414-382f-569f-bfbf-8f4b0f0c5468":  {
+                                                 "title":  "Rectangular Pyramid [1x1x1] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "b14c0eee-0738-5f04-acc0-31b63d26b4fa":  {
+                                                 "title":  "Rectangular Pyramid [1x1x1] (Variant 3)",
+                                                 "description":  "A Rectangular Pyramid [1x1x1] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "8ee07c0e-73f0-501b-9254-5dd65fb36d12":  {
+                                                 "title":  "Rectangular Pyramid [1x1x1] (Variant 4)",
+                                                 "description":  "A Rectangular Pyramid [1x1x1] (Variant 4) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3185239d-dc73-523f-94c6-fd1af500777f":  {
+                                                 "title":  "Rectangular Pyramid [1x1x2] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [1x1x2] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "2db27517-e52c-5090-9b8d-0e3f7ee7642a":  {
+                                                 "title":  "Rectangular Pyramid [1x1x2] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [1x1x2] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "67a249d9-41e1-5866-aeeb-b009f416397c":  {
+                                                 "title":  "Rectangular Pyramid [1x1x3] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [1x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e916337b-f859-5d20-aa5a-c09e188a1579":  {
+                                                 "title":  "Rectangular Pyramid [1x1x3] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [1x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "31b2e03f-5e35-5109-a569-afdc4faeac6d":  {
+                                                 "title":  "Rectangular Pyramid [1x1x4] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [1x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a3d6cddf-20dd-5d6e-b33d-9836d5e00565":  {
+                                                 "title":  "Rectangular Pyramid [1x1x4] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [1x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "83e6ec49-883c-55f3-a77c-89ef4f5afb19":  {
+                                                 "title":  "Rectangular Pyramid [1x1x5] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [1x1x5] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "5dc52b68-365b-574b-871d-fb1331674d16":  {
+                                                 "title":  "Rectangular Pyramid [1x1x5] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [1x1x5] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "631c086c-c80f-5cfc-9ed9-0b856abe693b":  {
+                                                 "title":  "Rectangular Pyramid [1x1x6] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [1x1x6] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "fff6e24e-29ef-5a1d-a970-ae78a6e71719":  {
+                                                 "title":  "Rectangular Pyramid [1x1x6] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [1x1x6] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "59b10cb8-53ae-51b7-98d8-d86f1ce7f49c":  {
+                                                 "title":  "Rectangular Pyramid [1x1x7] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [1x1x7] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3af93ab4-6c8e-5f98-a771-12da9f3bba6c":  {
+                                                 "title":  "Rectangular Pyramid [1x1x7] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [1x1x7] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "b5bcece2-7cfb-5c7a-9637-f292dcdc2bd8":  {
+                                                 "title":  "Rectangular Pyramid [1x1x8] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [1x1x8] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f20371f1-e1df-54b9-b5e4-a349335cfe56":  {
+                                                 "title":  "Rectangular Pyramid [1x1x8] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [1x1x8] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "798c05a2-bc3b-5dca-a07d-44e45e1c78c8":  {
+                                                 "title":  "Rectangular Pyramid [1x2x1]",
+                                                 "description":  "A Rectangular Pyramid [1x2x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "63f2379e-77c6-58f6-acf1-319c07ba6c89":  {
+                                                 "title":  "Rectangular Pyramid [1x3x1]",
+                                                 "description":  "A Rectangular Pyramid [1x3x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "9a62a697-df58-5573-8a3a-2261d26d98d3":  {
+                                                 "title":  "Rectangular Pyramid [1x4x1]",
+                                                 "description":  "A Rectangular Pyramid [1x4x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "10ea5ae6-81d1-5047-b88b-bc19ff4a0fdc":  {
+                                                 "title":  "Rectangular Pyramid [1x5x1]",
+                                                 "description":  "A Rectangular Pyramid [1x5x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "021394af-bcf6-5eda-ac21-7745dbda1c39":  {
+                                                 "title":  "Rectangular Pyramid [1x6x1]",
+                                                 "description":  "A Rectangular Pyramid [1x6x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "5d32a3d1-9bb4-52c8-a347-611ab4a65bb9":  {
+                                                 "title":  "Rectangular Pyramid [1x7x1]",
+                                                 "description":  "A Rectangular Pyramid [1x7x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "6096b158-abff-5fb1-b3ed-cef8db657669":  {
+                                                 "title":  "Rectangular Pyramid [1x8x1]",
+                                                 "description":  "A Rectangular Pyramid [1x8x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7f1c0573-c4e7-531d-8739-bb82f408d504":  {
+                                                 "title":  "Rectangular Pyramid [2x1x2]",
+                                                 "description":  "A Rectangular Pyramid [2x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "9d97633c-be90-5088-af6d-fdf3d3aca978":  {
+                                                 "title":  "Rectangular Pyramid [2x1x3] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [2x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7b9d26b9-4cf1-5768-ba38-a702700ec6ca":  {
+                                                 "title":  "Rectangular Pyramid [2x1x3] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [2x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "09e91734-ea7d-5e8a-99e0-d4b9a5fa4144":  {
+                                                 "title":  "Rectangular Pyramid [2x1x4] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [2x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "c336bdeb-8065-52c7-adc4-64d318f04634":  {
+                                                 "title":  "Rectangular Pyramid [2x1x4] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [2x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "b7c368d1-d9df-5cfb-aaff-8c6668ab5c67":  {
+                                                 "title":  "Rectangular Pyramid [3x1x3]",
+                                                 "description":  "A Rectangular Pyramid [3x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1484563a-7d5e-5401-adf2-b442fe6dd940":  {
+                                                 "title":  "Rectangular Pyramid [3x1x4] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [3x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1eeb7fac-7d8b-5435-9264-d0d86a0708ed":  {
+                                                 "title":  "Rectangular Pyramid [3x1x4] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [3x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "af6908ea-a012-5d45-a76a-9b1d8c51d249":  {
+                                                 "title":  "Rectangular Pyramid [3x1x5] (Variant 1)",
+                                                 "description":  "A Rectangular Pyramid [3x1x5] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "af7d78ad-ad0d-5b06-9cd5-23465bf3ef8a":  {
+                                                 "title":  "Rectangular Pyramid [3x1x5] (Variant 2)",
+                                                 "description":  "A Rectangular Pyramid [3x1x5] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7e84968f-eb2f-5717-8451-aadec7a0f349":  {
+                                                 "title":  "Rectangular Pyramid [4x1x4]",
+                                                 "description":  "A Rectangular Pyramid [4x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "111afcb5-8700-5237-a518-eee20458c52d":  {
+                                                 "title":  "Square Slice [1x1x1] (Variant 1)",
+                                                 "description":  "A Square Slice [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7f4aeda5-361b-54ad-a913-57fd6c834f2c":  {
+                                                 "title":  "Square Slice [1x1x1] (Variant 2)",
+                                                 "description":  "A Square Slice [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e3e98d07-5c5c-5347-b7e9-541192cfaaa0":  {
+                                                 "title":  "Square Slice [1x4x1] (Variant 1)",
+                                                 "description":  "A Square Slice [1x4x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "24f77dc3-815e-51b3-a378-3c97688fdb63":  {
+                                                 "title":  "Square Slice [1x4x1] (Variant 2)",
+                                                 "description":  "A Square Slice [1x4x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e71dbf49-62b7-54a0-8f94-a0bf19ae777a":  {
+                                                 "title":  "Square Slice [1x8x4] (Variant 1)",
+                                                 "description":  "A Square Slice [1x8x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "45e214ed-53f8-53fd-af21-896c40f7398a":  {
+                                                 "title":  "Square Slice [1x8x4] (Variant 2)",
+                                                 "description":  "A Square Slice [1x8x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "86b497df-983f-5768-a45b-fb78d77bb47d":  {
+                                                 "title":  "Tangential Cube Slice [1x1x1]",
+                                                 "description":  "A Tangential Cube Slice [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "073441d5-133c-5fdd-ba64-49220499f384":  {
+                                                 "title":  "Tangential Cube Slice [1x1x2]",
+                                                 "description":  "A Tangential Cube Slice [1x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "5355429b-4974-5d2b-8451-9976639dbe1f":  {
+                                                 "title":  "Tangential Cube Slice [1x1x3]",
+                                                 "description":  "A Tangential Cube Slice [1x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3b1c18a6-f316-55b5-b6c2-f8c84a2022dc":  {
+                                                 "title":  "Tangential Cube Slice [1x1x4]",
+                                                 "description":  "A Tangential Cube Slice [1x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "5a8c9754-c661-5cac-80d2-b36540b98c99":  {
+                                                 "title":  "Tangential Cube [1x1x1]",
+                                                 "description":  "A Tangential Cube [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1f87b733-c731-5a36-9140-4385ee59d967":  {
+                                                 "title":  "Tangential Cube [1x1x2]",
+                                                 "description":  "A Tangential Cube [1x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "377fccaf-2e63-53eb-8e6c-d7d3da7e6efc":  {
+                                                 "title":  "Tangential Cube [1x1x3]",
+                                                 "description":  "A Tangential Cube [1x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1199a5d4-02b1-54ae-8024-cdf9d1927fa2":  {
+                                                 "title":  "Tangential Cube [1x1x4]",
+                                                 "description":  "A Tangential Cube [1x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "63828397-ce57-579f-8048-92737b217c0c":  {
+                                                 "title":  "Tangential Cube [1x1x5]",
+                                                 "description":  "A Tangential Cube [1x1x5] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f40c5f9e-2aac-55d8-9516-e2bdef892c8c":  {
+                                                 "title":  "Tangential Cube [1x1x6]",
+                                                 "description":  "A Tangential Cube [1x1x6] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "09219173-bb74-5cf6-bc85-13493b861f81":  {
+                                                 "title":  "Tangential Cube [1x1x7]",
+                                                 "description":  "A Tangential Cube [1x1x7] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "b7b950c0-e3b7-5452-82ab-590d9261f340":  {
+                                                 "title":  "Tangential Cube [1x1x8]",
+                                                 "description":  "A Tangential Cube [1x1x8] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e0985bbc-1439-5ed9-8cc2-868f5b2054ad":  {
+                                                 "title":  "Tangential Cube [2x1x2]",
+                                                 "description":  "A Tangential Cube [2x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "d9e4721a-39fe-585c-8e57-087fd85db15b":  {
+                                                 "title":  "Tangential Cube [2x1x3] (Variant 1)",
+                                                 "description":  "A Tangential Cube [2x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "4b597924-0af9-510f-8266-f75affb15049":  {
+                                                 "title":  "Tangential Cube [2x1x3] (Variant 2)",
+                                                 "description":  "A Tangential Cube [2x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f00e439d-cab3-5823-844c-e152d1cb680b":  {
+                                                 "title":  "Tangential Cube [2x1x4] (Variant 1)",
+                                                 "description":  "A Tangential Cube [2x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "5dd6a271-47c7-59d2-ba93-39b8720b3e81":  {
+                                                 "title":  "Tangential Cube [2x1x4] (Variant 2)",
+                                                 "description":  "A Tangential Cube [2x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "92d1bd75-afc7-53e7-ac76-c1192f1b4896":  {
+                                                 "title":  "Tangential Cube [3x1x3]",
+                                                 "description":  "A Tangential Cube [3x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e584a383-1c93-5f49-969f-dd3d73e1e0f2":  {
+                                                 "title":  "Tangential Cube [3x1x4] (Variant 1)",
+                                                 "description":  "A Tangential Cube [3x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3180417e-f626-5492-a7d9-555c9c33eb25":  {
+                                                 "title":  "Tangential Cube [3x1x4] (Variant 2)",
+                                                 "description":  "A Tangential Cube [3x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "11e79222-6545-5c59-bc33-67e7638cb56b":  {
+                                                 "title":  "Tangential Cube [4x1x4]",
+                                                 "description":  "A Tangential Cube [4x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "339efba7-93ca-5f79-88c7-0059deb7bbb4":  {
+                                                 "title":  "Trangular Pyramid [1x1x1]",
+                                                 "description":  "A Trangular Pyramid [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "ebeb0045-3f9b-5955-8729-54c581d71ecf":  {
+                                                 "title":  "Trangular Pyramid [1x1x2]",
+                                                 "description":  "A Trangular Pyramid [1x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "4a24f89c-b6cb-5281-9071-a38bc84435b4":  {
+                                                 "title":  "Trangular Pyramid [1x1x3]",
+                                                 "description":  "A Trangular Pyramid [1x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e83583a5-fed3-5f7f-a8ca-bab2dee4c57b":  {
+                                                 "title":  "Trangular Pyramid [1x1x4]",
+                                                 "description":  "A Trangular Pyramid [1x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1c3ad5a3-0386-50c9-9903-dcd033f847af":  {
+                                                 "title":  "Trangular Pyramid [1x1x5]",
+                                                 "description":  "A Trangular Pyramid [1x1x5] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e4e478e5-2d5f-50a1-bd3b-f8ef2a0a28e9":  {
+                                                 "title":  "Trangular Pyramid [1x1x6]",
+                                                 "description":  "A Trangular Pyramid [1x1x6] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "d985e620-f665-52e3-abdf-ed37dd077bb1":  {
+                                                 "title":  "Trangular Pyramid [1x1x7]",
+                                                 "description":  "A Trangular Pyramid [1x1x7] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1d6a1898-de5b-5800-b467-d0b13b818be9":  {
+                                                 "title":  "Trangular Pyramid [1x1x8]",
+                                                 "description":  "A Trangular Pyramid [1x1x8] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "e39a1f82-b99e-5297-9f5d-a5d25676e4ba":  {
+                                                 "title":  "Trangular Pyramid [2x1x2]",
+                                                 "description":  "A Trangular Pyramid [2x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "9abee00d-d6ce-5c01-889a-a863e8560294":  {
+                                                 "title":  "Trangular Pyramid [2x1x3] (Variant 1)",
+                                                 "description":  "A Trangular Pyramid [2x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "1fb4c6d1-03d6-54bf-936a-6aca87f45763":  {
+                                                 "title":  "Trangular Pyramid [2x1x3] (Variant 2)",
+                                                 "description":  "A Trangular Pyramid [2x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "8a6d21f1-d49d-5ac3-a7f4-9d1f9aa0769a":  {
+                                                 "title":  "Trangular Pyramid [2x1x4] (Variant 1)",
+                                                 "description":  "A Trangular Pyramid [2x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "8e7a0c71-33d5-5276-81cc-c18bbf4e9dfc":  {
+                                                 "title":  "Trangular Pyramid [2x1x4] (Variant 2)",
+                                                 "description":  "A Trangular Pyramid [2x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a8d8c9f4-75ef-5268-b930-3a9f40c0ba92":  {
+                                                 "title":  "Trangular Pyramid [3x1x3]",
+                                                 "description":  "A Trangular Pyramid [3x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "29f89247-9c42-5993-b7dc-cf6193ad3253":  {
+                                                 "title":  "Trangular Pyramid [3x1x4] (Variant 1)",
+                                                 "description":  "A Trangular Pyramid [3x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7d985b02-910d-519c-938b-39661383f3ac":  {
+                                                 "title":  "Trangular Pyramid [3x1x4] (Variant 2)",
+                                                 "description":  "A Trangular Pyramid [3x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "37bb594a-2f2d-544b-9d45-0f1c63f7f5aa":  {
+                                                 "title":  "Trangular Pyramid [4x1x4]",
+                                                 "description":  "A Trangular Pyramid [4x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "933f7fef-5ec1-58ff-8814-b87a8e3d8cb1":  {
+                                                 "title":  "Trangular Pyramid Slice [1x1x1]",
+                                                 "description":  "A Trangular Pyramid Slice [1x1x1] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7ce079bd-ad2b-5001-943f-544d50df1d2d":  {
+                                                 "title":  "Trangular Pyramid Slice [1x1x2]",
+                                                 "description":  "A Trangular Pyramid Slice [1x1x2] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "beac82cd-0326-54d8-a285-9804c07e2082":  {
+                                                 "title":  "Trangular Pyramid Slice [1x1x3]",
+                                                 "description":  "A Trangular Pyramid Slice [1x1x3] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "614a22b7-9c47-5e03-92bb-890b53314e13":  {
+                                                 "title":  "Trangular Pyramid Slice [1x1x4]",
+                                                 "description":  "A Trangular Pyramid Slice [1x1x4] building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "42392b6a-f77c-5c43-ab0c-8e9f77dbb8f4":  {
+                                                 "title":  "Triangle Slice [1x1x1] (Variant 1)",
+                                                 "description":  "A Triangle Slice [1x1x1] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f4ebb850-b832-58b0-8028-d00fbed32552":  {
+                                                 "title":  "Triangle Slice [1x1x1] (Variant 2)",
+                                                 "description":  "A Triangle Slice [1x1x1] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "818b1f05-7c5d-511a-a5d5-046b5ced0ac1":  {
+                                                 "title":  "Triangle Slice [1x1x1] (Variant 3)",
+                                                 "description":  "A Triangle Slice [1x1x1] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "3884ff0b-4045-56b1-a2a4-0fe4c21c606e":  {
+                                                 "title":  "Triangle Slice [1x1x2] (Variant 1)",
+                                                 "description":  "A Triangle Slice [1x1x2] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a0074e68-4deb-5e81-ba30-24be785d497f":  {
+                                                 "title":  "Triangle Slice [1x1x2] (Variant 2)",
+                                                 "description":  "A Triangle Slice [1x1x2] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "f067710b-2634-5c5a-aefe-fb5e9df05030":  {
+                                                 "title":  "Triangle Slice [1x1x2] (Variant 3)",
+                                                 "description":  "A Triangle Slice [1x1x2] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "7ba652f2-ac36-54e2-8644-8f4fcae65012":  {
+                                                 "title":  "Triangle Slice [1x1x3] (Variant 1)",
+                                                 "description":  "A Triangle Slice [1x1x3] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "bd7d9d34-903a-5600-8e82-9d7fda65d20f":  {
+                                                 "title":  "Triangle Slice [1x1x3] (Variant 2)",
+                                                 "description":  "A Triangle Slice [1x1x3] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "5d430413-17ab-53ba-a423-9c3620ed4283":  {
+                                                 "title":  "Triangle Slice [1x1x3] (Variant 3)",
+                                                 "description":  "A Triangle Slice [1x1x3] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a73bf83a-f5ed-5770-a2b9-7c4ad8c43a1c":  {
+                                                 "title":  "Triangle Slice [1x1x4] (Variant 1)",
+                                                 "description":  "A Triangle Slice [1x1x4] (Variant 1) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "85bb1e86-a136-5ec1-8f6d-aa5abe8b7072":  {
+                                                 "title":  "Triangle Slice [1x1x4] (Variant 2)",
+                                                 "description":  "A Triangle Slice [1x1x4] (Variant 2) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "a1398b8d-563c-5d15-acea-f04171ed118a":  {
+                                                 "title":  "Triangle Slice [1x1x4] (Variant 3)",
+                                                 "description":  "A Triangle Slice [1x1x4] (Variant 3) building part for aircraft construction.\r\n#df7f00Plane Construct"
+                                             },
+    "0307d97e-1016-4131-9ca2-7c1d653d3f69":  {
+                                                 "title":  "Plane Radar Screen",
+                                                 "description":  "A transparent Glass Slice screen that marks players in front of the pane. Configure field of view, minimum distance, and maximum distance from the interaction menu. A yellow logic input cycles targets; a basic logic output commits the selected target to a connected Plane Controller.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "radar screen glass slice player marker detection minimum maximum range field of view yellow target plane controller logic"
+                                             },
+    "9e1fd450-3e60-4ce8-86dd-e0ee5ced4b77":  {
+                                                 "title":  "Radar Data Screen (WIP)",
+                                                 "description":  "A Glass Slice display that receives targets from connected Plane Radar Screens. The Remember targets option retains each target's last known position for a random 5-10 second memory window; when disabled, dots disappear as soon as targets leave the radar view. Yellow logic cycles the selected target; a basic logic signal passes a currently visible selection to a connected Plane Controller. Connected bearings scan until a visible selected target is available.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "radar data screen glass slice last known target memory bearing scan plane controller logic"
+                                             },
+    "99b23ad3-42a8-45fb-8156-9140430b7377":  {
+                                                 "title":  "Player Presence",
+                                                 "description":  "A vanilla logic-gate-style target that acts like a selectable player presence at its position. It is active by default and turns off while any logic input is active.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "player presence target dummy plane controller radar logic gate selectable"
+                                             },
+    "ed67a8c3-7bf8-4729-8596-f200440c95c5":  {
+                                                 "title":  "Plane Smart Cannon",
+                                                 "description":  "A configurable projectile cannon based on the Smart Cannon projectile model. Configure speed, gravity, explosion, knockback, shell effect, and impact ignition from the interaction menu.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "plane smart cannon projectile shell explosion knockback gravity fire ignite doppler"
+                                             },
+    "7c31d534-f77c-4006-afe6-47c0573f1af2":  {
+                                                 "title":  "Countermeasure Dispenser",
+                                                 "description":  "A configurable flare and chaff dispenser. Connect a logic signal to deploy countermeasures at the selected interval and capacity.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "countermeasure dispenser flare chaff aircraft missile defense logic"
+                                             },
+    "939a5048-b7d9-4c01-96bc-22337f4d9e08":  {
+                                                 "title":  "Player Lock Detector",
+                                                 "description":  "A logic detector that reports when a player is locked by a connected Plane Controller.\r\n#df7f00Plane Construct",
+                                                 "keywords":  "player lock detector radar plane controller target logic"
+                                             },
+    "b7c8d9e0-1234-4abc-8def-0123456789ab":  {
+                                   "title":  "Doppler Engine Test",
+                                   "description":  "A gray 1x1x1 test block that uses the gasoline engine sound and changes its RPM according to the relative speed between the block and the local player.\r\n#df7f00Plane Construct",
+                                    "keywords":  "doppler engine gasoline sound rpm velocity speed test"
+                                },
+    "c2f4a6d8-7b10-4e53-9c21-5f8a0d3b6e74":  {
+                                    "title":  "Flight Sensor",
+                                    "description":  "A 1x1x1 logic sensor that detects speed, altitude above the tile, roll, pitch, or G-force and generates a configurable repeating signal.\r\n#df7f00Plane Construct",
+                                    "keywords":  "flight sensor speed altitude roll pitch g force overload logic delayed signal"
+                                 },
+    "f1a2b3c4-d5e6-4789-9012-3456789abcde":  {
+                                    "title":  "Breakable Sided Wing [1x1]",
+                                    "description":  "A 1x1x1 aircraft wing that is destroyed by an active logic signal. Connect it to a Flight Sensor or any other trigger.",
+                                    "keywords":  "breakable wing destroy logic trigger overload flight sensor aircraft"
+                                 },
+    "de73f113-3f2c-4c35-9c7f-cb5efe394b17":  {
+                                    "title":  "Turret Controller",
+                                    "description":  "A sensor-style turret controller for horizontal and vertical bearings. Configure tracking and prediction.",
+                                    "keywords":  "turret controller sensor tracking horizontal vertical yaw pitch bearing projectile prediction"
+                                },
+    "b7c4f2a1-6d89-4e30-9f12-3a5c7d8e9012":  {
+                                                 "title":  "Drag Reducer",
+                                                 "description":  "Configurable creation drag control. Choose the final velocity change per frame from -1% to 100%. Only one reducer is active per creation.",
+                                                 "keywords":  "drag reducer velocity damping speed physics"
+                                             },
+    "c4e9d3b1-7a2f-4a8c-9d10-6f5b2e7c1a44":  {
+                                                 "title":  "Random Color Block",
+                                                 "description":  "A 1x1x1 logic block that changes to a random color while its logic input is active. Configure the color change interval from 0 to 10 seconds.",
+                                                 "keywords":  "random color color changing logic block timer rainbow"
+                                             },
+    "a2dc250a-0c7b-4d37-8600-b60daa2edddd":  {
+                                    "title":  "Walker Controller",
+                                    "description":  "A controller for walker-style mechanical builds.",
+                                    "keywords":  "walker controller legs bearings walking mechanical"
+                                },
+    "2e0055c8-90ca-4a5f-9491-da57b5f3fe42":  {
+                                    "title":  "Seat Camera",
+                                    "description":  "A 1x1x1 camera block that connects to a seat. Interact with it while seated to switch to the camera mounted on the block.",
+                                    "keywords":  "seat camera pilot view aircraft driver camera logic"
+                                },
+    "c81f2a4e-12d9-4ec6-8b33-1e61f230a401":  {
+                                     "title":  "2x2 thruster",
+                                     "description":  "A grid-aligned 2x2 thruster controlled by a connected Throttle Gate.",
+                                     "keywords":  "2x2 thruster engine afterburner throttle gate"
+                                 },
+    "c81f2a4e-12d9-4ec6-8b33-1e61f230a402":  {
+                                     "title":  "2x2 thruster offgrid",
+                                     "description":  "A centered 2x2 thruster for off-grid mounting. Controlled by a connected Throttle Gate.",
+                                     "keywords":  "2x2 thruster offgrid engine afterburner throttle gate"
+                                 },
+    "c81f2a4e-12d9-4ec6-8b33-1e61f230a403":  {
+                                     "title":  "throttle gate",
+                                     "description":  "Sets the thrust level of connected thrusters.",
+                                     "keywords":  "throttle gate thrust controller engine"
+                                 },
+    "c81f2a4e-12d9-4ec6-8b33-1e61f230a404":  {
+                                     "title":  "antiradar gate",
+                                     "description":  "Hides potential radar targets within its configured radius.",
+                                     "keywords":  "antiradar radar stealth target gate"
+                                 },
+    "c81f2a4e-12d9-4ec6-8b33-1e61f230a405":  {
+                                      "title":  "driver seat",
+                                      "description":  "A driving seat that can be exited with E.",
+                                      "keywords":  "driver seat vehicle seat aircraft pilot"
+                                  },
+    "c81f2a4e-12d9-4ec6-8b33-1e61f230a406":  {
+                                     "title":  "bearing motor controller",
+                                     "description":  "Drives all connected bearings at the configured speed and force while powered by logic.",
+                                     "keywords":  "bearing motor controller speed rpm force impulse logic"
+                                 },
+    "d4f6a7b8-9c01-4e23-8f45-6a7b8c9d0123":  {
+                                    "title":  "Laser Emitter",
+                                    "description":  "A coded laser emitter. A logic signal enables it; mount it on a Turret Controller assembly so its laser point can be acquired by a matching Laser Guidance Module.",
+                                    "keywords":  "laser emitter designation turret controller code password guidance targeting"
+                                },
+    "e5a7b9c1-0d23-4f56-9a78-1b2c3d4e5678":  {
+                                    "title":  "Laser Guidance Module",
+                                    "description":  "A glass half-ball module. A logic signal enables laser-only guidance for a connected Plane Controller or Turret Controller.",
+                                    "keywords":  "laser guidance module glass half ball designation plane controller code password"
+                                },
+    "c81f2a4e-12d9-4ec6-8b33-1e61f230a407":  {
+                                    "title":  "Parachute",
+                                    "description":  "A logic-deployed parachute that slows and helps stabilize a creation.",
+                                    "keywords":  "parachute chute drag braking aircraft logic"
+                                }
+}

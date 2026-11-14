@@ -1,0 +1,88 @@
+{
+    "partList": [
+        {
+            "uuid": "7b7c7d7e-1111-4aaa-8bbb-ccccdddd0001",
+            "name": "obj_experimental_centered_wing_t_mount_1x1",
+            "renderable": {
+                "lodList": [
+                    {
+                        "mesh": "$CONTENT_DATA/Objects/Mesh/Centered Wings/Centered Wing 1x1.obj",
+                        "subMeshList": [
+                            {
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                    "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                    "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "hull": {
+                "col": "$GAME_DATA/Objects/Collision/small_3way_pipe.obj",
+                "margin": 0.25,
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                "classname": "Wing1x1"
+            },
+            "qualityLevel": 0,
+            "color": "aeb5bb",
+            "density": 250,
+            "flammable": true,
+            "physicsMaterial": "Plastic",
+            "rotationSet": "PropXNegZm",
+            "sticky": "-X+X+Z",
+            "ratings": {
+                "durability": 4
+            }
+        },
+        {
+            "uuid": "7b7c7d7e-3333-4aaa-8bbb-ccccdddd0003",
+            "name": "obj_experimental_sided_wing_t_mount_1x1",
+            "renderable": {
+                "lodList": [
+                    {
+                        "mesh": "$CONTENT_DATA/Objects/Mesh/Sided Wings/Sided Wing 1x1.obj",
+                        "subMeshList": [
+                            {
+                                "material": "DifAsgNor",
+                                "textureList": [
+                                    "$CONTENT_DATA/Objects/Textures/aircraft_panel_colorable_contrast_paintable_dif.png",
+                                    "$CONTENT_DATA/Objects/Textures/scoob_asg.png",
+                                    "$CONTENT_DATA/Objects/Textures/scoob_normal.jpg"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "hull": {
+                "col": "$GAME_DATA/Objects/Collision/small_3way_pipe.obj",
+                "margin": 0.25,
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/ScoobAirfoil.lua",
+                "classname": "Wing1x1"
+            },
+            "qualityLevel": 0,
+            "color": "aeb5bb",
+            "density": 250,
+            "flammable": true,
+            "physicsMaterial": "Plastic",
+            "rotationSet": "PropFull",
+            "sticky": "+X-X+Z-Z",
+            "ratings": {
+                "durability": 4
+            }
+        }
+    ]
+}

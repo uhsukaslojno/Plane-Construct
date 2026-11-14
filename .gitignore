@@ -1,0 +1,26 @@
+# Scrap Mechanic generated caches
+Cache/
+**/Cache/
+*.dco
+*.rco
+*.mco
+
+# Local game installation and backups
+Plane Construct backups/
+**/Plane Construct backups/
+*.bak
+*.backup
+
+# Temporary build/import files
+*.tmp
+*.log
+ContentCompiler-*.err.log
+ContentCompiler-*.out.log
+
+# Editor and operating-system files
+.vs/
+.vscode/
+*.suo
+*.user
+Thumbs.db
+Desktop.ini

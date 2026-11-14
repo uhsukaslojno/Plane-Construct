@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <!-- Match the working PlaneController layout structure: a full-screen root,
+       then a centered panel, with the visual background as its child. -->
+  <Widget type="Widget" skin="PanelEmpty" position_real="0 0 1 1" name="BackPanel">
+    <Widget type="Widget" skin="PanelEmpty" position_real="0.350 0.20 0.300 0.60" name="MainPanel">
+      <Property key="NeedKey" value="false" />
+      <Property key="NeedMouse" value="true" />
+      <Property key="InheritsAlpha" value="false" />
+      <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 1 1" name="MainPanelBackground">
+        <Property key="NeedMouse" value="false" />
+      </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.05 0.84 0.12" name="Title">
+      <Property key="Caption" value="ДАТЧИК ПОЛЁТА" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.19 0.84 0.06" name="MetricTitle">
+      <Property key="Caption" value="Измерение" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Widget" skin="PanelEmpty" position_real="0.08 0.26 0.84 0.09" name="MetricDropDown">
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.38 0.84 0.07" name="ThresholdLabel">
+      <Property key="Caption" value="Порог: 100 км/ч" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.46 0.84 0.10" name="ThresholdSlider">
+      <Property key="NeedKey" value="false" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.59 0.84 0.07" name="DelayLabel">
+      <Property key="Caption" value="Интервал / длительность ВКЛ: 0 тиков (0.00 с)" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.67 0.84 0.10" name="DelaySlider">
+      <Property key="NeedKey" value="false" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.82 0.84 0.12" name="HelpText">
+      <Property key="Caption" value="0 = постоянно ВКЛ. Иначе датчик чередует ВЫКЛ и ВКЛ в течение выбранного числа тиков." />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center Top" />
+    </Widget>
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

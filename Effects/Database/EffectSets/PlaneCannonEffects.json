@@ -1,0 +1,54 @@
+{
+    "PlaneCannon - Doppler 1": {
+        "maxInstances": 512,
+        "parameterList": {
+            "velocity": 200.0,
+            "power": 200.0
+        },
+        "effectList": [
+            {
+                "type": "audio",
+                "name": "event:/vehicle/thrusters/thruster01",
+                "offset": {
+                    "x": 0.15,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "parameters": [
+                    "velocity",
+                    "power"
+                ],
+                "delay": 0.0,
+                "duration": 30.0
+            }
+        ]
+    },
+    "PlaneCannon - Doppler 2": {
+        "maxInstances": 512,
+        "parameterList": { "velocity": 200.0, "power": 200.0 },
+        "effectList": [
+            { "type": "audio", "name": "event:/vehicle/thrusters/thruster02", "offset": { "x": 0.15, "y": 0.0, "z": 0.0 }, "parameters": [ "velocity", "power" ], "delay": 0.0, "duration": 30.0 }
+        ]
+    },
+    "PlaneCannon - Doppler 3": {
+        "maxInstances": 512,
+        "parameterList": { "velocity": 200.0, "power": 200.0 },
+        "effectList": [
+            { "type": "audio", "name": "event:/vehicle/thrusters/thruster03", "offset": { "x": 0.15, "y": 0.0, "z": 0.0 }, "parameters": [ "velocity", "power" ], "delay": 0.0, "duration": 30.0 }
+        ]
+    },
+    "PlaneCannon - Doppler 4": {
+        "maxInstances": 512,
+        "parameterList": { "velocity": 200.0, "power": 200.0 },
+        "effectList": [
+            { "type": "audio", "name": "event:/vehicle/thrusters/thruster04", "offset": { "x": 0.15, "y": 0.0, "z": 0.0 }, "parameters": [ "velocity", "power" ], "delay": 0.0, "duration": 30.0 }
+        ]
+    },
+    "PlaneCannon - Doppler 5": {
+        "maxInstances": 512,
+        "parameterList": { "velocity": 200.0, "power": 200.0 },
+        "effectList": [
+			{ "type": "audio", "name": "event:/vehicle/thrusters/thruster05", "offset": { "x": 0.15, "y": 0.0, "z": 0.0 }, "parameters": [ "velocity", "power" ], "delay": 0.0, "duration": 30.0 }
+		]
+	}
+}

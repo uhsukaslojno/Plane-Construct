@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="PanelEmpty" position_real="0 0.08 0.92 0.90" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+
+    <Widget type="Widget" skin="PanelEmpty" position_real="0.28 0 0.44 0.88" name="MainMenuCentered">
+      <Property key="NeedMouse" value="true" />
+      <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 1 1" name="MainBackgroundCentered">
+        <Property key="NeedMouse" value="false" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.02 0.72 0.065" name="TitleCentered">
+        <Property key="Caption" value="ЭКРАН РАДАРА" />
+        <Property key="FontName" value="SM_HeaderLarge_Medium" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.10 0.72 0.05" name="FovValueCentered">
+        <Property key="Caption" value="Поле зрения: 60 градусов" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.14 0.16 0.72 0.06">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="FovLabelCentered">
+          <Property key="Caption" value="Поле зрения обнаружения" />
+          <Property key="FontName" value="SM_ItemTitle" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.14 0.22 0.72 0.06" name="FovSliderCentered">
+        <Property key="Range" value="180" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.285 0.72 0.05" name="MinimumDistanceValueCentered">
+        <Property key="Caption" value="Минимальная дальность: 0 блоков" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.14 0.345 0.72 0.06">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="MinimumDistanceLabelCentered">
+          <Property key="Caption" value="Минимальная дальность обнаружения" />
+          <Property key="FontName" value="SM_ItemTitle" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.14 0.405 0.72 0.06" name="MinimumDistanceSliderCentered">
+        <Property key="Range" value="100" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.47 0.72 0.05" name="DistanceValueCentered">
+        <Property key="Caption" value="Максимальная дальность: 1000 блоков" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.14 0.53 0.72 0.06">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="DistanceLabelCentered">
+          <Property key="Caption" value="Максимальная дальность обнаружения" />
+          <Property key="FontName" value="SM_ItemTitle" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.14 0.59 0.72 0.06" name="DistanceSliderCentered">
+        <Property key="Range" value="5000" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.66 0.72 0.04" name="HelpTextCentered">
+        <Property key="Caption" value="Зелёные метки показывают игроков перед прозрачной панелью." />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Center Top" />
+      </Widget>
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.14 0.71 0.05 0.04" name="CrosshairButtonCentered">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.22 0.71 0.60 0.04" name="CrosshairLabelCentered">
+        <Property key="Caption" value="Прицел" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.14 0.76 0.05 0.04" name="TargetDataButtonCentered">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.22 0.76 0.60 0.04" name="TargetDataLabelCentered">
+        <Property key="Caption" value="Данные цели: скорость / высота" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Button" skin="PrimaryButton" position_real="0.14 0.805 0.72 0.06" name="TargetFilterDropDownCentered">
+        <Property key="NeedMouse" value="true" />
+        <Widget type="TextBox" skin="TextBox" position_real="0 0 1 1" name="TargetFilterLabelCentered">
+          <Property key="Caption" value="Фильтр целей: контроллер самолёта (нажмите для смены)" />
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextColour" value="0 0 0" />
+          <Property key="TextAlign" value="Center VCenter" />
+          <Property key="NeedMouse" value="false" />
+        </Widget>
+      </Widget>
+    </Widget>
+
+    <Widget type="Widget" skin="PanelEmpty" position_real="0.52 0 0.44 0.88" name="MainMenu">
+      <Property key="NeedMouse" value="true" />
+      <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 1 1" name="MainBackground">
+        <Property key="NeedMouse" value="false" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.02 0.72 0.065" name="Title">
+        <Property key="Caption" value="ЭКРАН РАДАРА" />
+        <Property key="FontName" value="SM_HeaderLarge_Medium" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.10 0.72 0.05" name="FovValue">
+        <Property key="Caption" value="Поле зрения: 60 градусов" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.14 0.16 0.72 0.06">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="FovLabel">
+          <Property key="Caption" value="Поле зрения обнаружения" />
+          <Property key="FontName" value="SM_ItemTitle" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.14 0.22 0.72 0.06" name="FovSlider">
+        <Property key="Range" value="180" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.285 0.72 0.05" name="MinimumDistanceValue">
+        <Property key="Caption" value="Минимальная дальность: 0 блоков" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.14 0.345 0.72 0.06">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="MinimumDistanceLabel">
+          <Property key="Caption" value="Минимальная дальность обнаружения" />
+          <Property key="FontName" value="SM_ItemTitle" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.14 0.405 0.72 0.06" name="MinimumDistanceSlider">
+        <Property key="Range" value="100" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.47 0.72 0.05" name="DistanceValue">
+        <Property key="Caption" value="Максимальная дальность: 1000 блоков" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.14 0.53 0.72 0.06">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="DistanceLabel">
+          <Property key="Caption" value="Максимальная дальность обнаружения" />
+          <Property key="FontName" value="SM_ItemTitle" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.14 0.59 0.72 0.06" name="DistanceSlider">
+        <Property key="Range" value="5000" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.66 0.72 0.04" name="HelpText">
+        <Property key="Caption" value="Зелёные метки показывают игроков перед прозрачной панелью." />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Center Top" />
+      </Widget>
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.14 0.71 0.05 0.04" name="CrosshairButton">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.22 0.71 0.60 0.04" name="CrosshairLabel">
+        <Property key="Caption" value="Прицел" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.14 0.76 0.05 0.04" name="TargetDataButton">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.22 0.76 0.60 0.04" name="TargetDataLabel">
+        <Property key="Caption" value="Данные цели: скорость / высота" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Button" skin="PrimaryButton" position_real="0.14 0.805 0.72 0.06" name="TargetFilterDropDown">
+        <Property key="NeedMouse" value="true" />
+        <Widget type="TextBox" skin="TextBox" position_real="0 0 1 1" name="TargetFilterLabel">
+          <Property key="Caption" value="Фильтр целей: контроллер самолёта (нажмите для смены)" />
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextColour" value="0 0 0" />
+          <Property key="TextAlign" value="Center VCenter" />
+          <Property key="NeedMouse" value="false" />
+        </Widget>
+      </Widget>
+    </Widget>
+
+    <Widget type="Widget" skin="PanelEmpty" position_real="0.06 0 0.44 0.76" name="CrosshairMenu">
+      <Property key="NeedMouse" value="true" />
+      <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 1 1" name="CrosshairBackground">
+        <Property key="NeedMouse" value="false" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.08 0.025 0.84 0.06" name="CrosshairSettingsTitle">
+        <Property key="Caption" value="Настройки прицела" />
+        <Property key="FontName" value="SM_HeaderLarge_Medium" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.12 0.40 0.045" name="CrosshairVerticalValue">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="CrosshairVerticalValueText">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.17 0.40 0.045" name="CrosshairVerticalSlider">
+        <Property key="Range" value="200" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.54 0.12 0.40 0.045" name="CrosshairHorizontalValue">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="CrosshairHorizontalValueText">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.54 0.17 0.40 0.045" name="CrosshairHorizontalSlider">
+        <Property key="Range" value="200" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.06 0.255 0.18 0.045" name="CrosshairColorLabel">
+        <Property key="Caption" value="Цвет" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Button" skin="PrimaryButton" position_real="0.28 0.245 0.66 0.055" name="CrosshairColorButton">
+        <Property key="NeedMouse" value="true" />
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairColorButtonText">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextColour" value="0.152941 0.152941 0.0941177" />
+          <Property key="TextAlign" value="Center VCenter" />
+          <Property key="NeedMouse" value="false" />
+        </Widget>
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.06 0.335 0.18 0.045" name="CrosshairShapeLabel">
+        <Property key="Caption" value="Форма" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Button" skin="PrimaryButton" position_real="0.28 0.325 0.66 0.055" name="CrosshairShapeButton">
+        <Property key="NeedMouse" value="true" />
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairShapeButtonText">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextColour" value="0.152941 0.152941 0.0941177" />
+          <Property key="TextAlign" value="Center VCenter" />
+          <Property key="NeedMouse" value="false" />
+        </Widget>
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.415 0.40 0.04" name="CrosshairSizeValue">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairSizeValueText">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.46 0.40 0.04" name="CrosshairSizeSlider">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.515 0.40 0.04" name="CrosshairDotSizeValue">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairDotSizeValueText">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.56 0.40 0.04" name="CrosshairDotSizeSlider">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.615 0.40 0.04" name="CrosshairGapSizeValue">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairGapSizeValueText">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.66 0.40 0.04" name="CrosshairGapSizeSlider">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.54 0.415 0.40 0.04" name="CrosshairElementWidthValue">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairElementWidthValueText">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.54 0.46 0.40 0.04" name="CrosshairElementWidthSlider">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.54 0.515 0.40 0.04" name="CrosshairElementLengthValue">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairElementLengthValueText">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.54 0.56 0.40 0.04" name="CrosshairElementLengthSlider">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.515 0.40 0.04" name="CrosshairElementWidthValueLeft">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairElementWidthValueTextLeft">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.56 0.40 0.04" name="CrosshairElementWidthSliderLeft">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.515 0.40 0.04" name="CrosshairElementLengthValueLeft">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairElementLengthValueTextLeft">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.56 0.40 0.04" name="CrosshairElementLengthSliderLeft">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.54 0.415 0.40 0.04" name="CrosshairDotSizeValueRight">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairDotSizeValueTextRight">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.54 0.46 0.40 0.04" name="CrosshairDotSizeSliderRight">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.54 0.415 0.40 0.04" name="CrosshairGapSizeValueRight">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairGapSizeValueTextRight">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.54 0.46 0.40 0.04" name="CrosshairGapSizeSliderRight">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.515 0.40 0.04" name="CrosshairGapSizeValueLeft">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairGapSizeValueTextLeft">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.56 0.40 0.04" name="CrosshairGapSizeSliderLeft">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.54 0.515 0.40 0.04" name="CrosshairElementWidthValueRightRow2">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairElementWidthValueTextRightRow2">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.54 0.56 0.40 0.04" name="CrosshairElementWidthSliderRightRow2">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.615 0.40 0.04" name="CrosshairElementLengthValueLeftRow3">
+        <Widget type="TextBox" skin="TextBox" position_real="0.02 0 0.96 1" name="CrosshairElementLengthValueTextLeftRow3">
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Center VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.66 0.40 0.04" name="CrosshairElementLengthSliderLeftRow3">
+        <Property key="Range" value="175" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

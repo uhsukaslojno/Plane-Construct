@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundInteractableWide" position_real="0 0 0.52 0.98" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.04 0.84 0.10" name="Title">
+      <Property key="Caption" value="DOPPLER ENGINE" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.16 0.84 0.07" name="LevelValue">
+      <Property key="Caption" value="Engine level: 1 / 5" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Button" skin="PrimaryButton" position_real="0.08 0.25 0.18 0.09" name="LevelLeft">
+      <Property key="Caption" value="&lt;" />
+      <Property key="FontName" value="SM_Button" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Button" skin="PrimaryButton" position_real="0.74 0.25 0.18 0.09" name="LevelRight">
+      <Property key="Caption" value="&gt;" />
+      <Property key="FontName" value="SM_Button" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.10 0.35 0.80 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1">
+        <Property key="Caption" value="Engine power" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.10 0.41 0.80 0.05" name="PowerSlider">
+      <Property key="NeedKey" value="false" />
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.10 0.47 0.80 0.04" name="PowerValue">
+      <Property key="Caption" value="Engine power: 100%" />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.10 0.53 0.80 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1">
+        <Property key="Caption" value="Doppler effect strength" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.10 0.59 0.80 0.05" name="EffectSlider">
+      <Property key="NeedKey" value="false" />
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.10 0.65 0.80 0.04" name="EffectValue">
+      <Property key="Caption" value="Doppler effect: OFF" />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.10 0.78 0.80 0.05" name="Hint">
+      <Property key="Caption" value="Level changes the engine sound." />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings/>
+</MyGUI>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 0.52 0.70" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.12 0.03 0.76 0.10" name="Title">
+      <Property key="Caption" value="Countermeasures Dispenser" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.12 0.14 0.76 0.07" name="ModeValue">
+      <Property key="Caption" value="Dispensing: Flare" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Center VCenter" />
+    </Widget>
+    <Widget type="Button" skin="CheckBoxSkin" position_real="0.12 0.23 0.07 0.07" name="FlareButton">
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.21 0.23 0.26 0.07" name="FlareLabel">
+      <Property key="Caption" value="Flares" />
+      <Property key="FontName" value="SM_TextLabel" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Button" skin="CheckBoxSkin" position_real="0.55 0.23 0.07 0.07" name="ChaffButton">
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.64 0.23 0.24 0.07" name="ChaffLabel">
+      <Property key="Caption" value="Chaff" />
+      <Property key="FontName" value="SM_TextLabel" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Button" skin="CheckBoxSkin" position_real="0.12 0.33 0.07 0.07" name="LimitButton">
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.21 0.33 0.67 0.07" name="LimitLabel">
+      <Property key="Caption" value="Limit countermeasures" />
+      <Property key="FontName" value="SM_TextLabel" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Button" skin="PrimaryButton" position_real="0.68 0.33 0.20 0.07" name="ReloadButton">
+      <Property key="NeedMouse" value="true" />
+      <Property key="Caption" value="Reload" />
+      <Property key="FontName" value="SM_TextLabel" />
+      <Property key="TextAlign" value="Center" />
+      <Property key="Visible" value="false" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.12 0.42 0.76 0.08" name="IntervalBackground">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="IntervalValue">
+        <Property key="Caption" value="Dispensing interval: 60 ticks (1.50 s)" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.12 0.51 0.76 0.10" name="IntervalSlider">
+      <Property key="Range" value="191" />
+      <Property key="NeedKey" value="false" />
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.10 0.63 0.80 0.06" name="HelpText">
+      <Property key="Caption" value="Uncheck the limit for unlimited countermeasures. The slider sets the stock when enabled." />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center Top" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

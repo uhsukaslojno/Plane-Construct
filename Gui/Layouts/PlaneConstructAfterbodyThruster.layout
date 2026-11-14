@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 0.58 0.42" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.06 0.84 0.16" name="Title">
+      <Property key="Caption" value="AFTERBODY THRUSTER" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.19 0.84 0.12">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="MaxPowerValue">
+        <Property key="Caption" value="Maximum power: 100%" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.31 0.84 0.14" name="MaxPowerSlider">
+      <Property key="NeedKey" value="false" />
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.47 0.84 0.12">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="EffectLevelValue">
+        <Property key="Caption" value="Effect and sound level: 1 / 5" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.59 0.84 0.14" name="EffectLevelSlider">
+      <Property key="NeedKey" value="false" />
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="Button" skin="CheckBoxSkin" position_real="0.08 0.75 0.06 0.05" name="NoAfterburnerButton">
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.16 0.74 0.76 0.07" name="NoAfterburnerLabel">
+      <Property key="Caption" value="No afterburner" />
+      <Property key="FontName" value="SM_TextLabel" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.86 0.84 0.10" name="HelpText">
+      <Property key="Caption" value="Actual thrust is controlled by the connected thrust controller." />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center Top" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

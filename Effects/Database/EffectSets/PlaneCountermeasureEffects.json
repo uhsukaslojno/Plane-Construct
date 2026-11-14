@@ -1,0 +1,38 @@
+{
+    "PlaneCountermeasureDeploySound": {
+        "maxInstances": 128,
+        "effectList": [
+            {
+                "type": "audio",
+                "audio": [
+                    "event:/weapons/spudgun/launcher_fire"
+                ],
+                "delay": 0.0
+            }
+        ]
+    },
+    "PlaneCountermeasureFlareSilent": {
+        "maxInstances": 384,
+        "effectList": [
+            {
+                "type": "particle",
+                "name": "explosion_debri_part",
+                "attached": true,
+                "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+                "delay": 0.0
+            }
+        ]
+    },
+    "PlaneCountermeasureChaff": {
+        "maxInstances": 384,
+        "effectList": [
+            {
+                "type": "particle",
+                "name": "p_enviroment_sparks_electricspark_burst_directional01",
+                "attached": true,
+                "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+                "delay": 0.0
+            }
+        ]
+    }
+}

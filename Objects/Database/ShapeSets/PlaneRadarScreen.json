@@ -1,0 +1,318 @@
+{
+    "partList": [
+        {
+            "uuid": "0307d97e-1016-4131-9ca2-7c1d653d3f69",
+            "name": "obj_interactive_plane_radar_screen",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$CONTENT_DATA/Objects/Textures/plane_radar_glass_dif.png",
+                                    "$CONTENT_DATA/Objects/Textures/plane_radar_glass_asg.png",
+                                    "$CONTENT_DATA/Objects/Textures/plane_radar_glass_nor.png"
+                                ],
+                                "material": "Glass"
+                            }
+                        ],
+                        "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarGlass.mesh"
+                    }
+                ]
+            },
+            "hull": {
+                "x": 1,
+                "y": 1,
+                "z": 1,
+                "margin": 0.0,
+                "pointList": [
+                    { "x": 0.2, "y": -1.0, "z": -1.0 },
+                    { "x": 0.2, "y": -1.0, "z": 1.0 },
+                    { "x": 0.2, "y": 1.0, "z": -1.0 },
+                    { "x": 0.2, "y": 1.0, "z": 1.0 },
+                    { "x": -0.2, "y": -1.0, "z": -1.0 },
+                    { "x": -0.2, "y": -1.0, "z": 1.0 },
+                    { "x": -0.2, "y": 1.0, "z": -1.0 },
+                    { "x": -0.2, "y": 1.0, "z": 1.0 }
+                ]
+            },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/PlaneRadarScreenUpdated.lua",
+                "classname": "PlaneRadarScreen"
+            },
+            "qualityLevel": 0,
+            "color": "EEEEEE",
+            "density": 25.0,
+            "ratings": {
+                "durability": 5,
+                "friction": 5,
+                "buoyancy": 7
+            },
+            "flammable": false,
+            "stackSize": 20,
+            "physicsMaterial": "Glass",
+            "rotationSet": "T_-Y",
+            "sticky": "-Y+Y-Z+Z"
+        },
+        {
+            "uuid": "9e1fd450-3e60-4ce8-86dd-e0ee5ced4b77",
+            "name": "obj_interactive_radar_data_screen",
+            "renderable": {
+                "lodList": [
+                    {
+                        "subMeshList": [
+                            {
+                                "textureList": [
+                                    "$CONTENT_DATA/Objects/Textures/plane_radar_glass_dif.png",
+                                    "$CONTENT_DATA/Objects/Textures/plane_radar_glass_asg.png",
+                                    "$CONTENT_DATA/Objects/Textures/plane_radar_glass_nor.png"
+                                ],
+                                "material": "Glass"
+                            }
+                        ],
+                        "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarGlass.mesh"
+                    }
+                ]
+            },
+            "hull": {
+                "x": 1, "y": 1, "z": 1, "margin": 0.0,
+                "pointList": [
+                    { "x": 0.2, "y": -1.0, "z": -1.0 }, { "x": 0.2, "y": -1.0, "z": 1.0 },
+                    { "x": 0.2, "y": 1.0, "z": -1.0 }, { "x": 0.2, "y": 1.0, "z": 1.0 },
+                    { "x": -0.2, "y": -1.0, "z": -1.0 }, { "x": -0.2, "y": -1.0, "z": 1.0 },
+                    { "x": -0.2, "y": 1.0, "z": -1.0 }, { "x": -0.2, "y": 1.0, "z": 1.0 }
+                ]
+            },
+            "scripted": { "filename": "$CONTENT_DATA/Scripts/RadarDataScreen.lua", "classname": "RadarDataScreen" },
+            "qualityLevel": 0, "color": "EEEEEE", "density": 25.0,
+            "ratings": { "durability": 5, "friction": 5, "buoyancy": 7 },
+            "flammable": false, "stackSize": 20, "physicsMaterial": "Glass",
+            "rotationSet": "T_-Y", "sticky": "-Y+Y-Z+Z"
+        },
+        {
+            "uuid": "fe538133-1a7c-4698-8410-377fdd68824a",
+            "name": "plane_radar_screen_marker",
+            "renderable": {
+                "lodList": [
+                    {
+                        "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarDot.obj",
+                        "subMeshList": [
+                            {
+                                "material": "Dif",
+                                "textureList": [
+                                    "$CONTENT_DATA/Objects/Textures/plane_radar_green.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "box": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "color": "00FF00",
+            "physicsMaterial": "Default",
+            "rotationSet": "T_-Z",
+            "showInInventory": false
+        },
+        {
+            "uuid": "6bd47f9b-4b9f-4fe0-8f6a-8acb1a54c9a2",
+            "name": "plane_radar_screen_selected_marker",
+            "renderable": {
+                "lodList": [
+                    {
+                        "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarDot.obj",
+                        "subMeshList": [
+                            {
+                                "material": "Dif",
+                                "textureList": [
+                                    "$CONTENT_DATA/Objects/Textures/plane_radar_yellow.png"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "box": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "color": "FFFF00",
+            "physicsMaterial": "Default",
+            "rotationSet": "T_-Z",
+            "showInInventory": false
+        },
+        {
+            "uuid": "a11b0b89-9ac8-4d07-b4dd-d9b5b5c5fe9d",
+            "name": "plane_radar_crosshair_ordinary_red",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarMarker.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "c0bbc7d6-5393-4714-a863-d2ad0a6525ca",
+            "name": "plane_radar_crosshair_ordinary_black",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarMarker.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "106d6acc-9e00-46dc-b57e-604459f3b6e0",
+            "name": "plane_radar_crosshair_ordinary_blue",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarMarker.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "9e2cbc73-8bf0-4573-858b-beffad24751b",
+"name": "plane_radar_crosshair_ordinary_white",
+"renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarMarker.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] },
+"box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "3f6eb97c-195d-4d76-a5ca-5c624e207e7f",
+            "name": "plane_radar_crosshair_gap_red",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossGap.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "62860bd0-f4d3-4f91-8bf1-efda0aaff4fd",
+            "name": "plane_radar_crosshair_gap_black",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossGap.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "9e3937f2-536e-4783-8960-06cfa4cc4ba1",
+            "name": "plane_radar_crosshair_gap_blue",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossGap.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "177785fe-4e16-4f10-96fa-82d3e8bd46c2",
+"name": "plane_radar_crosshair_gap_white",
+"renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossGap.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] },
+"box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "9952a908-a837-4768-8b0d-9c7c22ff8a5a",
+            "name": "plane_radar_crosshair_dot_red",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossDot.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "2440df24-fc6c-4d22-bd37-8b1c25ad7452",
+            "name": "plane_radar_crosshair_dot_black",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossDot.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "7401f60b-9bd4-438f-962b-e3d35f3bea40",
+            "name": "plane_radar_crosshair_dot_blue",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossDot.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "92253ac4-d732-4b97-aadc-5a368a709523",
+"name": "plane_radar_crosshair_dot_white",
+"renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossDot.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] },
+"box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "d3194a44-74bf-46f3-9103-dba720a1c339",
+            "name": "plane_radar_crosshair_circle_red",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRing.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "4b36db02-2ed3-4c8f-a0dc-f99bc0911b6e",
+            "name": "plane_radar_crosshair_circle_black",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRing.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "686cebb3-0d39-4f80-90a6-0e8282d0e8af",
+            "name": "plane_radar_crosshair_circle_blue",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRing.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "e6afdb8c-cdc3-406a-a43d-6c6dfa08b30a",
+"name": "plane_radar_crosshair_circle_white",
+"renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRing.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] },
+"box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "399212ce-1f40-4699-9698-77e91382598c",
+            "name": "plane_radar_crosshair_arm_horizontal_red",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossArmHorizontal.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "94573184-7b1d-42fa-bd7f-d87c195fa2e4",
+            "name": "plane_radar_crosshair_arm_horizontal_black",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossArmHorizontal.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "8b6b456e-860a-4316-91c9-b9b92ae6333d",
+            "name": "plane_radar_crosshair_arm_horizontal_blue",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossArmHorizontal.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "7ec15779-1cdb-404a-b177-d4a2ee908671",
+            "name": "plane_radar_crosshair_arm_horizontal_white",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossArmHorizontal.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "d0689523-20f2-4a62-a8da-f0b0e41635ba",
+            "name": "plane_radar_crosshair_arm_vertical_red",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossArmVertical.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "45e60fc3-d410-48a1-b2af-4d8b3e0dc193",
+            "name": "plane_radar_crosshair_arm_vertical_black",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossArmVertical.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "e9a3359a-e812-4c9c-a805-d749d92c2594",
+            "name": "plane_radar_crosshair_arm_vertical_blue",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossArmVertical.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        {
+            "uuid": "eeb6e499-b1cf-4c0f-968f-7dad07ef5b06",
+            "name": "plane_radar_crosshair_arm_vertical_white",
+            "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarCrossArmVertical.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] },
+            "box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false
+        },
+        { "uuid": "ead3a9b2-ff8f-4b3c-840c-a16bd3b0673f", "name": "plane_radar_crosshair_ring_25_red", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth25.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "8330f202-7805-4924-9008-63b7562dd590", "name": "plane_radar_crosshair_ring_50_red", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth50.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "146f7533-c3cc-45a9-b216-d3238ffafc43", "name": "plane_radar_crosshair_ring_100_red", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRing.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "5ca11aa2-c39f-4767-95eb-9b0e2b263e4c", "name": "plane_radar_crosshair_ring_150_red", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth150.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "84673146-2165-429a-abc9-64142b38c128", "name": "plane_radar_crosshair_ring_200_red", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth200.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_red.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "FF0000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "621323b2-be0d-4dfb-a689-217349ef5460", "name": "plane_radar_crosshair_ring_25_black", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth25.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "7baf7ded-df7f-492a-8f1d-a8ef3e960db6", "name": "plane_radar_crosshair_ring_50_black", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth50.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "06559dc8-ff5f-4191-9ae5-f90b5b527ada", "name": "plane_radar_crosshair_ring_100_black", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRing.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "4a789df5-2984-4a34-94cf-702eb4996dfc", "name": "plane_radar_crosshair_ring_150_black", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth150.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "e4bd93ae-b7c9-4e56-aa0d-f43bd70751ff", "name": "plane_radar_crosshair_ring_200_black", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth200.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_black.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "000000", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "4d2d4c1d-e2e9-4670-8ffe-1fb855c6637e", "name": "plane_radar_crosshair_ring_25_blue", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth25.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "bcbbad0f-2362-419a-96e3-e2812bd1ca80", "name": "plane_radar_crosshair_ring_50_blue", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth50.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "45932a5a-2063-4c22-acdf-f1f5002f57eb", "name": "plane_radar_crosshair_ring_100_blue", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRing.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "4cd03712-095e-4fc8-97f3-9d781581916f", "name": "plane_radar_crosshair_ring_150_blue", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth150.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "1c1dfaee-eff5-4da6-8a66-f7afa12a5e2c", "name": "plane_radar_crosshair_ring_200_blue", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth200.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_blue.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "0000FF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "81f3fe8a-0246-41fe-9ca0-365ad3ed55b8", "name": "plane_radar_crosshair_ring_25_white", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth25.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "fa795c39-7d79-42f2-8886-c7d4ad7ca5cd", "name": "plane_radar_crosshair_ring_50_white", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth50.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "bbeb950d-2fee-4432-997a-8a7814b6ffab", "name": "plane_radar_crosshair_ring_100_white", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRing.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "038f764b-9554-4c59-aa7a-4f3fb4007dd3", "name": "plane_radar_crosshair_ring_150_white", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth150.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "eab77b10-ad95-4306-a843-de14d314c2f2", "name": "plane_radar_crosshair_ring_200_white", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRingWidth200.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_white.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "FFFFFF", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "4f9f5a19-2b80-4ce7-a2a2-1c2f6d9a1001", "name": "plane_radar_range_ring_1000", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRangeRing1.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_green.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "00FF00", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "4f9f5a19-2b80-4ce7-a2a2-1c2f6d9a1002", "name": "plane_radar_range_ring_2000", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRangeRing2.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_green.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "00FF00", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "4f9f5a19-2b80-4ce7-a2a2-1c2f6d9a1003", "name": "plane_radar_range_ring_3000", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRangeRing3.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_green.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "00FF00", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "4f9f5a19-2b80-4ce7-a2a2-1c2f6d9a1004", "name": "plane_radar_range_ring_4000", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRangeRing4.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_green.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "00FF00", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false },
+        { "uuid": "4f9f5a19-2b80-4ce7-a2a2-1c2f6d9a1005", "name": "plane_radar_range_ring_5000", "renderable": { "lodList": [{ "mesh": "$CONTENT_DATA/Objects/Mesh/PlaneRadarRangeRing5.obj", "subMeshList": [{ "material": "Dif", "textureList": ["$CONTENT_DATA/Objects/Textures/plane_radar_green.png"] }] }] }, "box": { "x": 1, "y": 1, "z": 1 }, "color": "00FF00", "physicsMaterial": "Default", "rotationSet": "T_-Z", "showInInventory": false }
+    ]
+}

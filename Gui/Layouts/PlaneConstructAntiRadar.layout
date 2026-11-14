@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 0.58 0.42" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.06 0.84 0.16" name="Title">
+      <Property key="Caption" value="ANTI-RADAR" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.27 0.84 0.14">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="RadiusValue">
+        <Property key="Caption" value="Jamming radius: 50 blocks" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.43 0.84 0.23" name="RadiusSlider">
+      <Property key="NeedKey" value="false" />
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.73 0.84 0.12" name="HelpText">
+      <Property key="Caption" value="Enabled by default. An active logic signal disables jamming." />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center Top" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

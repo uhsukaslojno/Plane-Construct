@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 0.34 0.76" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.06 0.04 0.88 0.10" name="ConnectedWeaponsTitle">
+      <Property key="Caption" value="connected weapons" />
+      <Property key="FontName" value="SM_Header" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.06 0.04 0.88 0.10" name="NoConnectionsTitle">
+      <Property key="Caption" value="no connections" />
+      <Property key="FontName" value="SM_Header" />
+      <Property key="TextAlign" value="Center" />
+      <Property key="Visible" value="false" />
+    </Widget>
+    <Widget type="Widget" skin="PanelEmpty" position_real="0.04 0.14 0.92 0.10" name="OutputPrevFrame" />
+    <Widget type="Widget" skin="PanelEmpty" position_real="0.04 0.85 0.92 0.09" name="OutputNextFrame" />
+    <Widget type="Widget" skin="PanelEmpty" position_real="0.06 0.25 0.88 0.60" name="OutputListPanel">
+      <Widget type="Widget" skin="PanelEmpty" position_real="0 0.000 1 0.105" name="OutputFrame1">
+        <Widget type="Button" skin="FeatureButton" position_real="0.02 0.12 0.96 0.76" name="OutputButton1">
+          <Widget type="TextBox" skin="TextBox" position_real="0.04 0 0.92 1" name="OutputLabel1"><Property key="FontName" value="SM_Button" /><Property key="TextColour" value="1 1 1" /><Property key="TextAlign" value="Left VCenter" /><Property key="NeedMouse" value="false" /></Widget>
+        </Widget>
+      </Widget>
+      <Widget type="Widget" skin="PanelEmpty" position_real="0 0.120 1 0.105" name="OutputFrame2">
+        <Widget type="Button" skin="FeatureButton" position_real="0.02 0.12 0.96 0.76" name="OutputButton2">
+          <Widget type="TextBox" skin="TextBox" position_real="0.04 0 0.92 1" name="OutputLabel2"><Property key="FontName" value="SM_Button" /><Property key="TextColour" value="1 1 1" /><Property key="TextAlign" value="Left VCenter" /><Property key="NeedMouse" value="false" /></Widget>
+        </Widget>
+      </Widget>
+      <Widget type="Widget" skin="PanelEmpty" position_real="0 0.240 1 0.105" name="OutputFrame3">
+        <Widget type="Button" skin="FeatureButton" position_real="0.02 0.12 0.96 0.76" name="OutputButton3">
+          <Widget type="TextBox" skin="TextBox" position_real="0.04 0 0.92 1" name="OutputLabel3"><Property key="FontName" value="SM_Button" /><Property key="TextColour" value="1 1 1" /><Property key="TextAlign" value="Left VCenter" /><Property key="NeedMouse" value="false" /></Widget>
+        </Widget>
+      </Widget>
+      <Widget type="Widget" skin="PanelEmpty" position_real="0 0.360 1 0.105" name="OutputFrame4">
+        <Widget type="Button" skin="FeatureButton" position_real="0.02 0.12 0.96 0.76" name="OutputButton4">
+          <Widget type="TextBox" skin="TextBox" position_real="0.04 0 0.92 1" name="OutputLabel4"><Property key="FontName" value="SM_Button" /><Property key="TextColour" value="1 1 1" /><Property key="TextAlign" value="Left VCenter" /><Property key="NeedMouse" value="false" /></Widget>
+        </Widget>
+      </Widget>
+      <Widget type="Widget" skin="PanelEmpty" position_real="0 0.480 1 0.105" name="OutputFrame5">
+        <Widget type="Button" skin="FeatureButton" position_real="0.02 0.12 0.96 0.76" name="OutputButton5">
+          <Widget type="TextBox" skin="TextBox" position_real="0.04 0 0.92 1" name="OutputLabel5"><Property key="FontName" value="SM_Button" /><Property key="TextColour" value="1 1 1" /><Property key="TextAlign" value="Left VCenter" /><Property key="NeedMouse" value="false" /></Widget>
+        </Widget>
+      </Widget>
+      <Widget type="Widget" skin="PanelEmpty" position_real="0 0.600 1 0.105" name="OutputFrame6">
+        <Widget type="Button" skin="FeatureButton" position_real="0.02 0.12 0.96 0.76" name="OutputButton6">
+          <Widget type="TextBox" skin="TextBox" position_real="0.04 0 0.92 1" name="OutputLabel6"><Property key="FontName" value="SM_Button" /><Property key="TextColour" value="1 1 1" /><Property key="TextAlign" value="Left VCenter" /><Property key="NeedMouse" value="false" /></Widget>
+        </Widget>
+      </Widget>
+      <Widget type="Widget" skin="PanelEmpty" position_real="0 0.720 1 0.105" name="OutputFrame7">
+        <Widget type="Button" skin="FeatureButton" position_real="0.02 0.12 0.96 0.76" name="OutputButton7">
+          <Widget type="TextBox" skin="TextBox" position_real="0.04 0 0.92 1" name="OutputLabel7"><Property key="FontName" value="SM_Button" /><Property key="TextColour" value="1 1 1" /><Property key="TextAlign" value="Left VCenter" /><Property key="NeedMouse" value="false" /></Widget>
+        </Widget>
+      </Widget>
+      <Widget type="Widget" skin="PanelEmpty" position_real="0 0.840 1 0.105" name="OutputFrame8">
+        <Widget type="Button" skin="FeatureButton" position_real="0.02 0.12 0.96 0.76" name="OutputButton8">
+          <Widget type="TextBox" skin="TextBox" position_real="0.04 0 0.92 1" name="OutputLabel8"><Property key="FontName" value="SM_Button" /><Property key="TextAlign" value="Left VCenter" /><Property key="NeedMouse" value="false" /></Widget>
+        </Widget>
+      </Widget>
+    </Widget>
+    <Widget type="Button" skin="PrimaryButton" position_real="0.06 0.16 0.88 0.07" name="OutputPrevButton"><Widget type="TextBox" skin="TextBox" position_real="0 0 1 1" name="OutputPrevLabel"><Property key="Caption" value="▲  PREVIOUS OUTPUTS  ▲" /><Property key="FontName" value="SM_TextLabel" /><Property key="TextColour" value="0.152941 0.152941 0.0941177" /><Property key="TextAlign" value="Center" /><Property key="NeedMouse" value="false" /></Widget></Widget>
+    <Widget type="Button" skin="PrimaryButton" position_real="0.06 0.87 0.88 0.07" name="OutputNextButton"><Widget type="TextBox" skin="TextBox" position_real="0 0 1 1" name="OutputNextLabel"><Property key="Caption" value="▼  NEXT OUTPUTS  ▼" /><Property key="FontName" value="SM_TextLabel" /><Property key="TextColour" value="0.152941 0.152941 0.0941177" /><Property key="TextAlign" value="Center" /><Property key="NeedMouse" value="false" /></Widget></Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.06 0.95 0.88 0.04" name="HelpText">
+      <Property key="Caption" value="Select an output. A white logic input activates only that connection." />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

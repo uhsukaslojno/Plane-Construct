@@ -1,0 +1,31 @@
+{
+    "partList": [
+        {
+            "uuid": "99b23ad3-42a8-45fb-8156-9140430b7377",
+            "name": "obj_interactive_player_presence",
+            "renderable": "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+            "box": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/PlayerPresence.lua",
+                "classname": "PlayerPresence"
+            },
+            "qualityLevel": 0,
+            "color": "2f80ed",
+            "ratings": {
+                "buoyancy": 2,
+                "density": 2,
+                "durability": 4,
+                "friction": 5
+            },
+            "flammable": false,
+            "physicsMaterial": "Electronics",
+            "rotationSet": "PropYZ",
+            "stackSize": 10,
+            "sticky": "+Y-Y-Z+X-X"
+        }
+    ]
+}

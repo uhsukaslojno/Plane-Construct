@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="PanelEmpty" position_real="0 0 0.36 0.72" name="BackPanel">
+      <Property key="NeedKey" value="false" />
+      <Property key="NeedMouse" value="true" />
+      <Property key="InheritsAlpha" value="false" />
+
+      <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 1 0.57" name="MainBackground">
+        <Property key="NeedMouse" value="false" />
+      </Widget>
+      <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 1 0.68" name="TrackingBackground">
+        <Property key="NeedMouse" value="false" />
+        <Property key="Visible" value="false" />
+      </Widget>
+      <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 1 0.98" name="PredictionBackground">
+        <Property key="NeedMouse" value="false" />
+        <Property key="Visible" value="false" />
+      </Widget>
+      <Widget type="Widget" skin="BackgroundLiftImport" position_real="0.25 0.37 0.50 0.20" name="BombCalculatorBackground">
+        <Property key="NeedMouse" value="false" />
+        <Property key="Visible" value="false" />
+      </Widget>
+
+      <Widget type="Widget" skin="PanelEmpty" position_real="0 0 1 1" name="MainControls">
+
+      <Widget type="TextBox" skin="TextBox" position_real="0.14 0.025 0.72 0.05" name="Title">
+        <Property key="Caption" value="Turret Controller" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.095 0.40 0.04" name="HorizontalBackground">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="HorizontalValue">
+          <Property key="Caption" value="Horizontal limit: 360 degrees" />
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.14 0.40 0.045" name="HorizontalSlider">
+        <Property key="Range" value="360" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.54 0.095 0.40 0.04" name="VerticalBackground">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="VerticalValue">
+          <Property key="Caption" value="Vertical limit: 90 degrees" />
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.54 0.14 0.40 0.045" name="VerticalSlider">
+        <Property key="Range" value="90" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.195 0.40 0.04" name="YawRotationSpeedBackground">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="YawRotationSpeedValue">
+          <Property key="Caption" value="Yaw speed: 30 deg/s" />
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.24 0.40 0.045" name="YawRotationSpeedSlider">
+        <Property key="Range" value="300" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.54 0.195 0.40 0.04" name="PitchRotationSpeedBackground">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="PitchRotationSpeedValue">
+          <Property key="Caption" value="Pitch speed: 30 deg/s" />
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.54 0.24 0.40 0.045" name="PitchRotationSpeedSlider">
+        <Property key="Range" value="300" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.295 0.40 0.04" name="ForceBackground">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="ForceValue">
+          <Property key="Caption" value="Motor force: 50%" />
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.34 0.40 0.045" name="ForceSlider">
+        <Property key="Range" value="100" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.54 0.295 0.40 0.04" name="PitchOffsetBackground">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="PitchOffsetValue">
+          <Property key="Caption" value="Pitch height: 0 blocks" />
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.54 0.34 0.40 0.045" name="PitchOffsetSlider">
+        <Property key="Range" value="101" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+
+      <!-- Predict target and Use PoV are intentionally on swapped rows. -->
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.06 0.415 0.035 0.035" name="TrackPlayerButton">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.11 0.415 0.31 0.035" name="TrackPlayerLabel">
+        <Property key="Caption" value="Track target" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.54 0.415 0.035 0.035" name="PredictTargetButton">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.59 0.415 0.35 0.035" name="PredictTargetLabel">
+        <Property key="Caption" value="Predict target" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.06 0.47 0.035 0.035" name="TrackingPovButton">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.11 0.47 0.31 0.035" name="TrackingPovLabel">
+        <Property key="Caption" value="Use PoV" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.54 0.47 0.035 0.035" name="HoldBearingsOnSeatExitButton">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.59 0.47 0.35 0.035" name="HoldBearingsOnSeatExitLabel">
+        <Property key="Caption" value="Hold bearings on exit" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+
+      <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.06 0.535 0.40 0.04" name="TrackingFovValue">
+        <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="TrackingFovValueText">
+          <Property key="Caption" value="Tracking PoV: 60 degrees" />
+          <Property key="FontName" value="SM_TextSmall" />
+          <Property key="TextAlign" value="Left VCenter" />
+        </Widget>
+      </Widget>
+      <Widget type="Window" skin="PanelEmpty" position_real="0.06 0.58 0.40 0.045" name="TrackingFovSlider">
+        <Property key="Range" value="171" />
+        <Property key="NeedKey" value="false" />
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+
+      <Widget type="TextBox" skin="TextBox" position_real="0.54 0.535 0.10 0.04" name="TargetPlayerLabel">
+        <Property key="Caption" value="Target:" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Widget" skin="PanelEmpty" position_real="0.64 0.532 0.30 0.05" name="TargetPlayerDropDown" />
+
+      <Widget type="TextBox" skin="TextBox" position_real="0.06 0.70 0.40 0.03" name="ProjectileSpeedLabel">
+        <Property key="Caption" value="Projectile speed (m/s)" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Widget" skin="SearchBarBackground" position_real="0.06 0.73 0.40 0.05" name="ProjectileSpeedBackground">
+        <Widget type="EditBox" skin="EditBoxEmpty" position_real="0.03 0.08 0.94 0.84" name="ProjectileSpeedInput">
+          <Property key="MaxTextLength" value="12" />
+          <Property key="TextAlign" value="Left VCenter" />
+          <Property key="FontName" value="SM_TextSmall" />
+        </Widget>
+      </Widget>
+
+      <Widget type="TextBox" skin="TextBox" position_real="0.06 0.84 0.40 0.03" name="ProjectileGravityLabel">
+        <Property key="Caption" value="Gravity (m/s^2)" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Widget" skin="SearchBarBackground" position_real="0.06 0.87 0.40 0.05" name="ProjectileGravityBackground">
+        <Widget type="EditBox" skin="EditBoxEmpty" position_real="0.03 0.08 0.94 0.84" name="ProjectileGravityInput">
+          <Property key="MaxTextLength" value="12" />
+          <Property key="TextAlign" value="Left VCenter" />
+          <Property key="FontName" value="SM_TextSmall" />
+        </Widget>
+      </Widget>
+
+      </Widget>
+
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.54 0.415 0.035 0.035" name="BombCalculatorButton">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.59 0.415 0.35 0.035" name="BombCalculatorLabel">
+        <Property key="Caption" value="Bomb calculator" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.30 0.415 0.035 0.035" name="BombCalculatorModeButton">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.35 0.415 0.35 0.035" name="BombCalculatorModeLabel">
+        <Property key="Caption" value="Bomb calculator" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+      <Widget type="Button" skin="CheckBoxSkin" position_real="0.30 0.47 0.035 0.035" name="FinnedBombsButton">
+        <Property key="NeedMouse" value="true" />
+      </Widget>
+      <Widget type="TextBox" skin="TextBox" position_real="0.35 0.47 0.35 0.035" name="FinnedBombsLabel">
+        <Property key="Caption" value="Finned bombs" />
+        <Property key="FontName" value="SM_TextSmall" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

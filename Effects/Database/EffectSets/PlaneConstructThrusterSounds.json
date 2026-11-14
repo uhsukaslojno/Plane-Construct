@@ -1,0 +1,37 @@
+{
+    "PlaneConstruct - Thruster Sound 1": {
+        "maxInstances": 64,
+        "parameterList": { "power": 0.0, "velocity": 0.0 },
+        "effectList": [
+            { "type": "audio", "audio": ["event:/vehicle/thrusters/thruster01"], "offset": { "x": 0.0, "y": 0.0, "z": 0.0 }, "parameters": ["velocity", "power"], "delay": 0.0 }
+        ]
+    },
+    "PlaneConstruct - Thruster Sound 2": {
+        "maxInstances": 64,
+        "parameterList": { "power": 0.0, "velocity": 0.0 },
+        "effectList": [
+            { "type": "audio", "audio": ["event:/vehicle/thrusters/thruster02"], "offset": { "x": 0.0, "y": 0.0, "z": 0.0 }, "parameters": ["velocity", "power"], "delay": 0.0 }
+        ]
+    },
+    "PlaneConstruct - Thruster Sound 3": {
+        "maxInstances": 64,
+        "parameterList": { "power": 0.0, "velocity": 0.0 },
+        "effectList": [
+            { "type": "audio", "audio": ["event:/vehicle/thrusters/thruster03"], "offset": { "x": 0.0, "y": 0.0, "z": 0.0 }, "parameters": ["velocity", "power"], "delay": 0.0 }
+        ]
+    },
+    "PlaneConstruct - Thruster Sound 4": {
+        "maxInstances": 64,
+        "parameterList": { "power": 0.0, "velocity": 0.0 },
+        "effectList": [
+            { "type": "audio", "audio": ["event:/vehicle/thrusters/thruster04"], "offset": { "x": 0.0, "y": 0.0, "z": 0.0 }, "parameters": ["velocity", "power"], "delay": 0.0 }
+        ]
+    },
+    "PlaneConstruct - Thruster Sound 5": {
+        "maxInstances": 64,
+        "parameterList": { "power": 0.0, "velocity": 0.0 },
+        "effectList": [
+            { "type": "audio", "audio": ["event:/vehicle/thrusters/thruster05"], "offset": { "x": 0.0, "y": 0.0, "z": 0.0 }, "parameters": ["velocity", "power"], "delay": 0.0 }
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "PlaneRadarDotGreen": {
+        "effectList": [
+            {
+                "type": "particle",
+                "name": "PlaneRadarDotGreen",
+                "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+                "delay": 0.0
+            }
+        ]
+    },
+    "PlaneRadarDotYellow": {
+        "effectList": [
+            {
+                "type": "particle",
+                "name": "PlaneRadarDotYellow",
+                "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+                "delay": 0.0
+            }
+        ]
+    }
+}

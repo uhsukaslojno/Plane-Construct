@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 0.78 0.94" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.25 0.02 0.50 0.075" name="Title">
+      <Property key="Caption" value="Plane Controller" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.04 0.12 0.34 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="AngleValue">
+        <Property key="Caption" value="Degrees limit: 25" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.04 0.18 0.34 0.10" name="AngleSlider">
+      <Property key="Range" value="90" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.04 0.32 0.34 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="SensitivityValue">
+        <Property key="Caption" value="Sensitivity: 3" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.04 0.38 0.34 0.10" name="SensitivitySlider">
+      <Property key="Range" value="10" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.62 0.12 0.34 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="RollOffsetValue">
+        <Property key="Caption" value="Roll offset: +0 degrees" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.62 0.18 0.34 0.10" name="RollOffsetSlider">
+      <Property key="Range" value="181" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.62 0.32 0.34 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="PitchOffsetValue">
+        <Property key="Caption" value="Pitch offset: +0 degrees" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.62 0.38 0.34 0.10" name="PitchOffsetSlider">
+      <Property key="Range" value="181" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.62 0.52 0.34 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="YawOffsetValue">
+        <Property key="Caption" value="Yaw offset: +0 degrees" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.62 0.58 0.34 0.10" name="YawOffsetSlider">
+      <Property key="Range" value="181" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.405 0.20 0.19 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="DampingValue">
+        <Property key="Caption" value="Damping: 0" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.445 0.26 0.11 0.22" name="DampingSlider">
+      <Property key="Range" value="21" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.385 0.12 0.23 0.04" name="DampingHint">
+      <Property key="Caption" value="Use high levels only for fast aircrafts" />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextColour" value="1 0.803922 0.247059" />
+      <Property key="TextAlign" value="Center VCenter" />
+    </Widget>
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.405 0.52 0.19 0.06" name="TrackingFovValue">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="TrackingFovValueText">
+        <Property key="Caption" value="PoV: 60 degrees" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.405 0.58 0.19 0.10" name="TrackingFovSlider">
+      <Property key="Range" value="171" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.04 0.52 0.34 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="WhiteBearingAngleValue">
+        <Property key="Caption" value="Flaps angle: 90 degrees" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.04 0.58 0.34 0.10" name="WhiteBearingAngleSlider">
+      <Property key="Range" value="181" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+
+    <Widget type="Button" skin="CheckBoxSkin" position_real="0.04 0.70 0.05 0.05" name="TrackClosestPlayerButton">
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.11 0.70 0.35 0.05" name="TrackPlayerLabel">
+      <Property key="Caption" value="Track player" />
+      <Property key="FontName" value="SM_TextLabel" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Button" skin="CheckBoxSkin" position_real="0.405 0.70 0.05 0.05" name="TrackingPovButton">
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.475 0.70 0.12 0.05" name="TrackingPovLabel">
+      <Property key="Caption" value="Use PoV" />
+      <Property key="FontName" value="SM_TextLabel" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.04 0.77 0.12 0.04" name="TargetPlayerLabel">
+      <Property key="Caption" value="Target:" />
+      <Property key="FontName" value="SM_TextLabel" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Widget" skin="PanelEmpty" position_real="0.17 0.755 0.28 0.065" name="TargetPlayerDropDown" />
+    <Widget type="Button" skin="CheckBoxSkin" position_real="0.04 0.86 0.05 0.05" name="PredictTargetButton">
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.11 0.86 0.28 0.05" name="PredictTargetLabel">
+      <Property key="Caption" value="Predict target" />
+      <Property key="FontName" value="SM_TextLabel" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+
+    <Widget type="Button" skin="CheckBoxSkin" position_real="0.62 0.70 0.05 0.05" name="DistanceActivationButton">
+      <Property key="NeedMouse" value="true" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.69 0.70 0.27 0.05" name="DistanceActivationLabel">
+      <Property key="Caption" value="Distance activation" />
+      <Property key="FontName" value="SM_TextLabel" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.62 0.77 0.34 0.06" name="DistanceActivationValue">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="DistanceActivationValueText">
+        <Property key="Caption" value="Distance activation: 50 blocks" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.62 0.83 0.34 0.10" name="DistanceActivationSlider">
+      <Property key="Range" value="201" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

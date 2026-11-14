@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 0.56 0.38" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.15 0.04 0.70 0.15" name="Title">
+      <Property key="Caption" value="Fire Detector Gate" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.24 0.84 0.14">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="RangeValue">
+        <Property key="Caption" value="Detection radius: 10 blocks" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.39 0.84 0.23" name="RangeSlider">
+      <Property key="NeedKey" value="false" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.69 0.84 0.19" name="HelpText">
+      <Property key="Caption" value="Outputs logic while a burning block is within range." />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center Top" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

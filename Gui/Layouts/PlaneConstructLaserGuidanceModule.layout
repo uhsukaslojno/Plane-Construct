@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 0.58 0.44" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.05 0.04 0.90 0.13" name="Title">
+      <Property key="Caption" value="LASER GUIDANCE MODULE" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.10 0.20 0.28 0.08" name="CodeLabel">
+      <Property key="Caption" value="Code" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Widget" skin="SearchBarBackground" position_real="0.40 0.19 0.50 0.10" name="CodeField">
+      <Widget type="EditBox" skin="EditBoxEmpty" position_real="0.03 0.06 0.94 0.88" name="CodeInput">
+        <Property key="MaxTextLength" value="12" />
+        <Property key="FontName" value="SM_Button" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.10 0.33 0.28 0.08" name="PasswordLabel">
+      <Property key="Caption" value="Password" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Left VCenter" />
+    </Widget>
+    <Widget type="Widget" skin="SearchBarBackground" position_real="0.40 0.32 0.50 0.10" name="PasswordField">
+      <Widget type="EditBox" skin="EditBoxEmpty" position_real="0.03 0.06 0.94 0.88" name="PasswordInput">
+        <Property key="MaxTextLength" value="24" />
+        <Property key="FontName" value="SM_Button" />
+        <Property key="TextAlign" value="Center" />
+      </Widget>
+    </Widget>
+    <Widget type="Button" skin="PrimaryButton" position_real="0.10 0.62 0.80 0.15" align="Center Top" name="SaveButton">
+      <Property key="Caption" value="Save" />
+      <Property key="FontName" value="SM_Button" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.82 0.84 0.10" name="HelpText">
+      <Property key="Caption" value="A logic signal enables laser-only guidance for Plane or Turret Controller." />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center Top" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

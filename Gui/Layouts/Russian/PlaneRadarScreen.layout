@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyGUI type="Layout" version="3.2.0">
+  <Widget type="Widget" skin="BackgroundLiftImport" position_real="0 0 0.66 0.92" name="BackPanel">
+    <Property key="NeedKey" value="false" />
+    <Property key="NeedMouse" value="true" />
+    <Property key="InheritsAlpha" value="false" />
+    <Widget type="TextBox" skin="TextBox" position_real="0.12 0.02 0.76 0.08" name="Title">
+      <Property key="Caption" value="ЭКРАН РАДАРА" />
+      <Property key="FontName" value="SM_HeaderLarge_Medium" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.11 0.84 0.06" name="FovValue">
+      <Property key="Caption" value="Поле зрения: 60 градусов" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.18 0.84 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="FovLabel">
+        <Property key="Caption" value="Поле зрения обнаружения" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.25 0.84 0.06" name="FovSlider">
+      <Property key="Range" value="180" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.33 0.84 0.06" name="MinimumDistanceValue">
+      <Property key="Caption" value="Минимальная дальность: 0 блоков" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.40 0.84 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="MinimumDistanceLabel">
+        <Property key="Caption" value="Минимальная дальность обнаружения" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.47 0.84 0.06" name="MinimumDistanceSlider">
+      <Property key="Range" value="100" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.55 0.84 0.06" name="DistanceValue">
+      <Property key="Caption" value="Максимальная дальность: 1000 блоков" />
+      <Property key="FontName" value="SM_ItemTitle" />
+      <Property key="TextAlign" value="Center" />
+    </Widget>
+    <Widget type="Widget" skin="LargeHorizontalSliderBackground" position_real="0.08 0.62 0.84 0.06">
+      <Widget type="TextBox" skin="TextBox" position_real="0.03 0 0.94 1" name="DistanceLabel">
+        <Property key="Caption" value="Максимальная дальность обнаружения" />
+        <Property key="FontName" value="SM_ItemTitle" />
+        <Property key="TextAlign" value="Left VCenter" />
+      </Widget>
+    </Widget>
+    <Widget type="Window" skin="PanelEmpty" position_real="0.08 0.69 0.84 0.06" name="DistanceSlider">
+      <Property key="Range" value="5000" />
+      <Property key="NeedKey" value="false" />
+    </Widget>
+    <Widget type="TextBox" skin="TextBox" position_real="0.08 0.79 0.84 0.08" name="HelpText">
+      <Property key="Caption" value="Зелёные метки показывают игроков перед прозрачной панелью." />
+      <Property key="FontName" value="SM_TextSmall" />
+      <Property key="TextAlign" value="Center Top" />
+    </Widget>
+  </Widget>
+  <CodeGeneratorSettings />
+</MyGUI>

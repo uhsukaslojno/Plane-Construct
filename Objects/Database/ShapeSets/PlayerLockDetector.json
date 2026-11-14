@@ -1,0 +1,31 @@
+{
+    "partList": [
+        {
+            "uuid": "939a5048-b7d9-4c01-96bc-22337f4d9e08",
+            "name": "obj_interactive_player_lock_detector",
+            "renderable": "$GAME_DATA/Objects/Renderable/Interactive/obj_interactive_logicgate.rend",
+            "box": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            },
+            "scripted": {
+                "filename": "$CONTENT_DATA/Scripts/PlayerLockDetector.lua",
+                "classname": "PlayerLockDetector"
+            },
+            "qualityLevel": 0,
+            "color": "FFFFFF",
+            "ratings": {
+                "buoyancy": 2,
+                "density": 2,
+                "durability": 4,
+                "friction": 5
+            },
+            "flammable": false,
+            "physicsMaterial": "Electronics",
+            "rotationSet": "PropYZ",
+            "stackSize": 10,
+            "sticky": "+Y-Y-Z+X-X"
+        }
+    ]
+}

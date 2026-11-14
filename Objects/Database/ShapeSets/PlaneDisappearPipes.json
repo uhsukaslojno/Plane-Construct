@@ -1,0 +1,148 @@
+{
+    "partList":  [
+                     {
+                         "uuid":  "304132e9-4b11-4052-9d96-50dcbc96578d",
+                         "name":  "obj_plane_construct_disappearing_small_2way_pipe",
+                         "renderable":  "$GAME_DATA/Objects/Renderable/Fittings/obj_fittings_small_2way_pipe.rend",
+                         "color":  "7A7A7A",
+                         "hull":  {
+                                      "col":  "$GAME_DATA/Objects/Collision/small_2way_pipe.obj",
+                                      "margin":  0.25,
+                                      "x":  1,
+                                      "y":  1,
+                                      "z":  1
+                                  },
+                         "previewRotation":  [
+                                                 0,
+                                                 0,
+                                                 -1,
+                                                 1,
+                                                 0,
+                                                 0,
+                                                 0,
+                                                 1,
+                                                 0
+                                             ],
+                         "rotationSet":  "PropXmm",
+                         "sticky":  "-X+X",
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/PlaneConstructDisappearPipes.lua",
+                                          "classname":  "PlaneConstructDisappearPipe"
+                                      },
+                         "ratings":  {
+                                         "buoyancy":  3,
+                                         "density":  2,
+                                         "durability":  4,
+                                         "friction":  3
+                                     },
+                         "flammable":  true,
+                         "stackSize":  10,
+                         "physicsMaterial":  "Metal"
+                     },
+                     {
+                         "uuid":  "db4c73e2-f54b-4bcd-b216-b2cb8eae61c8",
+                         "name":  "obj_plane_construct_disappearing_small_3way_pipe",
+                         "renderable":  "$GAME_DATA/Objects/Renderable/Fittings/obj_fittings_small_3way_pipe.rend",
+                         "color":  "7A7A7A",
+                         "hull":  {
+                                      "col":  "$GAME_DATA/Objects/Collision/small_3way_pipe.obj",
+                                      "margin":  0.25,
+                                      "x":  1,
+                                      "y":  1,
+                                      "z":  1
+                                  },
+                         "previewRotation":  [
+                                                 0,
+                                                 0,
+                                                 -1,
+                                                 1,
+                                                 0,
+                                                 0,
+                                                 0,
+                                                 1,
+                                                 0
+                                             ],
+                         "rotationSet":  "PropXNegZm",
+                         "sticky":  "-X+X+Z",
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/PlaneConstructDisappearPipes.lua",
+                                          "classname":  "PlaneConstructDisappearPipe"
+                                      },
+                         "ratings":  {
+                                         "buoyancy":  3,
+                                         "density":  2,
+                                         "durability":  4,
+                                         "friction":  3
+                                     },
+                         "flammable":  true,
+                         "stackSize":  10,
+                         "physicsMaterial":  "Metal"
+                     },
+                     {
+                         "uuid":  "0c24527c-ab89-49ee-80b0-5275bd55bc7a",
+                         "name":  "obj_plane_construct_disappearing_small_2wayb_pipe",
+                         "renderable":  "$GAME_DATA/Objects/Renderable/Fittings/obj_fittings_small_2wayb_pipe.rend",
+                         "color":  "7A7A7A",
+                         "hull":  {
+                                      "col":  "$GAME_DATA/Objects/Collision/small_2wayb_pipe.obj",
+                                      "margin":  0.25,
+                                      "x":  1,
+                                      "y":  1,
+                                      "z":  1
+                                  },
+                         "previewRotation":  [
+                                                 0,
+                                                 0,
+                                                 1,
+                                                 1,
+                                                 0,
+                                                 0,
+                                                 0,
+                                                 1,
+                                                 0
+                                             ],
+                         "rotationSet":  "PropY",
+                         "sticky":  "+X-Y",
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/PlaneConstructDisappearPipes.lua",
+                                          "classname":  "PlaneConstructDisappearPipe"
+                                      },
+                         "ratings":  {
+                                         "buoyancy":  3,
+                                         "density":  2,
+                                         "durability":  4,
+                                         "friction":  3
+                                     },
+                         "flammable":  true,
+                         "stackSize":  10,
+                         "physicsMaterial":  "Metal"
+                     },
+                     {
+                         "uuid":  "4c9c248a-6e25-43f9-a19f-d7b5bbc537dc",
+                         "name":  "obj_plane_construct_disappearing_small_6way_pipe",
+                         "renderable":  "$GAME_DATA/Objects/Renderable/Fittings/obj_fittings_small_6way_pipe.rend",
+                         "color":  "7A7A7A",
+                         "hull":  {
+                                      "col":  "$GAME_DATA/Objects/Collision/small_6way_pipe.obj",
+                                      "margin":  0.25,
+                                      "x":  1,
+                                      "y":  1,
+                                      "z":  1
+                                  },
+                         "rotationSet":  "PropXmm",
+                         "scripted":  {
+                                          "filename":  "$CONTENT_DATA/Scripts/PlaneConstructDisappearPipes.lua",
+                                          "classname":  "PlaneConstructDisappearPipe"
+                                      },
+                         "ratings":  {
+                                         "buoyancy":  3,
+                                         "density":  2,
+                                         "durability":  4,
+                                         "friction":  3
+                                     },
+                         "flammable":  true,
+                         "stackSize":  10,
+                         "physicsMaterial":  "Metal"
+                     }
+                 ]
+}
