@@ -27,6 +27,8 @@ stallRecoveryFullAngle = math.rad(0.1) -- practically level flight restores 100%
 stallLiftFactor = 0.03 -- lift retained at a fully stalled angle
 stallRecoveryStartFactor = 0.05 -- lift at the start of the recovery curve
 stallRecoveryMidFactor = 0.30 -- lift at 10 degrees during recovery
+stallReferenceWingLoading = 100.0 -- reference creation mass per square meter of wing
+stallMaxLightweightAngleBonus = math.rad(5) -- extra AoA margin for low wing loading
 gefv = sm.vec3.new(0, 0, -groundEffectHeight)
 
 local STALL_MODE_CAN = 1
@@ -130,10 +132,43 @@ local function applyTransitionLiftVariation(self, speed, dt, lift)
 	return lift
 end
 
+local function getStallAngleOffset(self, group, entry)
+	-- Keep the area in the shared creation registry so the calculation sees
+	-- all wing elements, not only the wing currently being updated.
+	entry.area = self.area or 0
+	local totalWingArea = 0
+	for _, wing in pairs(group) do
+		totalWingArea = totalWingArea + (wing.area or 0)
+	end
+	if totalWingArea <= 0 then
+		return 0
+	end
+
+	local body = self.shape:getBody()
+	local totalMass = 0
+	for _, creationBody in pairs(body:getCreationBodies()) do
+		totalMass = totalMass + creationBody:getMass()
+	end
+	if totalMass <= 0 then
+		totalMass = body:getMass()
+	end
+
+	local wingLoading = totalMass / totalWingArea
+	-- Only low wing loading gets an additional margin. This prevents the
+	-- correction from making heavier aircraft stall earlier than before.
+	local lightweightFactor = math.max(0, math.min(1,
+		(stallReferenceWingLoading - wingLoading) / stallReferenceWingLoading))
+	return stallMaxLightweightAngleBonus * lightweightFactor
+end
+
 local function applyStall(self, totalSpeed, lift)
 	local mode = normalizeStallMode(self.stallMode)
 	self.stallMode = mode
 	local stallFactor = 1
+	local group, entry = getWingRegistryEntry(self)
+	local stallAngleOffset = getStallAngleOffset(self, group, entry)
+	local effectiveStallEntryAngle = stallEntryAngle + stallAngleOffset
+	local effectiveRecoveryMidAngle = stallRecoveryMidAngle + stallAngleOffset
 
 	-- Only the first mode is allowed to initiate a stall from its own
 	-- angle of attack. The third mode can only follow another wing.
@@ -142,23 +177,23 @@ local function applyStall(self, totalSpeed, lift)
 		normalRatio = math.min(1, math.max(0, normalRatio))
 		local angleOfAttack = math.asin(normalRatio)
 
-		if not self.stalled and angleOfAttack > stallEntryAngle then
+		if not self.stalled and angleOfAttack > effectiveStallEntryAngle then
 			self.stalled = true
 		end
 
 		if self.stalled then
 			if angleOfAttack <= stallRecoveryFullAngle then
 				self.stalled = false
-			elseif angleOfAttack > stallEntryAngle then
+			elseif angleOfAttack > effectiveStallEntryAngle then
 				stallFactor = stallLiftFactor
-			elseif angleOfAttack > stallRecoveryMidAngle then
-				local progress = (stallEntryAngle - angleOfAttack) /
-					(stallEntryAngle - stallRecoveryMidAngle)
+			elseif angleOfAttack > effectiveRecoveryMidAngle then
+				local progress = (effectiveStallEntryAngle - angleOfAttack) /
+					(effectiveStallEntryAngle - effectiveRecoveryMidAngle)
 				stallFactor = stallRecoveryStartFactor +
 					(stallRecoveryMidFactor - stallRecoveryStartFactor) * progress
 			else
-				local progress = (stallRecoveryMidAngle - angleOfAttack) /
-					(stallRecoveryMidAngle - stallRecoveryFullAngle)
+				local progress = (effectiveRecoveryMidAngle - angleOfAttack) /
+					(effectiveRecoveryMidAngle - stallRecoveryFullAngle)
 				stallFactor = stallRecoveryMidFactor +
 					(1 - stallRecoveryMidFactor) * progress
 			end
@@ -167,7 +202,6 @@ local function applyStall(self, totalSpeed, lift)
 		self.stalled = false
 	end
 
-	local group, entry = getWingRegistryEntry(self)
 	entry.mode = mode
 	entry.stalled = mode == STALL_MODE_CAN and self.stalled == true
 	entry.stallFactor = entry.stalled and stallFactor or 1
