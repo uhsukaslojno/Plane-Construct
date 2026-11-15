@@ -149,5 +149,6 @@
   "filter_plane_controller": "Plane Controller",
   "filter_player_presence": "Player Presence",
   "filter_constructions": "Constructions (experimental)",
-  "filter_ir": "Active engines / boosters / lights (IR)"
+  "filter_ir": "Active engines / boosters / lights (IR)",
+  "wing_follow_stall": "Follows stall"
 }

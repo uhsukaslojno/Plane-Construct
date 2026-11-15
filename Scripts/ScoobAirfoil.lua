@@ -26,6 +26,53 @@ stallExitAngle = math.rad(10) -- recover only after dropping below this angle
 stallLiftFactor = 0.05 -- lift retained while stalled
 gefv = sm.vec3.new(0, 0, -groundEffectHeight)
 
+local STALL_MODE_CAN = 1
+local STALL_MODE_CANNOT = 2
+local STALL_MODE_FOLLOW = 3
+local WING_STALL_REGISTRY_NAME = "PlaneConstructWingStallRegistry"
+_G[WING_STALL_REGISTRY_NAME] = _G[WING_STALL_REGISTRY_NAME] or {}
+
+local function normalizeStallMode(mode)
+	mode = tonumber(mode)
+	if mode == nil then return STALL_MODE_CAN end
+	return math.max(STALL_MODE_CAN, math.min(STALL_MODE_FOLLOW, math.floor(mode)))
+end
+
+local function getWingCreationKey(self)
+	local body = self.shape:getBody()
+	local lowestBodyId = body:getId()
+	for _, creationBody in pairs(body:getCreationBodies()) do
+		lowestBodyId = math.min(lowestBodyId, creationBody:getId())
+	end
+	return tostring(lowestBodyId)
+end
+
+local function getWingRegistryEntry(self)
+	local registry = _G[WING_STALL_REGISTRY_NAME]
+	local creationKey = getWingCreationKey(self)
+	local shapeId = tostring(self.shape:getId())
+
+	if self.wingStallCreationKey ~= creationKey then
+		if self.wingStallCreationKey ~= nil and registry[self.wingStallCreationKey] ~= nil then
+			registry[self.wingStallCreationKey][shapeId] = nil
+		end
+		self.wingStallCreationKey = creationKey
+	end
+
+	registry[creationKey] = registry[creationKey] or {}
+	registry[creationKey][shapeId] = registry[creationKey][shapeId] or {}
+	return registry[creationKey], registry[creationKey][shapeId]
+end
+
+local function removeWingFromStallRegistry(self)
+	local registry = _G[WING_STALL_REGISTRY_NAME]
+	local creationKey = self.wingStallCreationKey
+	if creationKey ~= nil and registry[creationKey] ~= nil then
+		registry[creationKey][tostring(self.shape:getId())] = nil
+	end
+	self.wingStallCreationKey = nil
+end
+
 function sign(num)
 	if num < 0 then
 		return -1
@@ -81,32 +128,40 @@ local function applyTransitionLiftVariation(self, speed, dt, lift)
 end
 
 local function applyStall(self, totalSpeed, lift)
-	if self.canStall == false then
-		self.stalled = false
-		return lift
-	end
+	local mode = normalizeStallMode(self.stallMode)
+	self.stallMode = mode
 
-	if totalSpeed <= 0.001 then
-		self.stalled = false
-		return lift
-	end
+	-- Only the first mode is allowed to initiate a stall from its own
+	-- angle of attack. The third mode can only follow another wing.
+	if mode == STALL_MODE_CAN and totalSpeed > 0.001 then
+		local normalRatio = math.abs(self.normalVel) / totalSpeed
+		normalRatio = math.min(1, math.max(0, normalRatio))
+		local angleOfAttack = math.asin(normalRatio)
 
-	-- normalVel is already measured against the wing's lift normal. Its
-	-- relation to total speed gives sin(angle of attack), without introducing
-	-- another world/local-axis rotation calculation.
-	local normalRatio = math.abs(self.normalVel) / totalSpeed
-	normalRatio = math.min(1, math.max(0, normalRatio))
-	local angleOfAttack = math.asin(normalRatio)
-
-	if self.stalled then
-		if angleOfAttack < stallExitAngle then
-			self.stalled = false
+		if self.stalled then
+			if angleOfAttack < stallExitAngle then
+				self.stalled = false
+			end
+		elseif angleOfAttack > stallEntryAngle then
+			self.stalled = true
 		end
-	elseif angleOfAttack > stallEntryAngle then
-		self.stalled = true
+	else
+		self.stalled = false
 	end
 
-	if self.stalled then
+	local group, entry = getWingRegistryEntry(self)
+	entry.mode = mode
+	entry.stalled = mode == STALL_MODE_CAN and self.stalled == true
+
+	local anotherWingIsStalled = false
+	for _, wing in pairs(group) do
+		if wing.mode == STALL_MODE_CAN and wing.stalled then
+			anotherWingIsStalled = true
+			break
+		end
+	end
+
+	if self.stalled or (mode == STALL_MODE_FOLLOW and anotherWingIsStalled) then
 		return lift * stallLiftFactor
 	end
 	return lift
@@ -379,20 +434,30 @@ end
 
 local function wing_serverInitialize(self)
 	local stored = self.storage:load()
-	self.canStall = not (type(stored) == "table" and stored.canStall == false)
-	self.storage:save({ canStall = self.canStall })
-	self.network:setClientData({ canStall = self.canStall })
+	if type(stored) == "table" and stored.stallMode ~= nil then
+		self.stallMode = normalizeStallMode(stored.stallMode)
+	elseif type(stored) == "table" and stored.canStall == false then
+		-- Migrate the previous two-state format.
+		self.stallMode = STALL_MODE_CANNOT
+	else
+		self.stallMode = STALL_MODE_CAN
+	end
+
+	self.canStall = self.stallMode == STALL_MODE_CAN
+	self.storage:save({ stallMode = self.stallMode })
+	self.network:setClientData({ stallMode = self.stallMode })
 end
 
 local function wing_serverToggleStall(self)
-	self.canStall = not self.canStall
-	self.storage:save({ canStall = self.canStall })
-	self.network:setClientData({ canStall = self.canStall })
-	self.network:sendToClients("cl_showStallNotification", self.canStall)
+	self.stallMode = normalizeStallMode((self.stallMode or STALL_MODE_CAN) % STALL_MODE_FOLLOW + 1)
+	self.canStall = self.stallMode == STALL_MODE_CAN
+	self.storage:save({ stallMode = self.stallMode })
+	self.network:setClientData({ stallMode = self.stallMode })
+	self.network:sendToClients("cl_showStallNotification", self.stallMode)
 end
 
 local function wing_clientCreate(self)
-	self.wingClient = { canStall = true }
+	self.wingClient = { stallMode = STALL_MODE_CAN }
 end
 
 local function wing_clientDataUpdate(self, data)
@@ -400,15 +465,18 @@ local function wing_clientDataUpdate(self, data)
 		wing_clientCreate(self)
 	end
 
-	self.wingClient.canStall = data and data.canStall ~= false or true
+	self.wingClient.stallMode = normalizeStallMode(data and data.stallMode)
 end
 
-local function wing_clientShowStallNotification(self, canStall)
-	if canStall then
-		sm.gui.displayAlertText(PC_L.get("wing_can_stall"), 3.0)
-	else
-		sm.gui.displayAlertText(PC_L.get("wing_cannot_stall"), 3.0)
+local function wing_clientShowStallNotification(self, stallMode)
+	stallMode = normalizeStallMode(stallMode)
+	local messageKey = "wing_can_stall"
+	if stallMode == STALL_MODE_CANNOT then
+		messageKey = "wing_cannot_stall"
+	elseif stallMode == STALL_MODE_FOLLOW then
+		messageKey = "wing_follow_stall"
 	end
+	sm.gui.displayAlertText(PC_L.get(messageKey), 3.0)
 end
 
 local function wing_clientCanInteract(self)
@@ -426,6 +494,10 @@ local function wing_clientInteract(self, _, state)
 	end
 end
 
+local function wing_serverDestroy(self)
+	removeWingFromStallRegistry(self)
+end
+
 -- All current wing variants use this script. Assigning the common callbacks
 -- here keeps the aerodynamic implementation shared while giving every
 -- individual wing element its own saved stall mode.
@@ -439,6 +511,7 @@ local wingClasses = {
 for _, wingClass in ipairs(wingClasses) do
 	wingClass.server_onCreate = wing_serverInitialize
 	wingClass.server_onRefresh = wing_serverInitialize
+	wingClass.server_onDestroy = wing_serverDestroy
 	wingClass.sv_toggleStall = wing_serverToggleStall
 	wingClass.client_onCreate = wing_clientCreate
 	wingClass.client_onClientDataUpdate = wing_clientDataUpdate
