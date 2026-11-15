@@ -111,13 +111,18 @@ local transitionLiftVariationMin = 0.10
 local transitionLiftVariationMax = 0.20
 local transitionLiftVariationMinTime = 0.45
 local transitionLiftVariationMaxTime = 1.00
+local getWindResponseFactor
 
 local function applyTransitionLiftVariation(self, speed, dt, lift)
 	local transition = (speed - minimumLiftSpeed) / (fullLiftSpeed - minimumLiftSpeed)
 	if transition > 0 and transition < 1 then
+		local group, entry = getWingRegistryEntry(self)
+		local windResponseFactor = getWindResponseFactor(self, group, entry)
+		local variationMin = transitionLiftVariationMin * windResponseFactor
+		local variationMax = transitionLiftVariationMax * windResponseFactor
 		if self.liftVariationTimer == nil or self.liftVariationTimer <= 0 then
-			local variation = transitionLiftVariationMin +
-				math.random() * (transitionLiftVariationMax - transitionLiftVariationMin)
+			local variation = variationMin +
+				math.random() * (variationMax - variationMin)
 			self.liftVariationFactor = 1 + variation * (math.random(0, 1) == 0 and -1 or 1)
 			self.liftVariationTimer = transitionLiftVariationMinTime +
 				math.random() * (transitionLiftVariationMaxTime - transitionLiftVariationMinTime)
@@ -132,7 +137,7 @@ local function applyTransitionLiftVariation(self, speed, dt, lift)
 	return lift
 end
 
-local function getStallAngleOffset(self, group, entry)
+local function getCreationWingLoading(self, group, entry)
 	-- Keep the area in the shared creation registry so the calculation sees
 	-- all wing elements, not only the wing currently being updated.
 	entry.area = self.area or 0
@@ -153,7 +158,21 @@ local function getStallAngleOffset(self, group, entry)
 		totalMass = body:getMass()
 	end
 
-	local wingLoading = totalMass / totalWingArea
+	return totalMass / totalWingArea
+end
+
+getWindResponseFactor = function(self, group, entry)
+	local wingLoading = getCreationWingLoading(self, group, entry)
+	if wingLoading <= 0 then
+		return 1
+	end
+	-- The same wing-loading principle also controls gust sensitivity:
+	-- light aircraft react more, heavy aircraft react less.
+	return math.max(0.5, math.min(1.5, stallReferenceWingLoading / wingLoading))
+end
+
+local function getStallAngleOffset(self, group, entry)
+	local wingLoading = getCreationWingLoading(self, group, entry)
 	-- Only low wing loading gets an additional margin. This prevents the
 	-- correction from making heavier aircraft stall earlier than before.
 	local lightweightFactor = math.max(0, math.min(1,
