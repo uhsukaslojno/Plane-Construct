@@ -21,9 +21,12 @@ groundEffectHeight = 20
 groundEffectFactor = -1 + (2.5) -- math.pow(dist/height, gEF)
 groundEffectCurve  = 1.4
 groundEffectChance = 0.15
-stallEntryAngle = math.rad(15) -- enter stall above this angle of attack
-stallExitAngle = math.rad(10) -- recover only after dropping below this angle
-stallLiftFactor = 0.05 -- lift retained while stalled
+stallEntryAngle = math.rad(30) -- enter stall above this angle of attack
+stallRecoveryMidAngle = math.rad(15) -- lift reaches 30% here while recovering
+stallRecoveryFullAngle = math.rad(0.1) -- practically level flight restores 100%
+stallLiftFactor = 0.03 -- lift retained at a fully stalled angle
+stallRecoveryStartFactor = 0.05 -- lift at the start of the recovery curve
+stallRecoveryMidFactor = 0.30 -- lift at 15 degrees during recovery
 gefv = sm.vec3.new(0, 0, -groundEffectHeight)
 
 local STALL_MODE_CAN = 1
@@ -104,8 +107,8 @@ end
 -- from every physics tick.
 local transitionLiftVariationMin = 0.10
 local transitionLiftVariationMax = 0.20
-local transitionLiftVariationMinTime = 0.08
-local transitionLiftVariationMaxTime = 0.20
+local transitionLiftVariationMinTime = 0.45
+local transitionLiftVariationMaxTime = 1.00
 
 local function applyTransitionLiftVariation(self, speed, dt, lift)
 	local transition = (speed - minimumLiftSpeed) / (fullLiftSpeed - minimumLiftSpeed)
@@ -130,6 +133,7 @@ end
 local function applyStall(self, totalSpeed, lift)
 	local mode = normalizeStallMode(self.stallMode)
 	self.stallMode = mode
+	local stallFactor = 1
 
 	-- Only the first mode is allowed to initiate a stall from its own
 	-- angle of attack. The third mode can only follow another wing.
@@ -138,12 +142,26 @@ local function applyStall(self, totalSpeed, lift)
 		normalRatio = math.min(1, math.max(0, normalRatio))
 		local angleOfAttack = math.asin(normalRatio)
 
-		if self.stalled then
-			if angleOfAttack < stallExitAngle then
-				self.stalled = false
-			end
-		elseif angleOfAttack > stallEntryAngle then
+		if not self.stalled and angleOfAttack > stallEntryAngle then
 			self.stalled = true
+		end
+
+		if self.stalled then
+			if angleOfAttack <= stallRecoveryFullAngle then
+				self.stalled = false
+			elseif angleOfAttack > stallEntryAngle then
+				stallFactor = stallLiftFactor
+			elseif angleOfAttack > stallRecoveryMidAngle then
+				local progress = (stallEntryAngle - angleOfAttack) /
+					(stallEntryAngle - stallRecoveryMidAngle)
+				stallFactor = stallRecoveryStartFactor +
+					(stallRecoveryMidFactor - stallRecoveryStartFactor) * progress
+			else
+				local progress = (stallRecoveryMidAngle - angleOfAttack) /
+					(stallRecoveryMidAngle - stallRecoveryFullAngle)
+				stallFactor = stallRecoveryMidFactor +
+					(1 - stallRecoveryMidFactor) * progress
+			end
 		end
 	else
 		self.stalled = false
@@ -152,17 +170,21 @@ local function applyStall(self, totalSpeed, lift)
 	local group, entry = getWingRegistryEntry(self)
 	entry.mode = mode
 	entry.stalled = mode == STALL_MODE_CAN and self.stalled == true
+	entry.stallFactor = entry.stalled and stallFactor or 1
 
 	local anotherWingIsStalled = false
+	local groupStallFactor = 1
 	for _, wing in pairs(group) do
 		if wing.mode == STALL_MODE_CAN and wing.stalled then
 			anotherWingIsStalled = true
-			break
+			groupStallFactor = math.min(groupStallFactor, wing.stallFactor or stallLiftFactor)
 		end
 	end
 
-	if self.stalled or (mode == STALL_MODE_FOLLOW and anotherWingIsStalled) then
-		return lift * stallLiftFactor
+	if self.stalled then
+		return lift * stallFactor
+	elseif mode == STALL_MODE_FOLLOW and anotherWingIsStalled then
+		return lift * groupStallFactor
 	end
 	return lift
 end
