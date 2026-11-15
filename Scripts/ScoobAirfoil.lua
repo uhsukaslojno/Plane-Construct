@@ -21,12 +21,12 @@ groundEffectHeight = 20
 groundEffectFactor = -1 + (2.5) -- math.pow(dist/height, gEF)
 groundEffectCurve  = 1.4
 groundEffectChance = 0.15
-stallEntryAngle = math.rad(30) -- enter stall above this angle of attack
-stallRecoveryMidAngle = math.rad(15) -- lift reaches 30% here while recovering
+stallEntryAngle = math.rad(20) -- enter stall above this angle of attack
+stallRecoveryMidAngle = math.rad(10) -- lift reaches 30% here while recovering
 stallRecoveryFullAngle = math.rad(0.1) -- practically level flight restores 100%
 stallLiftFactor = 0.03 -- lift retained at a fully stalled angle
 stallRecoveryStartFactor = 0.05 -- lift at the start of the recovery curve
-stallRecoveryMidFactor = 0.30 -- lift at 15 degrees during recovery
+stallRecoveryMidFactor = 0.30 -- lift at 10 degrees during recovery
 gefv = sm.vec3.new(0, 0, -groundEffectHeight)
 
 local STALL_MODE_CAN = 1
