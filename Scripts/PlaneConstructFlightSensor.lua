@@ -413,6 +413,9 @@ function PlaneConstructFlightSensor.server_onFixedUpdate(self, timeStep)
         -- For altitude, the sensor is active when the ground is closer than
         -- the configured threshold.
         detected = measuredValue <= self.sv.threshold
+    elseif self.sv.metricKey == "turnRate" then
+        -- Turn rate is a minimum threshold: reach or exceed it to activate.
+        detected = measuredValue >= self.sv.threshold
     else
         detected = measuredValue >= self.sv.threshold
     end
@@ -431,7 +434,13 @@ function PlaneConstructFlightSensor.server_onFixedUpdate(self, timeStep)
     self.sv.cycleTicks = self.sv.cycleTicks + 1
     if self.sv.cycleTicks >= self.sv.delayTicks then
         self.sv.cycleTicks = 0
-        self:sv_setActive(not self.sv.outputActive)
+        if self.sv.metricKey == "turnRate" then
+            -- For turn rate, delay is only an activation delay. Once the
+            -- threshold is reached, keep the output active until it drops.
+            self:sv_setActive(true)
+        else
+            self:sv_setActive(not self.sv.outputActive)
+        end
     end
 end
 
