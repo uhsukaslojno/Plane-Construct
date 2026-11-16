@@ -199,42 +199,31 @@ local function getPitchAngle(shape)
     return clamp(math.abs(angle), 0.0, 180.0)
 end
 
-local function getHorizontalHeading(shape)
-    local worldUp = sm.vec3.new(0.0, 0.0, 1.0)
-    local direction = shape:getAt()
-    local horizontalDirection = direction - worldUp * direction.z
-
-    -- If the sensor's forward axis is vertical, use its right axis instead.
-    -- This keeps the measurement usable when the block is installed vertically.
-    if horizontalDirection:length() <= 0.0001 then
-        direction = shape:getRight()
-        horizontalDirection = direction - worldUp * direction.z
-    end
-    if horizontalDirection:length() <= 0.0001 then return nil end
-
-    horizontalDirection = horizontalDirection / horizontalDirection:length()
-    return math.atan2(horizontalDirection.y, horizontalDirection.x)
+local function getLocalVector(shape, vector)
+    return sm.vec3.new(
+        shape:getRight():dot(vector),
+        shape:getAt():dot(vector),
+        shape:getUp():dot(vector)
+    )
 end
 
-local function getHorizontalTurnRate(self, timeStep)
-    local heading = getHorizontalHeading(self.shape)
-    if heading == nil then return 0.0 end
+local function getHorizontalTurnRate(self)
+    -- Read the rigid body's angular velocity directly.  Calculating speed
+    -- from heading changes makes tiny physics corrections look like very
+    -- large turn-rate spikes after division by the tick duration.
+    local body = self.shape:getBody()
+    if body == nil then return 0.0 end
 
-    local previousHeading = self.sv.previousHeading
-    self.sv.previousHeading = heading
-    if previousHeading == nil then return 0.0 end
-
-    local delta = heading - previousHeading
-    if delta > math.pi then
-        delta = delta - math.pi * 2.0
-    elseif delta < -math.pi then
-        delta = delta + math.pi * 2.0
+    local angularVelocity = body:getAngularVelocity()
+    if angularVelocity == nil then
+        angularVelocity = body.angularVelocity
     end
+    if angularVelocity == nil then return 0.0 end
 
-    local deltaTime = math.max(tonumber(timeStep) or (1.0 / TICKS_PER_SECOND), 0.001)
-    -- Invert the sign to keep counter-clockwise rotation negative, as used
-    -- by the sensor controls.
-    return clamp(-math.deg(delta / deltaTime), -1000.0, 1000.0)
+    -- The Modpack's degree/s meter uses the local Z component of the body's
+    -- angular velocity.  Keep the same convention and sign here.
+    local localAngularVelocity = getLocalVector(self.shape, angularVelocity)
+    return clamp(-math.deg(localAngularVelocity.z), -1000.0, 1000.0)
 end
 
 local function isTurnRateThresholdReached(measuredValue, threshold)
@@ -305,7 +294,7 @@ function PlaneConstructFlightSensor.sv_measure(self, timeStep)
     elseif metricKey == "gforce" then
         return self:sv_measureGForce(timeStep)
     elseif metricKey == "turnRate" then
-        return getHorizontalTurnRate(self, timeStep)
+        return getHorizontalTurnRate(self)
     end
     return 0.0
 end
@@ -365,7 +354,6 @@ function PlaneConstructFlightSensor.sv_initialize(self)
         cycleTicks = 0,
         outputActive = false,
         previousVelocity = getShapeVelocity(self.shape),
-        previousHeading = getHorizontalHeading(self.shape),
         altitudeSampleTicks = 0,
         altitudeValue = ALTITUDE_RAY_LENGTH,
         breakableWingConnected = false
@@ -401,7 +389,6 @@ function PlaneConstructFlightSensor.sv_setMetric(self, requestedMetric)
     self.sv.metricKey = requestedMetric
     self.sv.threshold = clampThreshold(requestedMetric, self.sv.threshold)
     self.sv.previousVelocity = getShapeVelocity(self.shape)
-    self.sv.previousHeading = getHorizontalHeading(self.shape)
     self.sv.altitudeSampleTicks = 0
     self.sv.altitudeValue = ALTITUDE_RAY_LENGTH
     self:sv_resetCycle()
