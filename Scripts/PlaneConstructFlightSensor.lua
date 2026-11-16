@@ -239,13 +239,13 @@ end
 
 local function isTurnRateThresholdReached(measuredValue, threshold)
     if threshold > 0.0 then
-        -- Positive threshold selects positive rotation and activates when
-        -- the selected minimum rate is reached or exceeded.
-        return measuredValue >= threshold
+        -- Positive threshold selects positive rotation and acts as an upper
+        -- limit for that direction.
+        return measuredValue > 0.001 and measuredValue <= threshold
     elseif threshold < 0.0 then
-        -- Negative threshold selects negative rotation and activates when
-        -- the selected negative minimum rate is reached or exceeded.
-        return measuredValue <= threshold
+        -- Negative threshold selects negative rotation and mirrors the same
+        -- upper-limit behavior by magnitude.
+        return measuredValue < -0.001 and measuredValue >= threshold
     end
     -- A zero threshold means any actual horizontal rotation.
     return math.abs(measuredValue) > 0.001
