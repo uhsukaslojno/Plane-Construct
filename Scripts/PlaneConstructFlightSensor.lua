@@ -211,13 +211,12 @@ local function getHorizontalTurnRate(self)
     -- Read the rigid body's angular velocity directly.  Calculating speed
     -- from heading changes makes tiny physics corrections look like very
     -- large turn-rate spikes after division by the tick duration.
-    local body = self.shape:getBody()
+    local body = self.shape.body
     if body == nil then return 0.0 end
 
-    local angularVelocity = body:getAngularVelocity()
-    if angularVelocity == nil then
-        angularVelocity = body.angularVelocity
-    end
+    -- Match The Modpack X-O Meter: use the body's exposed angularVelocity
+    -- property rather than calling the optional body method.
+    local angularVelocity = body.angularVelocity
     if angularVelocity == nil then return 0.0 end
 
     -- The Modpack's degree/s meter uses the local Z component of the body's
