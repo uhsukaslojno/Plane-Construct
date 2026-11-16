@@ -68,6 +68,14 @@ local METRICS = {
         minimum = 0.0,
         maximum = 20.0,
         step = 0.1
+    },
+    {
+        key = "turnRate",
+        label = PC_L.get("flight_sensor_turn_rate"),
+        unit = "degrees/s",
+        minimum = 0.0,
+        maximum = 1000.0,
+        step = 1.0
     }
 }
 
@@ -191,6 +199,19 @@ local function getPitchAngle(shape)
     return clamp(math.abs(angle), 0.0, 180.0)
 end
 
+local function getHorizontalTurnRate(shape)
+    local body = shape:getBody()
+    if body == nil then return 0.0 end
+
+    local angularVelocity = body:getAngularVelocity()
+    if angularVelocity == nil then return 0.0 end
+
+    -- Project angular velocity onto the world's vertical axis. This leaves
+    -- only the horizontal/yaw component and reports it in degrees per second.
+    local worldUp = sm.vec3.new(0.0, 0.0, 1.0)
+    return clamp(math.abs(math.deg(angularVelocity:dot(worldUp))), 0.0, 1000.0)
+end
+
 function PlaneConstructFlightSensor.sv_setActive(self, active)
     if self.sv.outputActive == active then return end
     self.sv.outputActive = active
@@ -244,6 +265,8 @@ function PlaneConstructFlightSensor.sv_measure(self, timeStep)
         return getRollAngle(self.shape)
     elseif metricKey == "gforce" then
         return self:sv_measureGForce(timeStep)
+    elseif metricKey == "turnRate" then
+        return getHorizontalTurnRate(self.shape)
     end
     return 0.0
 end

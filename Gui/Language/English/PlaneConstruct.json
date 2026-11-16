@@ -54,6 +54,7 @@
   "roll": "Roll: %.0f°",
   "pitch": "Pitch: %.0f°",
   "g_force": "G: %.1f",
+  "flight_sensor_turn_rate": "Turn rate",
   "fuel_unlimited": "Fuel: Unlimited",
   "chaff_unlimited": "Chaff: Unlimited",
   "flare_unlimited": "Flare: Unlimited",
