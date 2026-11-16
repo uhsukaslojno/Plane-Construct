@@ -73,7 +73,7 @@ local METRICS = {
         key = "turnRate",
         label = PC_L.get("flight_sensor_turn_rate"),
         unit = "degrees/s",
-        minimum = 0.0,
+        minimum = -1000.0,
         maximum = 1000.0,
         step = 1.0
     }
@@ -207,9 +207,19 @@ local function getHorizontalTurnRate(shape)
     if angularVelocity == nil then return 0.0 end
 
     -- Project angular velocity onto the world's vertical axis. This leaves
-    -- only the horizontal/yaw component and reports it in degrees per second.
+    -- only the horizontal/yaw component and reports signed degrees per second.
     local worldUp = sm.vec3.new(0.0, 0.0, 1.0)
-    return clamp(math.abs(math.deg(angularVelocity:dot(worldUp))), 0.0, 1000.0)
+    return clamp(math.deg(angularVelocity:dot(worldUp)), -1000.0, 1000.0)
+end
+
+local function isTurnRateThresholdReached(measuredValue, threshold)
+    if threshold > 0.0 then
+        return measuredValue >= threshold
+    elseif threshold < 0.0 then
+        return measuredValue <= threshold
+    end
+    -- A zero threshold means any actual horizontal rotation.
+    return math.abs(measuredValue) > 0.001
 end
 
 function PlaneConstructFlightSensor.sv_setActive(self, active)
@@ -414,8 +424,8 @@ function PlaneConstructFlightSensor.server_onFixedUpdate(self, timeStep)
         -- the configured threshold.
         detected = measuredValue <= self.sv.threshold
     elseif self.sv.metricKey == "turnRate" then
-        -- Turn rate is a minimum threshold: reach or exceed it to activate.
-        detected = measuredValue >= self.sv.threshold
+        -- Positive and negative thresholds select opposite rotation directions.
+        detected = isTurnRateThresholdReached(measuredValue, self.sv.threshold)
     else
         detected = measuredValue >= self.sv.threshold
     end
