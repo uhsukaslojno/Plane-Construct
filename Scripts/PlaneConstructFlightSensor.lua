@@ -199,30 +199,16 @@ local function getPitchAngle(shape)
     return clamp(math.abs(angle), 0.0, 180.0)
 end
 
-local function getLocalVector(shape, vector)
-    return sm.vec3.new(
-        shape:getRight():dot(vector),
-        shape:getAt():dot(vector),
-        shape:getUp():dot(vector)
-    )
-end
-
 local function getHorizontalTurnRate(self)
-    -- Read the rigid body's angular velocity directly.  Calculating speed
-    -- from heading changes makes tiny physics corrections look like very
-    -- large turn-rate spikes after division by the tick duration.
-    local body = self.shape.body
-    if body == nil then return 0.0 end
-
-    -- Match The Modpack X-O Meter: use the body's exposed angularVelocity
-    -- property rather than calling the optional body method.
-    local angularVelocity = body.angularVelocity
-    if angularVelocity == nil then return 0.0 end
-
-    -- The Modpack's degree/s meter uses the local Z component of the body's
-    -- angular velocity.  Keep the same convention and sign here.
-    local localAngularVelocity = getLocalVector(self.shape, angularVelocity)
-    return clamp(-math.deg(localAngularVelocity.z), -1000.0, 1000.0)
+    -- This is the same calculation used by The Modpack's X-O Meter:
+    -- transform body.angularVelocity to the sensor's local axes and use Z.
+    local angularVelocity = self.shape.body.angularVelocity
+    local localAngularVelocity = sm.vec3.new(
+        self.shape.right:dot(angularVelocity),
+        self.shape.at:dot(angularVelocity),
+        self.shape.up:dot(angularVelocity)
+    )
+    return -math.deg(localAngularVelocity.z)
 end
 
 local function isTurnRateThresholdReached(measuredValue, threshold)
