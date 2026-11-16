@@ -200,15 +200,12 @@ local function getPitchAngle(shape)
 end
 
 local function getHorizontalTurnRate(self)
-    -- This is the same calculation used by The Modpack's X-O Meter:
-    -- transform body.angularVelocity to the sensor's local axes and use Z.
+    -- Use the same direct body.angularVelocity source as The Modpack's
+    -- X-O Meter, but read the world Z component because this sensor measures
+    -- horizontal/yaw rotation of the whole creation, not rotation around the
+    -- sensor's installation axis.
     local angularVelocity = self.shape.body.angularVelocity
-    local localAngularVelocity = sm.vec3.new(
-        self.shape.right:dot(angularVelocity),
-        self.shape.at:dot(angularVelocity),
-        self.shape.up:dot(angularVelocity)
-    )
-    return -math.deg(localAngularVelocity.z)
+    return -math.deg(angularVelocity.z)
 end
 
 local function isTurnRateThresholdReached(measuredValue, threshold)
