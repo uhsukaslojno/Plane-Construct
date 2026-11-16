@@ -216,9 +216,9 @@ end
 
 local function isTurnRateThresholdReached(measuredValue, threshold)
     if threshold > 0.0 then
-        return measuredValue >= threshold
+        return measuredValue > threshold
     elseif threshold < 0.0 then
-        return measuredValue <= threshold
+        return measuredValue < threshold
     end
     -- A zero threshold means any actual horizontal rotation.
     return math.abs(measuredValue) > 0.001
