@@ -209,7 +209,9 @@ local function getHorizontalTurnRate(shape)
     -- Project angular velocity onto the world's vertical axis. This leaves
     -- only the horizontal/yaw component and reports signed degrees per second.
     local worldUp = sm.vec3.new(0.0, 0.0, 1.0)
-    return clamp(math.deg(angularVelocity:dot(worldUp)), -1000.0, 1000.0)
+    -- The engine's positive yaw direction is opposite to the direction used
+    -- by the sensor controls, so invert the projection for intuitive signs.
+    return clamp(-math.deg(angularVelocity:dot(worldUp)), -1000.0, 1000.0)
 end
 
 local function isTurnRateThresholdReached(measuredValue, threshold)
